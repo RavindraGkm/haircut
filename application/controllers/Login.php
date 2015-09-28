@@ -1,5 +1,4 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller {
     public function login_page() {
@@ -16,6 +15,11 @@ class Login extends CI_Controller {
         $this->db->close();
         echo json_encode($response);
     }
+    public function login_with_fb(){
+        $email = $this->input->post('email');
+        $this->load->library('session');
+        $this->load->helper('url');
+        echo json_encode(array('status'=>200,'url'=>base_url()."abc"));
+    }
 }
-
 ?>

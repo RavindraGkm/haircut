@@ -88,22 +88,9 @@ $route['clients/add-new-client'] = 'Clients/add_new_client';
 $route['clients/show-clients'] = 'Clients/show_clients';
 $route['clients/show-all-client']='Clients/show_all_client';
 
-$route['logins/logins']='Logins/login_page';
-$route['logins/login-check']='Logins/login_check';
-
-$route['quotation/add-quotation'] = 'Quotation/add_quotation';
-$route['quotation/quotation-details'] = 'Quotation/quotation_details';
-$route['quotation/create-quotation'] = 'Quotation/create_quotation';
-$route['quotation/print-quotation/(:num)'] = 'Quotation/print_quotation/$1';
-$route['quotation/all-quotations'] = 'Quotation/view_all_quotations';
-$route['quotation/get-all-quotations'] = 'Quotation/get_all_quotations';
-
-$route['billing/new-bill']='Billing/new_bill';
-//$route['billing/print-bill']='Billing/print_bill';
-$route['billing/create-bill']='Billing/create_bill';
-$route['billing/all-bills'] = 'Billing/view_all_bills';
-$route['billing/print-bill/(:num)'] = 'Billing/print_bill/$1';
-$route['billing/get-all-bills'] = 'Billing/get_all_bills';
+$route['logins/logins']='Login/login_page';
+$route['logins/login-check']='Login/login_check';
+$route['logins/login-with-fb']='Login/login_with_fb';
 
 $route['admin/admin-panel']='Admin/admin_panel';
 $route['404_override'] = '';

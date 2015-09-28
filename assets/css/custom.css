@@ -57,3 +57,14 @@ a.sign-out-button{
 .radio-list .radio-inline input {
     margin-top: 2px;
 }
+
+.sign-in-heading {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.sign-in-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
