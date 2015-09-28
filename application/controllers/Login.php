@@ -19,6 +19,8 @@ class Login extends CI_Controller {
         $email = $this->input->post('email');
         $this->load->library('session');
         $this->load->helper('url');
+        $this->session->set_userdata('user_email',$email);
+        $this->session->set_userdata('is_fb_login',true);
         echo json_encode(array('status'=>200,'url'=>base_url()."abc"));
     }
 }
