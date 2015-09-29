@@ -58,28 +58,6 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Quotations</span></a>
-                <ul>
-                    <li>
-                        <?php echo anchor('quotation/all-quotations','<span class="menu-item-parent">View Quotations</span>');?>
-                    </li>
-                    <li>
-                        <?php echo anchor('quotation/add-quotation','<span class="menu-item-parent">Create Quotation</span>');?>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Billing</span></a>
-                <ul>
-                    <li>
-                        <?php echo anchor('billing/all-bills','<span class="menu-item-parent">View Bills</span>');?>
-                    </li>
-                    <li>
-                        <?php echo anchor('billing/new-bill','<span class="menu-item-parent">Create New Bill</span>');?>
-                    </li>
-                </ul>
-            </li>
         </ul>
     </nav>
 </aside>
@@ -128,28 +106,28 @@
                                     <table id="user" class="table table-bordered table-striped" style="clear: both">
                                         <tbody>
                                             <tr>
-                                                <td style="width:35%;">Name</td>
+                                                <td style="width:35%;"><b>Name</b></td>
                                                 <td style="width:65%" name="name" class="name" id="name"></td>
                                             </tr>
                                             <tr>
-                                                <td>Date of Birth</td>
+                                                <td><b>Date of Birth</b></td>
                                                 <td name="birth-date" id="birth-date" class="birth-date"></td>
                                             </tr>
                                             <tr>
-                                                <td>Address</td>
+                                                <td><b>Address</b></td>
                                                 <td name="address" id="address" class="address"></td>
                                             </tr>
                                             <tr>
-                                                <td>Mobile Number</td>
+                                                <td><b>Mobile Number</b></td>
                                                 <td name="mobile" id="mobile" class="mobile"></td>
                                             </tr>
                                             <tr>
-                                                <td>User Name</td>
+                                                <td><b>User Name</b></td>
                                                 <td name="username" id="username" class="username"></td>
                                             </tr>
 
                                             <tr>
-                                                <td>Password</td>
+                                                <td><b>Password</b></td>
                                                 <td name="password" id="password" class="password"></td>
                                             </tr>
                                             

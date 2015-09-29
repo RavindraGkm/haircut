@@ -59,39 +59,6 @@
                     </li>
                 </ul>
             </li>
-            <li >
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Items</span></a>
-                <ul>
-                    <li >
-                        <?php echo anchor('items/show-items','<span class="menu-item-parent">View Items</span>');?>
-                    </li>
-                    <li>
-                        <?php echo anchor('items/add-item','<span class="menu-item-parent">Add Items</span>');?>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Quotations</span></a>
-                <ul>
-                    <li>
-                        <?php echo anchor('quotation/all-quotations','<span class="menu-item-parent">View Quotations</span>');?>
-                    </li>
-                    <li>
-                        <?php echo anchor('quotation/add-quotation','<span class="menu-item-parent">Create Quotation</span>');?>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Billing</span></a>
-                <ul>
-                    <li>
-                        <?php echo anchor('billing/all-bills','<span class="menu-item-parent">View Bills</span>');?>
-                    </li>
-                    <li>
-                        <?php echo anchor('billing/new-bill','<span class="menu-item-parent">Create New Bill</span>');?>
-                    </li>
-                </ul>
-            </li>
         </ul>
     </nav>
 </aside>

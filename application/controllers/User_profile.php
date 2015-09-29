@@ -44,6 +44,19 @@ class User_profile extends CI_Controller {
         $response = $this->User_model->update_user($data);
         echo json_encode($response);
     }
+    public function show_all_user() {
+        $this->load->helper('html');
+        $this->load->helper('url');
+        $this->load->view('profile/show_user');
+    }
+    public function show_all_users_details(){
+        $this->load->database();
+        $this->load->model('user/User_model');
+        $response=$this->User_model->view_all_users();
+        $this->db->close();
+        echo json_encode($response);
+    }
+    
 }
 
 ?>

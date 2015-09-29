@@ -36,7 +36,7 @@ CKE.Register.prototype={
                 success: function (data) {
                     console.log(data);
                      if(data.status==200) {
-                         window.location= window.location = self.base_url+"logincopy";
+                         window.location= window.location = self.base_url+"login";
                      }
                      else if(data.status==401) {
                          $.smallBox({

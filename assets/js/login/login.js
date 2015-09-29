@@ -33,7 +33,7 @@ HSS.Login.prototype={
                             window.location = self.base_url+"user-profile/profile-page";
                         }
                         else {
-                            window.location=self.base_url+"items/show-items";
+                            window.location=self.base_url+"employee-registration/registration-page";
                         }
                     }
                     else if(data.status==401) {

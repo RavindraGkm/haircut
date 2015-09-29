@@ -38,4 +38,21 @@ class Appointment_model extends CI_Model {
         }
         return $response;
     }
+    public function view_all_employees_appointments()
+    {
+        $response=array();
+        $sql="select * from booking_request";
+        $query=$this->db->query($sql);
+        foreach($query->result() as $row){
+            $temp['id']=$row->id;
+            $temp['name']=$row->name;
+            $temp['booking_date']=$row->booking_date;
+            $temp['booking_with']=$row->booking_with;
+            $temp['booking_timing']=$row->booking_timing;
+            $temp['mobile']=$row->mobile;
+            $temp['status']=$row->status;
+            $response[]=$temp;
+        }
+        return $response;
+    }
 }   

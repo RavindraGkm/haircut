@@ -1,3 +1,4 @@
+
 <?php
 class  User_model extends CI_Model {
 
@@ -27,6 +28,21 @@ class  User_model extends CI_Model {
         else{
             $response['status']=500;
             $response['msg']="Something Went Wrong...";
+        }
+        return $response;
+    }
+    public function view_all_users(){
+        $response=array();
+        $sql="select * from user_login";
+        $query=$this->db->query($sql);
+        foreach($query->result() as $row){
+            $temp['name']=$row->name;
+            $temp['birth_date']=$row->mydate;
+            $temp['address']=$row->address;
+            $temp['mobile']=$row->mobile;
+            $temp['username']=$row->username;
+            $temp['password']=$row->password;
+            $response[]=$temp;
         }
         return $response;
     }

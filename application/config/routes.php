@@ -51,47 +51,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Login/login_page';
 $route['login/login-check']='Login/login_check';
+$route['login']='Login/login_page';
 
 $route['user-profile/profile-page']='User_profile/profile_page';
 $route['user-profile/edit-page']='User_profile/edit_page';
 $route['user-profile/show-user']='User_profile/show_user';
 $route['user-profile/edit-user']='User_profile/edit_user';
 $route['user-profile/view-page']='User_profile/view_page';
+$route['user-profile/show-all-user']='User_profile/show_all_user';
+$route['user-profile/show-all-users-details']='User_profile/show_all_users_details';
 
 $route['appointment/book-appointment']='Appointment/book_appointment';
 $route['appointment/book-my-appointment']='Appointment/book_my_appointment';
 $route['appointment/view-appointment']='Appointment/view_appointment';
 $route['appointment/show-all-appointment']='Appointment/show_all_appointment';
+$route['appointment/view-all-appointment']='Appointment/view_all_appointment';
+$route['appointment/show-all-employees-appointment']='Appointment/show_all_employees_appointment';
 
 $route['registration']='Registration/registration_page';
 $route['registration/user-registration']='Registration/user_registration';
 
-$route['items/add-item'] = 'Items/add_item';
-$route['items/add-new-item'] = 'Items/add_new_item';
 
-$route['items/show-items'] = 'Items/show_items';
-$route['items/show-all-item']='Items/show_all_item';
+$route['employee-registration/registration-page']='Employee_registration/registration_page';
+$route['employee-registration/add-employee']='Employee_registration/add_employee';
+$route['employee-registration/view-employee']='Employee_registration/view_employee';
+$route['employee-registration/show-all-employees']='Employee_registration/show_all_employees';
 
-$route['items/edit-items/(:num)'] = 'Items/edit_items/$1';
-$route['items/get-item-by-id']='Items/get_item_by_id';
-$route['items/update-item'] = 'Items/update_item';
-$route['items/get-all-items-by-name'] = 'Items/get_all_items_by_name';
-
-$route['clients/edit-clients/(:num)'] = 'Clients/edit_clients/$1';
-$route['clients/get-client-by-id']='Clients/get_client_by_id';
-$route['clients/update-client'] = 'Clients/update_client';
-$route['clients/get-all-clients-by-name'] = 'Clients/get_all_clients_by_name';
-
-$route['clients/add-client']='Clients/add_client';
-$route['clients/add-new-client'] = 'Clients/add_new_client';
-
-$route['clients/show-clients'] = 'Clients/show_clients';
-$route['clients/show-all-client']='Clients/show_all_client';
-
-$route['logins/logins']='Login/login_page';
-$route['logins/login-check']='Login/login_check';
-$route['logins/login-with-fb']='Login/login_with_fb';
-
-$route['admin/admin-panel']='Admin/admin_panel';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

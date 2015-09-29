@@ -36,6 +36,18 @@ class Appointment extends CI_Controller {
         $this->db->close();
         echo json_encode($response);
     }
+    public function view_all_appointment() {
+        $this->load->helper('html');
+        $this->load->helper('url');
+        $this->load->view('appointment/view_all_appointment');
+    }
+    public function show_all_employees_appointment(){
+        $this->load->database();
+        $this->load->model('appointment/Appointment_model');
+        $response=$this->Appointment_model->view_all_employees_appointments();
+        $this->db->close();
+        echo json_encode($response);
+    }
 }
 
 ?>
