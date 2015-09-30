@@ -48,6 +48,14 @@ class Appointment extends CI_Controller {
         $this->db->close();
         echo json_encode($response);
     }
+    public function appointment_status_update_call(){
+        $this->load->database();
+        $data['status'] = $this->input->post('status');
+        $data['appointment_id']=$this->input->post('appointment_tab_id');
+        $this->load->model('appointment/Appointment_model');
+        $response=$this->Appointment_model->appointment_status_update_call($data);
+        echo json_encode($response);
+    }
 }
 
 ?>

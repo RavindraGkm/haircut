@@ -67,6 +67,7 @@ $route['appointment/view-appointment']='Appointment/view_appointment';
 $route['appointment/show-all-appointment']='Appointment/show_all_appointment';
 $route['appointment/view-all-appointment']='Appointment/view_all_appointment';
 $route['appointment/show-all-employees-appointment']='Appointment/show_all_employees_appointment';
+$route['appointment/appointment-status-update-call']='Appointment/appointment_status_update_call';
 
 $route['registration']='Registration/registration_page';
 $route['registration/user-registration']='Registration/user_registration';

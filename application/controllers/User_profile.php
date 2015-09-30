@@ -7,6 +7,7 @@ class User_profile extends CI_Controller {
         $data['user_id']= $this->session->userdata('user_id');
         $this->load->helper('html');
         $this->load->helper('url');
+        //echo $data['user_id'];
         $this->load->view('profile/profile_panel',$data);
     }
     public function edit_page() {
@@ -21,6 +22,7 @@ class User_profile extends CI_Controller {
         $data['user_id']= $this->session->userdata('user_id');
         $this->load->helper('html');
         $this->load->helper('url');
+         // echo $data['user_id'];
         $this->load->view('profile/profile_panel',$data );
     }
      public function show_user() {

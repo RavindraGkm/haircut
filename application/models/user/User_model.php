@@ -8,7 +8,9 @@ class  User_model extends CI_Model {
         if($query->num_rows()>0) {
             $row = $query->row();
             $response['name']=$row->name;
-            $response['mydate']=$row->mydate;
+            $birth_date = new DateTime($row->mydate);
+            $birth_date = $birth_date->format('d-M-Y');
+            $response['mydate']=$birth_date;
             $response['address']=$row->address;
             $response['mobile']=$row->mobile;
             $response['username']=$row->username;
@@ -37,7 +39,9 @@ class  User_model extends CI_Model {
         $query=$this->db->query($sql);
         foreach($query->result() as $row){
             $temp['name']=$row->name;
-            $temp['birth_date']=$row->mydate;
+            $birth_date = new DateTime($row->mydate);
+            $birth_date = $birth_date->format('d-M-Y');
+            $temp['birth_date']=$birth_date;
             $temp['address']=$row->address;
             $temp['mobile']=$row->mobile;
             $temp['username']=$row->username;

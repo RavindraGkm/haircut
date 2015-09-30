@@ -104,6 +104,7 @@
                                         <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Phone</th>
                                         <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Status</th>
                                         <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Action</th>
+                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Action</th>
                                     </tr>
                                     </thead>
                                     <tbody id="employess_data_json"></tbody>
@@ -134,7 +135,7 @@ echo script_tag('assets/js/appointment/view_employees.js');
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
-        new HSS.ViewEmployees();
+        new HSS.ViewEmployees();        
     });
 </script>
 </body>

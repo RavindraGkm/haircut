@@ -30,7 +30,9 @@ class Employee_model extends CI_Model {
         foreach($query->result() as $row){
             $temp['id']=$row->id;
             $temp['name']=$row->name;
-            $temp['birth_date']=$row->mydate;
+            $birth_date = new DateTime($row->mydate);
+            $birth_date = $birth_date->format('d-M-Y');
+            $temp['birth_date']=$birth_date;
             $temp['address']=$row->address;
             $temp['mobile']=$row->mobile;
             $temp['email']=$row->email;
