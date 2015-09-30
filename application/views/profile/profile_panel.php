@@ -40,10 +40,10 @@
                     <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
                     <ul>
                         <li>
-                            <?php echo anchor('user-profile/view-page','<span class="menu-item-parent">View Profile</span>');?>
+                            <?php echo anchor('profile/view-profile','<span class="menu-item-parent">View Profile</span>');?>
                         </li>
                         <li>
-                            <?php echo anchor('user-profile/edit-page','<span class="menu-item-parent">Edit Profile</span>');?>
+                            <?php echo anchor('profile/edit-profile','<span class="menu-item-parent">Edit Profile</span>');?>
                         </li>
                     </ul>
                 </li>

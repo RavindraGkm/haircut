@@ -56,7 +56,7 @@ HSS.EditUser.prototype={
                 },
                 success:function(data){
                     console.log(data);
-                    if(data.status == 200) {
+                    /*if(data.status == 200) {
                         $.smallBox({
                             title: data.msg,
                             content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
@@ -73,7 +73,7 @@ HSS.EditUser.prototype={
                             iconSmall: "fa fa-thumbs-down bounce animated",
                             timeout: 4000
                         });
-                    }
+                    }*/
                 },
                 complete: function() {
                     $('.myupdate').html("Update");

@@ -30,10 +30,10 @@ HSS.Login.prototype={
                     console.log(data);
                     if(data.status==200) {
                         if(data.user_type==0) {
-                            window.location = self.base_url+"user-profile/profile-page";
+                            window.location = self.base_url+"profile/view-profile";
                         }
                         else {
-                            window.location=self.base_url+"employee-registration/registration-page";
+                            window.location=self.base_url+"employee/employee-registration";
                         }
                     }
                     else if(data.status==401) {

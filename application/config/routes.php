@@ -53,13 +53,13 @@ $route['default_controller'] = 'Login/login_page';
 $route['login/login-check']='Login/login_check';
 $route['login']='Login/login_page';
 
-$route['user-profile/profile-page']='User_profile/profile_page';
-$route['user-profile/edit-page']='User_profile/edit_page';
-$route['user-profile/show-user']='User_profile/show_user';
-$route['user-profile/edit-user']='User_profile/edit_user';
-$route['user-profile/view-page']='User_profile/view_page';
-$route['user-profile/show-all-user']='User_profile/show_all_user';
-$route['user-profile/show-all-users-details']='User_profile/show_all_users_details';
+$route['profile/view-profile']='Profile/view_profile';
+$route['profile/edit-profile']='Profile/edit_profile';
+$route['profile/show-user']='Profile/show_user';
+$route['profile/edit-user']='Profile/edit_user';
+$route['profile/view-page']='Profile/profile_view';
+$route['profile/show-all-user']='Profile/show_all_user';
+$route['profile/show-all-users-details']='Profile/show_all_users_details';
 
 $route['appointment/book-appointment']='Appointment/book_appointment';
 $route['appointment/book-my-appointment']='Appointment/book_my_appointment';
@@ -73,10 +73,10 @@ $route['registration']='Registration/registration_page';
 $route['registration/user-registration']='Registration/user_registration';
 
 
-$route['employee-registration/registration-page']='Employee_registration/registration_page';
-$route['employee-registration/add-employee']='Employee_registration/add_employee';
-$route['employee-registration/view-employee']='Employee_registration/view_employee';
-$route['employee-registration/show-all-employees']='Employee_registration/show_all_employees';
+$route['employee/employee-registration']='Employee/employee_registration';
+$route['employee/add-employee']='Employee/add_employee';
+$route['employee/view-employee-details']='Employee/view_employee_details';
+$route['employee/show-all-employees']='Employee/show_all_employees';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

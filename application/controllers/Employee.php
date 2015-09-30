@@ -1,8 +1,8 @@
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Employee_registration extends CI_Controller {
-    public function registration_page() {
+class Employee extends CI_Controller {
+    public function employee_registration() {
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('employee_registor/registration');
@@ -19,7 +19,7 @@ class Employee_registration extends CI_Controller {
         $this->db->close();
         echo json_encode($response);
     }
-    public function view_employee() {
+    public function view_employee_details() {
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('employee_registor/view_employee');

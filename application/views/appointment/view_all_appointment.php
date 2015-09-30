@@ -40,10 +40,10 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Employee</span></a>
                 <ul>
                     <li >
-                        <?php echo anchor('employee-registration/registration-page','<span class="menu-item-parent">Registration Panel</span>');?>
+                        <?php echo anchor('employee/employee-registration','<span class="menu-item-parent">Registration Panel</span>');?>
                     </li>
                     <li>
-                        <?php echo anchor('employee-registration/view-employee','<span class="menu-item-parent">View Employee Details</span>');?>
+                        <?php echo anchor('employee/view-employee-details','<span class="menu-item-parent">View Employee Details</span>');?>
                     </li>
                 </ul>
             </li>
@@ -59,7 +59,7 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
                 <ul>
                     <li>
-                        <?php echo anchor('user-profile/show-all-user','<span class="menu-item-parent">User Profile</span>');?>
+                        <?php echo anchor('profile/show-all-user','<span class="menu-item-parent">User Profile</span>');?>
                     </li>                    
                 </ul>
             </li>
