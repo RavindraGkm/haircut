@@ -41,7 +41,7 @@ HSS.BookAppointment.prototype={
                     console.log(data);
                 },
                 success:function(data){
-                    console.log(data);
+                    //console.log(data);
                     if(data.status == 200) {
                         $.smallBox({
                             title: data.msg,

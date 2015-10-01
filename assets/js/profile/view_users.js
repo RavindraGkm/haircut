@@ -18,7 +18,7 @@ HSS.ViewUsers.prototype={
                 {             
                     var row = "<tr><td>"+[i]+"</td><td>" + data[i].name + "</td><td>" + data[i].birth_date + "</td><td>" + data[i].address +"</td><td>"+data[i].mobile+"</td><td>"+data[i].username+"</td><td>"+data[i].password+"</td></tr>";                    
                     $("#show_user_data_json").append(row);
-                }                  
+                }                 
                 
             }
         });

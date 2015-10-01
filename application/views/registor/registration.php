@@ -49,7 +49,7 @@
                 <section>
                     <label class="label">Mobile</label>
                     <label class="input"> <i class="icon-append fa fa-mobile"></i>
-                        <input type="number" name="mobile" id="mobile">
+                        <input type="text" name="mobile" id="mobile">
                         <b class="tooltip tooltip-top-right"><i class="fa fa-mobile txt-color-teal"></i> Enter your Mobile</b> </label>
                 </section>
                 <section>

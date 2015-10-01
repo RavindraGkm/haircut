@@ -2,12 +2,12 @@
 class  User_model extends CI_Model {
 
 	public function get_user_by_email($email) {
-        $response = array('s'=>'a');
+        $response = array();
         $sql = "select * from user_login where email=?";
         $values = array($email);
         if($query=$this->db->query($sql,$values)) {
             if($query->num_rows()>0) {
-                $response = array('s'=>'a');
+                //$response = array('s'=>'a');
                 $row = $query->row();
                 $response['name']=$row->name;
                 $birth_date = new DateTime($row->mydate);
@@ -17,11 +17,11 @@ class  User_model extends CI_Model {
                 $response['mobile']=$row->mobile;
                 $response['email']=$row->email;
                 $response['password']=$row->password;
-                $response['count']=1;
+                //$response['count']=1;
             }
-            else {
+            /*else {
                 $response['count']=0;
-            }
+            }*/
         }
         else {
             $response['status']=501;
@@ -46,8 +46,10 @@ class  User_model extends CI_Model {
     }
     public function view_all_users(){
         $response=array();
-        $sql="select * from user_login";
-        $query=$this->db->query($sql);
+        $type=0;
+        $sql="select * from user_login where type=?";
+        $values=array($type);
+        $query=$this->db->query($sql, $values);
         foreach($query->result() as $row){
             $temp['name']=$row->name;
             $birth_date = new DateTime($row->mydate);
@@ -55,7 +57,7 @@ class  User_model extends CI_Model {
             $temp['birth_date']=$birth_date;
             $temp['address']=$row->address;
             $temp['mobile']=$row->mobile;
-            $temp['username']=$row->username;
+            $temp['username']=$row->email;
             $temp['password']=$row->password;
             $response[]=$temp;
         }

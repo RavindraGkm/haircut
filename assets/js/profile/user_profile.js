@@ -16,7 +16,7 @@ HSS.ShowUser.prototype={
                 user_email: $("#user_email").val()
             },
             success: function (data) {
-                console.log(data);
+                //console.log(data);
                 $(".name").html(data.name);
                 $(".birth-date").html(data.mydate);
                 $(".address").html(data.address);

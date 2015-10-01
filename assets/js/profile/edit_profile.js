@@ -21,7 +21,7 @@ HSS.EditUser.prototype={
                 user_email: $("#user_email").val()
             },
             success: function (data) {
-                console.log(data);
+                //console.log(data);
                 $(".name").val(data.name);
                 $(".birth_date").val(data.mydate);
                 $(".address").val(data.address);
@@ -54,7 +54,7 @@ HSS.EditUser.prototype={
                     console.log(data);
                 },
                 success:function(data){
-                    console.log(data);
+                    //console.log(data);
                     if(data.status == 200) {
                         $.smallBox({
                             title: data.msg,
