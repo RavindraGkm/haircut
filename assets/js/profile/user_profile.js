@@ -13,15 +13,15 @@ HSS.ShowUser.prototype={
             type: "GET",
             dataType: "JSON",
             data:{
-                    id: $("#user_id").val()
-                },
+                user_email: $("#user_email").val()
+            },
             success: function (data) {
                 console.log(data);
                 $(".name").html(data.name);
                 $(".birth-date").html(data.mydate);
                 $(".address").html(data.address);
                 $(".mobile").html(data.mobile);
-                $(".username").html(data.username);
+                $(".email").html(data.email);
                 $(".password").html(data.password);
             }
         });

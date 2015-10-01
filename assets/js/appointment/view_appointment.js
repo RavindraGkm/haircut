@@ -13,18 +13,14 @@ HSS.ViewAppointment.prototype={
             type: "GET",
             dataType: "JSON",
             data:{
-                    user_id: $(".user_id").val()
-                },
+                user_email: $(".user_email").val()
+            },
             success: function (data) {
                 console.log(data);
-                for(var i=0;i<data.length;i++) 
-                {             
-                    var row = "<tr><td>"+[i]+"</td><td>" + data[i].name + "</td><td>" + data[i].booking_date + "</td><td>" + data[i].booking_with +"</td><td>"+data[i].booking_time+"</td><td>"+data[i].mobile+"</td><td>"+data[i].status+"</td></tr>";                    
+                for(var i=0;i<data.length;i++) {
+                    var row = "<tr><td>" + data[i].name + "</td><td>"+data[i].user_email+"</td><td>" + data[i].booking_date + "</td><td>" + data[i].booking_with +"</td><td>"+data[i].booking_timing+"</td><td>"+data[i].mobile+"</td><td>"+data[i].status+"</td></tr>";
                     $("#appontment_data_json").append(row);
                 }
-
-                    
-                
             }
         });
     }

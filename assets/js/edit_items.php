@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -181,7 +181,7 @@
 <div class="page-footer">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
-            <span class="txt-color-white">Classic Equipments © 2013-2014</span>
+            <span class="txt-color-white">Monarch Saloon © 2013-2014</span>
         </div>
     </div>
 </div>

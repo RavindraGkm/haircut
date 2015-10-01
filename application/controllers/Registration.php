@@ -13,7 +13,7 @@ class Registration extends CI_Controller {
         $data['mydate'] = $this->input->post('mydate');
         $data['address'] = $this->input->post('address');
         $data['mobile'] = $this->input->post('mobile');
-        $data['username'] = $this->input->post('username');
+        $data['email'] = $this->input->post('email');
         $data['password'] = $this->input->post('password');
         $this->load->model('register/Register_model');
         $response=$this->Register_model->add_new_user($data);

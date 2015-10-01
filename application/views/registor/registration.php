@@ -2,7 +2,7 @@
 <html lang="en-us" id="lock-page">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen</title>
+    <title> Monarch Saloon</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -23,7 +23,7 @@
 <div id="main" role="main" style="margin-top: -10px;">
     <form action="#" id="login-form" class="lockscreen animated flipInY smart-form client-form">
         <div class="logo">
-            <h1 class="semi-bold"><img src="<?php echo base_url('assets/img/logo-o.png')?>" alt="" /> ClassicKitchen</h1>
+            <h1 class="semi-bold"><img src="<?php echo base_url('assets/img/logo-o.png')?>" alt="" /> Monarch Saloon</h1>
         </div>
         <div>
             <header> Sign Up </header>
@@ -53,10 +53,10 @@
                         <b class="tooltip tooltip-top-right"><i class="fa fa-mobile txt-color-teal"></i> Enter your Mobile</b> </label>
                 </section>
                 <section>
-                    <label class="label">User-Name</label>
+                    <label class="label">Email</label>
                     <label class="input"><i class="icon-append fa fa-user"></i>
-                        <input type="email" name="txtusername" id="txtusername" />
-                        <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter email address/username</b></label>
+                        <input type="email" name="email" id="email" />
+                        <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter email address</b></label>
                 </section>
                 <section>
                     <label class="label">Password</label>
@@ -70,7 +70,7 @@
             </footer>
         </div>
         <p class="font-xs margin-top-5">
-            Copyright ClassicKitchen 2014-2020.
+            Copyright Monarch Saloon 2014-2020.
         </p>
     </form>
 </div>

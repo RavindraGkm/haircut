@@ -24,7 +24,7 @@ CKE.Register.prototype={
                     mydate: $("#birth_date").val(),
                     address: $("#address").val(),
                     mobile: $("#mobile").val(),
-                    username: $('#txtusername').val(),
+                    email: $('#email').val(),
                     password: $("#password").val()
                 },
                 beforeSend: function(data) {
@@ -36,7 +36,16 @@ CKE.Register.prototype={
                 success: function (data) {
                     console.log(data);
                      if(data.status==200) {
-                         window.location= window.location = self.base_url+"login";
+                         $.smallBox({
+                             title: data.msg,
+                             content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
+                             color: "#296191",
+                             iconSmall: "fa fa-thumbs-up bounce animated",
+                             timeout: 4000
+                         });
+                         setTimeout(function(){
+                             window.location= window.location = self.base_url+"login";
+                         },4000);
                      }
                      else if(data.status==401) {
                          $.smallBox({

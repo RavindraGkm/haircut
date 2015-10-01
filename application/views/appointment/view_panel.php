@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
-    //echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
+    echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
     echo link_tag('assets/css/bootstrap.min.css');
     echo link_tag('assets/css/font-awesome.min.css');
     echo link_tag('assets/css/smartadmin-production.min.css');
@@ -41,10 +41,10 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
                 <ul>
                     <li>
-                        <?php echo anchor('user-profile/view-page','<span class="menu-item-parent">View Profile</span>');?>
+                        <?php echo anchor('profile/view-profile','<span class="menu-item-parent">View Profile</span>');?>
                     </li>
                     <li>
-                        <?php echo anchor('user-profile/edit-page','<span class="menu-item-parent">Edit Profile</span>');?>
+                        <?php echo anchor('profile/edit-profile','<span class="menu-item-parent">Edit Profile</span>');?>
                     </li>
                 </ul>
             </li>
@@ -77,7 +77,7 @@
                     <span>&nbsp > &nbsp View</span>
                 </h1>
             </div>
-        <input class="user_id hidden" id="user_id" name="user_id" value="<?php echo $user_id;?>">
+        <input class="user_email hidden" id="user_email" name="user_email" value="<?php echo $user_email;?>">
         </div>
         <section id="widget-grid" class="">
             <div class="row">
@@ -92,13 +92,13 @@
                                 <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
                                     <thead>
                                     <tr>
-                                        <th data-hide="phone">ID</th>
-                                        <th data-class="expand"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>NAME</th>
-                                        <th data-hide="phone"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>Booking Date</th>
-                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i> Booking With</th>
-                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i> Booking Timing</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Phone</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Status</th>
+                                        <th data-class="expand">Customer Name</th>
+                                        <th data-hide="phone">User Email</th>
+                                        <th data-hide="phone">Booking Date</th>
+                                        <th data-hide="phone,tablet">Booking With</th>
+                                        <th data-hide="phone,tablet">Booking Timing</th>
+                                        <th data-hide="phone,tablet">Phone</th>
+                                        <th data-hide="phone,tablet">Status</th>
                                     </tr>
                                     </thead>
                                     <tbody id="appontment_data_json"></tbody>
@@ -118,7 +118,6 @@
         </div>
     </div>
 </div>
-<!--================================================== -->
 <?php
 echo script_tag('assets/js/jquery-1.11.1.min.js');
 echo script_tag('assets/js/bootstrap/bootstrap.min.js');

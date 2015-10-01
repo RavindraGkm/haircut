@@ -6,16 +6,16 @@ class Login extends CI_Controller {
         $this->load->helper('url');
         $this->load->view('login/login_panel');
     }
-    public function login_check(){
+    public function login_check() {
         $this->load->database();
-        $data['username'] = $this->input->post('username');
+        $data['email'] = $this->input->post('email');
         $data['password'] = $this->input->post('password');
         $this->load->model('login/Login_model');
         $response=$this->Login_model->login_check($data);
         $this->db->close();
         echo json_encode($response);
     }
-    public function login_with_fb(){
+    public function login_with_fb() {
         $email = $this->input->post('email');
         $this->load->library('session');
         $this->load->helper('url');

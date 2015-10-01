@@ -1,13 +1,12 @@
 <?php
 class Appointment_model extends CI_Model {
-    public function book_new_appointment($data) 
-    {
+    public function book_new_appointment($data) {
         $response=array();
         $booking_date = new DateTime($data['booking_date']);
         $booking_date = $booking_date->format('Y-m-d');
         $status='pending';
-        $sql= "INSERT INTO `booking_request` (name, booking_date, booking_with, booking_timing, mobile, status, user_id) VALUES (?,?,?,?,?,?,?)";
-        $values= array($data['name'],$booking_date,$data['booking_with'],$data['booking_timing'], $data['mobile'],$status, $data['user_id']);
+        $sql= "INSERT INTO booking_request (name, booking_date, booking_with, booking_timing, mobile, status, user_email) VALUES (?,?,?,?,?,?,?)";
+        $values= array($data['name'],$booking_date,$data['booking_with'],$data['booking_timing'], $data['mobile'],$status, $data['user_email']);
         if($this->db->query($sql,$values)) 
         {
             $response['status']=200;
@@ -20,14 +19,13 @@ class Appointment_model extends CI_Model {
             return $response;
         }
     }
-    public function view_specific_appointments($data)
-    {
+    public function get_user_appointments_by_email($email) {
         $response=array();
-        $sql="select * from booking_request where user_id=?";
-        $values=array($data['user_id']);
+        $sql="select * from booking_request where user_email=?";
+        $values=array($email);
         $query=$this->db->query($sql, $values);
         foreach($query->result() as $row){
-            $temp['id']=$row->user_id;
+            $temp['user_email']=$row->user_email;
             $temp['name']=$row->name;
             $booking_date = new DateTime($row->booking_date);
             $booking_date = $booking_date->format('d-M-Y');

@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -37,17 +37,16 @@
 <aside id="left-panel">
     <nav>
         <ul>
-            
+
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
                 <ul>
-                	<li>
-                        <?php echo anchor('user-profile/view-page','<span class="menu-item-parent">View Profile</span>');?>
+                    <li>
+                        <?php echo anchor('profile/view-profile','<span class="menu-item-parent">View Profile</span>');?>
                     </li>
                     <li>
-                        <?php echo anchor('user-profile/edit-page','<span class="menu-item-parent">Edit Profile</span>');?>
+                        <?php echo anchor('profile/edit-profile','<span class="menu-item-parent">Edit Profile</span>');?>
                     </li>
-                    
                 </ul>
             </li>
             <li class="active">
@@ -80,10 +79,10 @@
                     <span>> Booking </span>
                 </h1>
             </div>
-        
+
         </div>
 
-    <section id="widget-grid" class="">
+        <section id="widget-grid" class="">
             <div class="row">
                 <article class="col-sm-12 col-md-12 col-lg-6">
                     <div class="jarviswidget" id="wid-id-1" data-widget-editbutton="false" data-widget-custombutton="false">
@@ -114,13 +113,13 @@
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input">
-                                                <select class="booking_with form-control" id="booking_with">
-                                                    <option>Booking With</option>
-                                                    <option value='1'>Booking with Mr A</option>
-                                                    <option value='2'>Booking with Mr B</option>
-                                                    <option value='3'>Booking with Mr C</option>
-                                                    <option value='4'>Booking With Mr C</option>
-                                                </select>
+                                                    <select class="booking_with form-control" id="booking_with">
+                                                        <option>Booking With</option>
+                                                        <option value='1'>Booking with Mr A</option>
+                                                        <option value='2'>Booking with Mr B</option>
+                                                        <option value='3'>Booking with Mr C</option>
+                                                        <option value='4'>Booking With Mr C</option>
+                                                    </select>
                                                 </label>
                                             </section>
                                             <section class="col col-6">
@@ -139,16 +138,15 @@
                                             </section>
                                             <section class="col col-6 hidden">
                                                 <label class="input"> <i class="icon-prepend fa fa-phone"></i>
-                                                    <input type="text" name="user_id" id="user_id" class="user_id" placeholder="<?php echo $user_id; ?>" value="<?php echo $user_id; ?>">
+                                                    <input type="hidden" name="user_email" id="user_email" value="<?php echo $user_email; ?>">
                                                 </label>
                                             </section>
                                         </div>
                                     </fieldset>
                                     <footer>
                                         <button type="reset" class="hidden" id="reset_client_form"></button>
-                                        <button type="button" class="btn btn-primary mybooking" id="mybooking">
-                                           Book
-                                        </button>
+                                        <button type="button" class="btn btn-primary mybooking" id="mybooking">Book new appointment</button>
+                                        <button type="reset" class="hidden" id="reset_appointment_form"></button>
                                     </footer>
                                 </form>
                             </div>
@@ -160,7 +158,7 @@
     </div>
 </div>
 
-    
+
 <div class="page-footer">
     <div class="row">
         <div class="col-xs-12 col-sm-6">

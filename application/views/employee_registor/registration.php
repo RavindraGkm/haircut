@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
-    //echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
+    echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
     echo link_tag('assets/css/bootstrap.min.css');
     echo link_tag('assets/css/font-awesome.min.css');
     echo link_tag('assets/css/smartadmin-production.min.css');
@@ -78,11 +78,11 @@
         </div>
         <section id="widget-grid" class="">
             <div class="row">
-                <article class="col-sm-12 col-md-12 col-lg-6">
+                <article class="col-sm-12 col-md-12 col-lg-8">
                     <div class="jarviswidget" id="wid-id-1" data-widget-editbutton="false" data-widget-custombutton="false">
                         <header>
                             <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                            <h2>View Profile</h2>
+                            <h2>Fill information to add new employee</h2>
                         </header>
                         <div>
                             <div class="jarviswidget-editbox">
@@ -93,12 +93,12 @@
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input"> <i class="icon-prepend fa fa-user"></i>
-                                                    <input type="text" name="name" class="name" id="name">
+                                                    <input type="text" name="name" class="name" id="name" placeholder="Employee name">
                                                 </label>
                                             </section>
                                             <section class="col col-6">
                                                 <label class="input"> <i class="icon-prepend fa fa-calendar"></i>
-                                                    <input name="birth_date" id="birth_date" class="birth_date">
+                                                    <input name="birth_date" id="birth_date" placeholder="Employee DOB" class="birth_date">
                                                 </label>
                                             </section>
                                         </div>
@@ -107,12 +107,12 @@
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-                                                    <input type="text" name="address" id="address" class="address">
+                                                    <input type="text" name="address" id="address" class="address" placeholder="Employee address">
                                                 </label>
                                             </section>
                                             <section class="col col-6">
                                                 <label class="input"> <i class="icon-prepend fa fa-phone"></i>
-                                                    <input type="text" name="mobile" id="mobile" class="mobile">
+                                                    <input type="text" name="mobile" id="mobile" class="mobile" placeholder="Employee mobile no">
                                                 </label>
                                             </section>
                                         </div>
@@ -121,13 +121,14 @@
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input"> <i class="icon-prepend fa fa-user"></i>
-                                                    <input type="text" name="email" id="email" class="email">
+                                                    <input type="text" name="email" id="email" class="email" placeholder="Employee email">
                                                 </label>
                                             </section>                                            
                                         </div>
                                     </fieldset>
                                     <footer>
-                                        <button type="button" class="btn btn-primary myaddemp">Add Employee</button>
+                                        <button type="button" class="btn btn-primary myaddemp">Add New Employee</button>
+                                        <button type="reset" class="hidden" id="reset_employee_add_form"></button>
                                     </footer>
                                 </form>
                             </div>

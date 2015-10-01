@@ -31,7 +31,7 @@
                 <section>
                     <label class="label">Email</label>
                     <label class="input"><i class="icon-append fa fa-user"></i>
-                        <input type="email" name="txtusername" id="txtusername" />
+                        <input type="email" name="email" id="email" />
                         <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter email address</b></label>
                 </section>
                 <section>
@@ -42,7 +42,11 @@
                 </section>
             </fieldset>
             <footer>
-                <button class="btn btn-primary mysignup pull-left"><a href="http://localhost/classic-soft/registration">Sign up</a></button>
+                <button class="btn btn-primary mysignup pull-left">
+                    <?php
+                    echo anchor('registration','Sign up');
+                    ?>
+                </button>
                 <button type="button" id="btn-signin" class="btn btn-primary">Sign in</button>
             </footer>
             <h5 class="text-center sign-in-heading"> - Or sign in using -</h5>

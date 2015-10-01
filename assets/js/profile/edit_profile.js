@@ -18,8 +18,8 @@ HSS.EditUser.prototype={
             type: "GET",
             dataType: "JSON",
             data:{
-                    id: $("#user_id").val()
-                },
+                user_email: $("#user_email").val()
+            },
             success: function (data) {
                 console.log(data);
                 $(".name").val(data.name);
@@ -30,7 +30,7 @@ HSS.EditUser.prototype={
                 $(".password").val(data.password);
             }
         });
-     },
+    },
 
     updateClients:function(){
         var self=this;
@@ -40,12 +40,11 @@ HSS.EditUser.prototype={
                 type:"POST",
                 dataType:"JSON",
                 data:{
-                    id:2,
                     name:$('#name').val(),
-                    mydate: $('#birth_date').val(),
+                    birth_date: $('#birth_date').val(),
                     address: $('#address').val(),
                     mobile: $('#mobile').val(),
-                    username: $('#username').val(),
+                    email: $('#user_email').val(),
                     password: $('#password').val()
                 },
                 beforeSend:function(){
@@ -56,7 +55,7 @@ HSS.EditUser.prototype={
                 },
                 success:function(data){
                     console.log(data);
-                    /*if(data.status == 200) {
+                    if(data.status == 200) {
                         $.smallBox({
                             title: data.msg,
                             content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
@@ -73,10 +72,10 @@ HSS.EditUser.prototype={
                             iconSmall: "fa fa-thumbs-down bounce animated",
                             timeout: 4000
                         });
-                    }*/
+                    }
                 },
                 complete: function() {
-                    $('.myupdate').html("Update");
+                    $('.myupdate').html("Update Profile Info");
                 }
             })
         });

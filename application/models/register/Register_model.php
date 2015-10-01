@@ -6,10 +6,10 @@ class Register_model extends CI_Model {
         $birth_date = new DateTime($data['mydate']);
         $birth_date = $birth_date->format('Y-m-d');
 
-        if($this->db->query("INSERT INTO `user_login` (name, mydate, address, mobile, username, password) VALUES ('$data[name]','$birth_date','$data[address]', '$data[mobile]','$data[username]','$data[password]')")) 
+        if($this->db->query("INSERT INTO `user_login` (name, mydate, address, mobile, email, password) VALUES ('$data[name]','$birth_date','$data[address]', '$data[mobile]','$data[email]','$data[password]')"))
         {
             $response['status']=200;
-            $response['msg']="User Added Successfully";
+            $response['msg']="Registration Successfull plz login to continue";
             return $response;
         }
         else{

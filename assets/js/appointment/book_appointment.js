@@ -8,19 +8,18 @@ HSS.BookAppointment.prototype={
         this.book_appointment();
     },
     book_appointment:function(){
-        
+
         var self=this;
 
         $('.booking_timing').timepicker({
-                    autoclose: true,
-                    minuteStep: 5
+            autoclose: true,
+            minuteStep: 5
         });
 
         $('.booking_date').datepicker({
             autoclose: true,
             format: 'dd-mm-yyyy'
         });
-
 
         $('.mybooking').click(function(){
             $.ajax({
@@ -33,7 +32,7 @@ HSS.BookAppointment.prototype={
                     booking_with: $('#booking_with').val(),
                     booking_timing: $('#booking_timing').val(),
                     mobile: $('#mobile').val(),
-                    user_id: $('.user_id').val()
+                    user_email: $('#user_email').val()
                 },
                 beforeSend:function(){
                     $('.mybooking').html("Booking...");
@@ -63,10 +62,11 @@ HSS.BookAppointment.prototype={
                     }
                 },
                 complete: function() {
-                    $('.mybooking').html("Book");
+                    $('.mybooking').html("Book new appointment");
+                    $("#reset_appointment_form").click();
                 }
             })
         });
     }
-    
+
 }

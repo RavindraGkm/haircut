@@ -1,33 +1,44 @@
-
 <?php
 class  User_model extends CI_Model {
 
-	public function get_user_by_id($data){
-        $query=$this->db->query("select * from user_login where id='$data[id]'");
-        $response=array();
-        if($query->num_rows()>0) {
-            $row = $query->row();
-            $response['name']=$row->name;
-            $birth_date = new DateTime($row->mydate);
-            $birth_date = $birth_date->format('d-M-Y');
-            $response['mydate']=$birth_date;
-            $response['address']=$row->address;
-            $response['mobile']=$row->mobile;
-            $response['username']=$row->username;
-            $response['password']=$row->password;
+	public function get_user_by_email($email) {
+        $response = array('s'=>'a');
+        $sql = "select * from user_login where email=?";
+        $values = array($email);
+        if($query=$this->db->query($sql,$values)) {
+            if($query->num_rows()>0) {
+                $response = array('s'=>'a');
+                $row = $query->row();
+                $response['name']=$row->name;
+                $birth_date = new DateTime($row->mydate);
+                $birth_date = $birth_date->format('d-M-Y');
+                $response['mydate']=$birth_date;
+                $response['address']=$row->address;
+                $response['mobile']=$row->mobile;
+                $response['email']=$row->email;
+                $response['password']=$row->password;
+                $response['count']=1;
+            }
+            else {
+                $response['count']=0;
+            }
+        }
+        else {
+            $response['status']=501;
         }
         return $response;
     }
     public function update_user($data) {
         $response=array();
-        $birth_date = new DateTime($data['mydate']);
+        $birth_date = new DateTime($data['birth_date']);
         $birth_date = $birth_date->format('Y-m-d');
-        if($this->db->query("update user_login set name='$data[name]', mydate='$birth_date', address='$data[address]', mobile='$data[mobile]', username='$data[username]',password='$data[password]' where id='$data[id]'"))
-        {
+        $sql = "update user_login set name=?, mydate=?, address=?, mobile=?,password=? where email=?";
+        $values = array($data['name'],$birth_date,$data['address'],$data['mobile'],$data['password'],$data['email']);
+        if($this->db->query($sql,$values)) {
             $response['status']=200;
             $response['msg']="Client Updated Successfully";
         }
-        else{
+        else {
             $response['status']=500;
             $response['msg']="Something Went Wrong...";
         }

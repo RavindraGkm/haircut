@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
-    //echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
+    echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
     echo link_tag('assets/css/bootstrap.min.css');
     echo link_tag('assets/css/font-awesome.min.css');
     echo link_tag('assets/css/smartadmin-production.min.css');
@@ -96,12 +96,12 @@
                                     <thead>
                                     <tr>
                                         <th data-hide="phone">ID</th>                                        
-                                        <th data-class="expand"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>NAME</th>
-                                        <th data-hide="phone"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>Birth Date</th>
-                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i> Address</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Phone</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Username</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Passowrd</th>
+                                        <th data-class="expand">Name</th>
+                                        <th data-hide="phone">Birth Date</th>
+                                        <th data-hide="phone,tablet">Address</th>
+                                        <th data-hide="phone,tablet">Phone</th>
+                                        <th data-hide="phone,tablet">Username</th>
+                                        <th data-hide="phone,tablet">Passowrd</th>
                                     </tr>
                                     </thead>
                                     <tbody id="show_user_data_json"></tbody>

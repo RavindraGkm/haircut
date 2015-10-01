@@ -21,7 +21,7 @@ HSS.AddEmployee.prototype={
                 dataType: "JSON",
                 data:{
                     name: $("#name").val(),
-                    mydate: $("#birth_date").val(),
+                    birth_date: $("#birth_date").val(),
                     address: $("#address").val(),
                     mobile: $("#mobile").val(),
                     email: $('#email').val()
@@ -33,8 +33,7 @@ HSS.AddEmployee.prototype={
                     console.log(data);
                 },
                 success: function (data) {
-                    console.log(data);
-                     if(data.status==200) {
+                    if(data.status==200) {
                         $.smallBox({
                             title: data.msg,
                             content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
@@ -42,16 +41,17 @@ HSS.AddEmployee.prototype={
                             iconSmall: "fa fa-thumbs-up bounce animated",
                             timeout: 4000
                         });
-                     }
-                     else if(data.status==401) {
-                         $.smallBox({
-                             title: data.msg,
-                             content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
-                             color: "#c26565",
-                             iconSmall: "fa fa-thumbs-down bounce animated",
-                             timeout: 4000
-                         });
-                     }
+                        $("#reset_employee_add_form").click();
+                    }
+                    else if(data.status==401) {
+                        $.smallBox({
+                            title: data.msg,
+                            content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
+                            color: "#c26565",
+                            iconSmall: "fa fa-thumbs-down bounce animated",
+                            timeout: 4000
+                        });
+                    }
                     $(".myaddemp").html('Add Employee');
                 }
 

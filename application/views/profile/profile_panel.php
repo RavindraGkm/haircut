@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
-    //echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
+    echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
     echo link_tag('assets/css/bootstrap.min.css');
     echo link_tag('assets/css/font-awesome.min.css');
     echo link_tag('assets/css/smartadmin-production.min.css');
@@ -35,11 +35,10 @@
     <aside id="left-panel">
         <nav>
             <ul>
-
-                <li>
+                <li class="active">
                     <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
                     <ul>
-                        <li>
+                        <li class="active">
                             <?php echo anchor('profile/view-profile','<span class="menu-item-parent">View Profile</span>');?>
                         </li>
                         <li>
@@ -66,7 +65,7 @@
         <label for="client_name" class="col-md-2 control-label"> User Id</label>
         <div class="col-md-3">
             <div class="autocomplete-wrapper">
-                <input id="user_id" name="user_id" class="form-control autocomplete-client-names user_id " type="text" autocomplete="off" value='<?php echo $user_id; ?>'>
+                <input id="user_email" name="user_email" class="form-control autocomplete-client-names user_id " type="text" autocomplete="off" value='<?php echo $user_email; ?>'>
             </div>
         </div>
     </div>
@@ -122,8 +121,8 @@
                                                     <td name="mobile" id="mobile" class="mobile"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><b>User Name</b></td>
-                                                    <td name="username" id="username" class="username"></td>
+                                                    <td><b>Email</b></td>
+                                                    <td name="username" id="email" class="email"></td>
                                                 </tr>
 
                                                 <tr>
@@ -143,14 +142,7 @@
                 </div>
             </section>    
         </div>
-
-
-
     </div>
-
-
-
-
     <div class="page-footer">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
@@ -158,9 +150,6 @@
             </div>
         </div>
     </div>
-
-
-    <!--================================================== -->
     <?php
     echo script_tag('assets/js/jquery-1.11.1.min.js');
     echo script_tag('assets/js/bootstrap/bootstrap.min.js');

@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
-    //echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
+    echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
     echo link_tag('assets/css/bootstrap.min.css');
     echo link_tag('assets/css/font-awesome.min.css');
     echo link_tag('assets/css/smartadmin-production.min.css');
@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
 <body class="">
-    <input id='user_id' type="hidden" value='<?php echo $user_id; ?>'/>
+    <input id='user_email' type="hidden" value='<?php echo $user_email; ?>'/>
 <header id="header">
     <div id="logo-group">
         <span id="logo">
@@ -122,20 +122,15 @@
                                     </fieldset>
                                     <fieldset>
                                         <div class="row">
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-user"></i>
-                                                    <input type="text" name="username" id="username" class="username">
-                                                </label>
-                                            </section>
-                                            <section class="col col-6">
+                                            <section class="col col-lg-12">
                                                 <label class="input"> <i class="icon-prepend fa fa-unlock-alt"></i>
-                                                    <input type="text" name="password" id="password" class="password" >
+                                                    <input type="password" name="password" id="password" class="password" placeholder="Password">
                                                 </label>
                                             </section>
                                         </div>
                                     </fieldset>
                                     <footer>
-                                        <button type="button" class="btn btn-primary myupdate">Update</button>
+                                        <button type="button" class="btn btn-primary myupdate">Update Profile Info</button>
                                     </footer>
                                 </form>
                             </div>

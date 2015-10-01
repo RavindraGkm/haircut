@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> ClassicKitchen </title>
+    <title> Monarch Saloon </title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
-    //echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
+    echo link_tag('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700');
     echo link_tag('assets/css/bootstrap.min.css');
     echo link_tag('assets/css/font-awesome.min.css');
     echo link_tag('assets/css/smartadmin-production.min.css');
@@ -77,7 +77,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <h1 class="page-title txt-color-blueDark">
-                    <i class="fa-fw fa fa fa-book"></i> &nbsp Employees
+                    <i class="fa-fw fa fa fa-book"></i> &nbsp Employee
                     <span>&nbsp > &nbsp Details</span>
                 </h1>
             </div>
@@ -96,11 +96,11 @@
                                     <thead>
                                     <tr>
                                         <th data-hide="phone">ID</th>
-                                        <th data-class="expand"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>NAME</th>
-                                        <th data-hide="phone"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>Booking Date</th>
-                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i> Address</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Phone</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Email</th>
+                                        <th data-class="expand">NAME</th>
+                                        <th data-hide="phone">Booking Date</th>
+                                        <th data-hide="phone,tablet">Address</th>
+                                        <th data-hide="phone,tablet">Phone</th>
+                                        <th data-hide="phone,tablet">Email</th>
                                     </tr>
                                     </thead>
                                     <tbody id="employess_data_json"></tbody>

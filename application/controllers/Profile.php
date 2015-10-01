@@ -2,17 +2,17 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Profile extends CI_Controller {
+
     public function view_profile() {
         $this->load->library('session');
-        $data['user_id']= $this->session->userdata('user_id');
+        $data['user_email']= $this->session->userdata('user_email');
         $this->load->helper('html');
         $this->load->helper('url');
-        //echo $data['user_id'];
         $this->load->view('profile/profile_panel',$data);
     }
     public function edit_profile() {
         $this->load->library('session');
-        $data['user_id']= $this->session->userdata('user_id');
+        $data['user_email']= $this->session->userdata('user_email');
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('profile/edit_panel',$data);
@@ -27,20 +27,19 @@ class Profile extends CI_Controller {
     }
      public function show_user() {
         $this->load->database();
-        $data['id']=$this->input->get('id');
+        $user_email=$this->input->get('user_email');
         $this->load->model('user/User_model');
-        $response=$this->User_model->get_user_by_id($data);
+        $response=$this->User_model->get_user_by_email($user_email);
         $this->db->close();
         echo json_encode($response);
     }
     public function edit_user() {
         $this->load->database();
-        $data['id']=$this->input->post('id');
         $data['name']=$this->input->post('name');
-        $data['mydate'] = $this->input->post('mydate');
+        $data['birth_date'] = $this->input->post('birth_date');
         $data['address'] = $this->input->post('address');
         $data['mobile']=$this->input->post('mobile');
-        $data['username']=$this->input->post('username');
+        $data['email']=$this->input->post('email');
         $data['password']=$this->input->post('password');
         $this->load->model('user/User_model');
         $response = $this->User_model->update_user($data);

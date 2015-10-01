@@ -17,7 +17,7 @@ HSS.Login.prototype={
                 type: "POST",
                 dataType: "JSON",
                 data:{
-                    username: $("#txtusername").val(),
+                    email: $("#email").val(),
                     password: $("#password").val()
                 },
                 beforeSend: function(data) {
