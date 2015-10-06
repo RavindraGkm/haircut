@@ -1,8 +1,7 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Appointment extends CI_Controller {
-    public function book_appointment() {        
+    public function book_appointment() {
         $this->load->library('session');
         $data['user_email']= $this->session->userdata('user_email');
         $this->load->helper('html');

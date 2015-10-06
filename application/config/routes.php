@@ -30,6 +30,9 @@ $route['employee/view-employee-details']='Employee/view_employee_details';
 $route['employee/show-all-employees']='Employee/show_all_employees';
 
 $route['hair-style/try-hair-style']='Hair_style/try_hair_style';
+$route['hair-style/add-hair-style']='Hair_style/add_hair_style_details';
+$route['hair-style/add-hair-action']='Hair_style/add_hair_style_action';
+$route['hair-style/upload-user-image']='Hair_style/upload_user_image';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

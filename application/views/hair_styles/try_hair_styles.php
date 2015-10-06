@@ -13,6 +13,7 @@
     echo link_tag('assets/css/smartadmin-production.min.css');
     echo link_tag('assets/css/smartadmin-skins.min.css');
     echo link_tag('assets/css/demo.min.css');
+    echo link_tag('assets/css/custom.css');
     ?>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -47,14 +48,25 @@
                     </li>
                 </ul>
             </li>
-            <li class="active">
+            <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Appointment</span></a>
                 <ul>
                     <li>
                         <?php echo anchor('appointment/book-appointment','<span class="menu-item-parent">Book Appointment</span>');?>
                     </li>
-                    <li class="active">
+                    <li>
                         <?php echo anchor('appointment/view-appointment','<span class="menu-item-parent">View Appointment</span>');?>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Hair Styles</span></a>
+                <ul>
+                    <li class="active">
+                        <?php echo anchor('hair-style/try-hair-style','<span class="menu-item-parent">Try Hair Styles</span>');?>
+                    </li>
+                    <li>
+                        <?php echo anchor('hair-style/add-hair-style','<span class="menu-item-parent">Add Hair Styles</span>');?>
                     </li>
                 </ul>
             </li>
@@ -77,87 +89,15 @@
             </div>
         </div>
         <div class="row">
-
-            <!-- SuperBox -->
             <div class="superbox col-sm-12">
-                <div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-1.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-1.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Miller Cine" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-2.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-2.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Bridge of Edgen" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-3.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-3.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Lines of Friendship" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-4.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-4.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="My new car!" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-5.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-5.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Study Time" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-6.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-6.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="San Francisco Bridge"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-7.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-7.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="New Styla"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-8.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-8.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Cristpta"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-9.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-9.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Cristine Dine"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-10.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-10.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Mosaic Clock"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-11.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-11.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Elegance"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-12.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-12.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="China Town"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-13.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-13.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Sky Diving"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-14.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-14.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Country Music"  class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-15.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-15.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="You are late!" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-16.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-16.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Royal Bengle Tiger" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-17.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-17.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Snowpine" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-18.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-18.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Hop Jop Mop" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-19.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-19.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Party Girls" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-20.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-20.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Dragon Fly" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-21.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-21.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Kinds Road" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-22.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-22.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Tokyo" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-23.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-23.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Rome" class="superbox-img">
-                </div><!--
-				--><div class="superbox-list">
-                    <img src="<?php echo base_url(); ?>assets/img/superbox/superbox-thumb-24.jpg" data-img="<?php echo base_url(); ?>assets/img/superbox/superbox-full-24.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Traning" class="superbox-img">
-                </div>
+                <?php
+                foreach($hair_styles_info as $hair_style) {
+                    echo '<div class="superbox-list"><img src="'.base_url().'assets/img/superbox/hair_styles/'.$hair_style['hair_style_image'].'" data-img="'.base_url().'assets/img/superbox/hair_styles/'.$hair_style['hair_style_dummy_image'].'" alt="Cutting Price : '.$hair_style['price'].' INR" title="'.$hair_style['style_name'].'" class="superbox-img" /></div>';
+                }
+                ?>
                 <div class="superbox-float"></div>
             </div>
-            <!-- /SuperBox -->
-
             <div class="superbox-show" style="height:300px; display: none"></div>
-
         </div>
     </div>
 </div>
@@ -168,6 +108,86 @@
         </div>
     </div>
 </div>
+
+<div class="wrapper hidden try-hair-style-container">
+    <div class="_heading_wrapper">
+        <h2 class="heading">Select profile photo</h2>
+        <div class="Yf-Ph-db-bg"><i class="fa fa-times"></i></div>
+    </div>
+    <div class="tabs-wrapper">
+        <div class="tabs">
+            <ul class="tabs-list">
+                <li class="active tabs first">
+                    <a href="#web_cam_tab" class="tabs-anchor">Web camera</a>
+                </li>
+                <li class="tabs">
+                    <a href="#upload_photo_tab" class="tabs-anchor">Upload photos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tabs-content-wrapper">
+        <div id="upload_photo_tab" class="upload-tab-content hidden row">
+            <div class="col-md-12">
+                <div class="uploaded-image-wrapper hidden">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="user-uploaded-image-wrapper">
+                                <img src="" id="user_uploaded_image" class="img-responsive"/>
+                                <img class="hidden hat-image" src="images/sep_hat.png" id="applied_hair_style"/>
+                            </div>
+                            <div class="dimenstion-controllers">
+                                <button class="custom-button" id="hair_style_size_plus"><i class="fa fa-plus"></i></button>
+                                &nbsp;
+                                <button class="custom-button" id="hair_style_size_minus"><i class="fa fa-minus"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="uploadForm" action="<?php echo base_url(); ?>hair-style/upload-user-image" method="post">
+                    <div class="upload-section">
+                        <h1 class="headings-select-photo">Select a photo from your computer</h1>
+                        <div class="custom-file-upload">
+                            <input type="file" id="user_image" name="user_image" />
+                        </div>
+                    </div>
+                    <div class="upload-button-wrapper">
+                        <button type="submit" class="custom-button" id="upload_image">Upload Image</button>
+                        <div class="progress-wrapper hidden">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                    0% Complete
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="web_cam_tab" class="web-cam-tab-content row">
+            <div class="video-player-wrapper col-lg-6">
+                <div class="video-wapper">
+                    <video id="video" width="100%" autoplay></video>
+                    <?php
+                    echo img(array('src'=>'assets/img/outline.png','class'=>'outline-image'));
+                    ?>
+                </div>
+                <div class="span-button-wrapper">
+                    <button class="btn-take-snap btn"><i class="fa fa-camera"></i>&nbsp;&nbsp;Take Snap</button>
+                </div>
+            </div>
+            <div class="snap-wrapper col-lg-6">
+                <canvas id="canvas" width="468" height="351"></canvas>
+                <img class="hidden hat-image" src="images/sep_hat.png" id="hair_style_web_cam"/>
+                <div class="dimenstion-controllers-web-cam">
+                    <button class="custom-button button-small" id="hair_style_width_plus_web_cam">w&nbsp;<i class="fa fa-plus"></i></button>&nbsp;
+                    <button class="custom-button button-small" id="hair_style_width_minus_web_cam">w&nbsp;<i class="fa fa-minus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
 echo script_tag('assets/js/jquery-1.11.1.min.js');
 echo script_tag('assets/js/bootstrap/bootstrap.min.js');
@@ -175,11 +195,16 @@ echo script_tag('assets/js/plugin/superbox/superbox.min.js');
 echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
-echo script_tag('assets/js/appointment/view_appointment.js');
+echo script_tag('assets/js/jquery-ui.js');
+echo script_tag('assets/js/jquery.ui.touch-punch.js');
+echo script_tag('assets/js/webcam/jquery.webcam.min.js');
+echo script_tag("assets/js/jquery.form.min.js");
+echo script_tag("assets/js/fileupload.js");
+echo script_tag('assets/js/hair_style/try_hair_style.js');
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.superbox').SuperBox();
+        new HSS.TryHairStyle();
     });
 </script>
 </body>

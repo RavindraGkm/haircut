@@ -58,6 +58,17 @@
                     </li>                    
                 </ul>
             </li>
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Hair Styles</span></a>
+                <ul>
+                    <li>
+                        <?php echo anchor('hair-style/try-hair-style','<span class="menu-item-parent">Try Hair Styles</span>');?>
+                    </li>
+                    <li>
+                        <?php echo anchor('hair-style/add-hair-style','<span class="menu-item-parent">Add Hair Styles</span>');?>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </aside>
