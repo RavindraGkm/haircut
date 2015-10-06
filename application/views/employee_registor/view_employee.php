@@ -106,12 +106,15 @@
                                 <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
                                     <thead>
                                     <tr>
-                                        <th data-hide="phone">ID</th>
+                                        <th data-hide="phone">S. No.</th>
                                         <th data-class="expand">NAME</th>
                                         <th data-hide="phone">Booking Date</th>
                                         <th data-hide="phone,tablet">Address</th>
                                         <th data-hide="phone,tablet">Phone</th>
                                         <th data-hide="phone,tablet">Email</th>
+                                        <th data-hide="phone,tablet">Status</th>
+                                        <th data-hide="phone,tablet">Action</th>
+                                        <th data-hide="phone,tablet">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody id="employess_data_json"></tbody>

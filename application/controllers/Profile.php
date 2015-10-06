@@ -5,10 +5,18 @@ class Profile extends CI_Controller {
 
     public function view_profile() {
         $this->load->library('session');
-        $data['user_email']= $this->session->userdata('user_email');
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('profile/profile_panel',$data);
+        if($this->session->has_userdata('user_email'))
+        {
+            $data['user_email']= $this->session->userdata('user_email');
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('profile/profile_panel',$data);
+        }
+        else
+        {
+            echo "valid user";
+        }
+        
     }
     public function edit_profile() {
         $this->load->library('session');

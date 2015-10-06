@@ -16,7 +16,7 @@ HSS.ViewUsers.prototype={
                 //console.log(data);
                 for(var i=0;i<data.length;i++) 
                 {             
-                    var row = "<tr><td>"+[i]+"</td><td>" + data[i].name + "</td><td>" + data[i].birth_date + "</td><td>" + data[i].address +"</td><td>"+data[i].mobile+"</td><td>"+data[i].username+"</td><td>"+data[i].password+"</td></tr>";                    
+                    var row = "<tr><td>"+[i+1]+"</td><td>" + data[i].name + "</td><td>" + data[i].birth_date + "</td><td>" + data[i].address +"</td><td>"+data[i].mobile+"</td><td>"+data[i].username+"</td><td>"+data[i].password+"</td></tr>";                    
                     $("#show_user_data_json").append(row);
                 }                 
                 

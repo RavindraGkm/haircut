@@ -35,8 +35,35 @@ class Employee_model extends CI_Model {
             $temp['address']=$row->address;
             $temp['mobile']=$row->mobile;
             $temp['email']=$row->email;
+            $temp['status']=$row->status;
             $response[]=$temp;
         }
         return $response;
+    }
+    public function get_all_employees_name()
+    {
+        $response=array();
+        $sql="select * from add_employee";
+        $query=$this->db->query($sql);
+        foreach($query->result() as $row){
+            $temp['name']=$row->name;
+            $response[]=$temp;
+        }
+        return $response;
+    }
+    public function employee_status_update_call($data){
+        $response=array();
+        $sql= "UPDATE `add_employee` SET `status`=? WHERE id=? ";
+        $values= array($data['status'],$data['employee_id']);
+        if($this->db->query($sql,$values)) {
+            $response['status']=200;
+            $response['msg']="Updated Successfully";
+            return $response;
+        }
+        else{
+            $response['status']=500;
+            $response['msg']="Something Went Wrong...";
+            return $response;
+        }
     }
 }

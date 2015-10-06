@@ -17,7 +17,7 @@ HSS.ViewEmployees.prototype={
                 //console.log(data);
                 for(var i=0;i<data.length;i++) 
                 {             
-                    var row = "<tr><td>"+[i]+"</td><td>"+data[i].id+"</td><td>" + data[i].name + "</td><td>" + data[i].booking_date + "</td><td>" + data[i].booking_with +"</td><td>"+data[i].booking_timing+"</td><td>"+data[i].mobile+"</td><td>"+data[i].status+"</td><td><select class='appointment-status form-control' data-appointment-id='"+data[i].id+"'><option>Action</option><option value='Approved'>Approve</option><option value='Canceled'>Cancel</option></select></td><td><button class='btn btn-primary appintment-status-update' id='"+data[i].id+"' type='button'> Update</button></tr>";
+                    var row = "<tr><td>"+[i+1]+"</td><td class='hidden'>"+data[i].id+"</td><td>" + data[i].name + "</td><td>" + data[i].booking_date + "</td><td>" + data[i].booking_with +"</td><td>"+data[i].booking_timing+"</td><td>"+data[i].mobile+"</td><td>"+data[i].status+"</td><td><select class='appointment-status form-control' data-appointment-id='"+data[i].id+"'><option>Action</option><option value='Approved'>Approve</option><option value='Canceled'>Cancel</option></select></td><td><button class='btn btn-primary appintment-status-update' id='"+data[i].id+"' type='button'> Update</button></tr>";
                     $("#employess_data_json").append(row);
                 }    
 

@@ -95,7 +95,7 @@
                                 <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
                                     <thead>
                                     <tr>
-                                        <th data-hide="phone">ID</th>                                        
+                                        <th data-hide="phone">S. No.</th>                                        
                                         <th data-class="expand">Name</th>
                                         <th data-hide="phone">Birth Date</th>
                                         <th data-hide="phone,tablet">Address</th>

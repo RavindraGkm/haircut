@@ -31,6 +31,21 @@ class Employee extends CI_Controller {
         $this->db->close();
         echo json_encode($response);
     }
+    public function get_employees_name(){
+        $this->load->database();
+        $this->load->model('employee/Employee_model');
+        $response=$this->Employee_model->get_all_employees_name();
+        $this->db->close();
+        echo json_encode($response);
+    }
+    public function employee_status_update_call(){
+        //$this->load->database();
+        $data['status'] = $this->input->post('status');
+        $data['employee_id']=$this->input->post('employee_tab_id');
+        //$this->load->model('employee/Employee_model');
+        //$response=$this->Employee_model->employee_status_update_call($data);
+        echo json_encode($data);
+    }
 }
 
 ?>

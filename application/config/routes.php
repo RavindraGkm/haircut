@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'Login/login_page';
+$route['login/login-page'] = 'Login/login_page';
 $route['login/login-check']='Login/login_check';
 $route['login']='Login/login_page';
 
@@ -28,11 +29,15 @@ $route['employee/employee-registration']='Employee/employee_registration';
 $route['employee/add-employee']='Employee/add_employee';
 $route['employee/view-employee-details']='Employee/view_employee_details';
 $route['employee/show-all-employees']='Employee/show_all_employees';
+$route['employee/get-employees-name']='Employee/get_employees_name';
+$route['employee/employee-status-update-call']='Employee/employee_status_update_call';
 
 $route['hair-style/try-hair-style']='Hair_style/try_hair_style';
 $route['hair-style/add-hair-style']='Hair_style/add_hair_style_details';
 $route['hair-style/add-hair-action']='Hair_style/add_hair_style_action';
 $route['hair-style/upload-user-image']='Hair_style/upload_user_image';
+
+$route['logout/logout-panel']='Logout/logout_panel';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

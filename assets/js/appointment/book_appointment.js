@@ -5,8 +5,29 @@ HSS.BookAppointment=function(){
 
 HSS.BookAppointment.prototype={
     initialize:function(){
+        this.get_employees_name();
         this.book_appointment();
     },
+
+    get_employees_name:function()
+    {
+        $.ajax({
+                url:"../employee/get-employees-name",
+                type:"GET",
+                dataType:"JSON",
+                success:function(data){
+                    //console.log(data);
+                    for(var i=0;i<data.length;i++) 
+                    {             
+                    var row = "<option value='"+data[i].name+"'>"+data[i].name+"</option>";
+                    $("#booking_with").append(row);
+                    }
+                }
+
+            });
+    },
+
+
     book_appointment:function(){
 
         var self=this;

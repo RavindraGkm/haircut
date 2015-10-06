@@ -66,9 +66,6 @@
                     <li>
                         <?php echo anchor('hair-style/try-hair-style','<span class="menu-item-parent">Try Hair Styles</span>');?>
                     </li>
-                    <li>
-                        <?php echo anchor('hair-style/add-hair-style','<span class="menu-item-parent">Add Hair Styles</span>');?>
-                    </li>
                 </ul>
             </li>
         </ul>
@@ -125,12 +122,9 @@
                                             <section class="col col-6">
                                                 <label class="input">
                                                     <select class="booking_with form-control" id="booking_with">
-                                                        <option>Booking With</option>
-                                                        <option value='1'>Booking with Mr A</option>
-                                                        <option value='2'>Booking with Mr B</option>
-                                                        <option value='3'>Booking with Mr C</option>
-                                                        <option value='4'>Booking With Mr C</option>
+                                                         <option>Booking With</option>
                                                     </select>
+
                                                 </label>
                                             </section>
                                             <section class="col col-6">

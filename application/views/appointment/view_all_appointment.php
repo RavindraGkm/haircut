@@ -106,16 +106,16 @@
                                 <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
                                     <thead>
                                     <tr>
-                                        <th data-hide="phone">ID</th>
-                                        <th data-class="expand"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>Appointment ID</th>
-                                        <th data-class="expand"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>Name</th>
-                                        <th data-hide="phone"><i class="fa fa-fw text-muted hidden-md hidden-sm hidden-xs"></i>Booking Date</th>
-                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i> Booking With</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Booking Timing</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Phone</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Status</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Action</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue hidden-md hidden-sm hidden-xs"></i>Action</th>
+                                        <th data-hide="phone">S. No.</th>
+                                        <th data-class="expand" class="hidden"><i class="fa fa-fw text-muted "></i>Appointment ID</th>
+                                        <th data-class="expand"><i class="fa fa-fw text-muted "></i>Name</th>
+                                        <th data-hide="phone"><i class="fa fa-fw text-muted "></i>Booking Date</th>
+                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue "></i> Booking With</th>
+                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Booking Timing</th>
+                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Phone</th>
+                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Status</th>
+                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Action</th>
+                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Action</th>
                                     </tr>
                                     </thead>
                                     <tbody id="employess_data_json"></tbody>

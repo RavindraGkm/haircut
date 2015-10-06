@@ -65,9 +65,6 @@
                     <li>
                         <?php echo anchor('hair-style/try-hair-style','<span class="menu-item-parent">Try Hair Styles</span>');?>
                     </li>
-                    <li>
-                        <?php echo anchor('hair-style/add-hair-style','<span class="menu-item-parent">Add Hair Styles</span>');?>
-                    </li>
                 </ul>
             </li>
         </ul>
