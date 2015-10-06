@@ -4,15 +4,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Hair_style extends CI_Controller {
     public function try_hair_style() {
         $this->load->library('session');
-        $this->load->database();
-        $data['user_email']= $this->session->userdata('user_email');
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->model("hair_style/Hair_style_model");
-        $response = $this->Hair_style_model->get_all_hair_styles();
-        $data['hair_styles_info']=$response;
-        $this->db->close();
-        $this->load->view('hair_styles/try_hair_styles',$data);
+        if($this->session->has_userdata('user_email'))
+        {
+            $this->load->database();
+            $data['user_email']= $this->session->userdata('user_email');
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->model("hair_style/Hair_style_model");
+            $response = $this->Hair_style_model->get_all_hair_styles();
+            $data['hair_styles_info']=$response;
+            $this->db->close();
+            $this->load->view('hair_styles/try_hair_styles',$data);
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
     }
     public function add_hair_style_details() {
         if($this->input->get('error', TRUE)) {

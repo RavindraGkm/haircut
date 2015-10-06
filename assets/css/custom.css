@@ -12,6 +12,11 @@ span.bold{
     font-weight: bold;
 }
 
+.mytext
+{
+    text-align: center;
+}
+
 p.center {
     text-align: center;
     margin: 0;

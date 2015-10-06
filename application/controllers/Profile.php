@@ -14,16 +14,23 @@ class Profile extends CI_Controller {
         }
         else
         {
-            echo "valid user";
+            echo "not valid user";
         }
         
     }
     public function edit_profile() {
         $this->load->library('session');
-        $data['user_email']= $this->session->userdata('user_email');
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('profile/edit_panel',$data);
+        if($this->session->has_userdata('user_email'))
+        {
+            $data['user_email']= $this->session->userdata('user_email');
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('profile/edit_panel',$data);
+        }
+        else
+        {
+            echo "not valid user";
+        }
     }
     public function view_page() {
         $this->load->library('session');
@@ -34,12 +41,21 @@ class Profile extends CI_Controller {
         $this->load->view('profile/profile_panel',$data );
     }
      public function show_user() {
-        $this->load->database();
-        $user_email=$this->input->get('user_email');
-        $this->load->model('user/User_model');
-        $response=$this->User_model->get_user_by_email($user_email);
-        $this->db->close();
-        echo json_encode($response);
+        $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
+            $this->load->database();
+            $user_email=$this->input->get('user_email');
+            $this->load->model('user/User_model');
+            $response=$this->User_model->get_user_by_email($user_email);
+            $this->db->close();
+            echo json_encode($response);
+        }
+        else
+        {
+            echo "not valid user";
+        }
+        
     }
     public function edit_user() {
         $this->load->database();

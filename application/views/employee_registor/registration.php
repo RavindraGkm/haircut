@@ -23,7 +23,7 @@
     <div class="pull-right">
         <div id="logout" class="btn-header transparent pull-right">
             <span class="">
-                <?php echo anchor(base_url(),'<i class="fa fa-sign-out"></i>');?>
+                <?php echo anchor('logout/logout-panel','<i class="fa fa-sign-out"></i>');?>
             </span>
         </div>
     </div>

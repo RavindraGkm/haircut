@@ -3,17 +3,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Appointment extends CI_Controller {
     public function book_appointment() {
         $this->load->library('session');
-        $data['user_email']= $this->session->userdata('user_email');
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('appointment/book_panel',$data);
+        if($this->session->has_userdata('user_email'))
+        {
+            $data['user_email']= $this->session->userdata('user_email');
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('appointment/book_panel',$data);
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
+        
     }
     public function view_appointment() {
         $this->load->library('session');
-        $data['user_email']= $this->session->userdata('user_email');
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('appointment/view_panel', $data);
+        if($this->session->has_userdata('user_email'))
+        {
+            $data['user_email']= $this->session->userdata('user_email');
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('appointment/view_panel', $data);
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
+        
     }
      public function book_my_appointment() {
         $this->load->database();
