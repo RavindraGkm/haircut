@@ -43,7 +43,7 @@ HSS.ViewEmployees.prototype={
                      },
                 success: function (data) {
                      if(data.status==200) {
-                        row.find('td').eq(7).html(status);
+                        row.find('td').eq(6).html(status);
                      }
                 }
             });

@@ -52,9 +52,18 @@ class Appointment extends CI_Controller {
         echo json_encode($response);
     }
     public function view_all_appointment() {
+         $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('appointment/view_all_appointment');
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
+
     }
     public function show_all_employees_appointment(){
         $this->load->database();

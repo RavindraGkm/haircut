@@ -22,6 +22,9 @@ class Hair_style extends CI_Controller {
         }
     }
     public function add_hair_style_details() {
+        $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
         if($this->input->get('error', TRUE)) {
             $data['error'] = $this->input->get('error');
         }
@@ -34,6 +37,11 @@ class Hair_style extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->view('hair_styles/add_hair_style_details',$data);
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
     }
     public function add_hair_style_action() {
         $this->load->database();

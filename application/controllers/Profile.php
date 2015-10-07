@@ -70,9 +70,17 @@ class Profile extends CI_Controller {
         echo json_encode($response);
     }
     public function show_all_user() {
+        $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('profile/show_user');
+        }
+        else
+        {
+            echo "not valid user";
+        }
     }
     public function show_all_users_details(){
         $this->load->database();

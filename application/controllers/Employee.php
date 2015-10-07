@@ -3,9 +3,17 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Employee extends CI_Controller {
     public function employee_registration() {
+        $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('employee_registor/registration');
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
     }
     public function add_employee() {
         $this->load->database();
@@ -20,9 +28,17 @@ class Employee extends CI_Controller {
         echo json_encode($response);
     }
     public function view_employee_details() {
+        $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('employee_registor/view_employee');
+        }
+        else
+        {
+            echo "u r not valid user";
+        }
     }
     public function show_all_employees(){
         $this->load->database();
