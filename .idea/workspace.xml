@@ -2,85 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf36c874-1425-4585-b776-6234b2211740" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/jscam.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/jscam_canvas_only.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/outline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/src/BitString.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/hair_style/Hair_style_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/src/JPGEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/hair_styles/add_hair_style_details.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/fileupload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.form.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.ui.touch-punch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/jquery.webcam.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/jquery.webcam.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/src/jscam.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/src/jscam.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/hair_style/try_hair_style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/webcam/webcam.jquery.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session0519e531f35e3e47ff9d4d8d3f194b9a78914fd0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session05b60255935d3d1c2ce004f874044665ad9fecf1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session05f4e03330a46ad14468b4a3d54ec096f62c4e92" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session11a432e203f27813141b8ae4b705984332c6a34c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session13b3969917e836703abe693e5b7feb2208f8c3da" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session159fe5987b8c9616361450dac1d515a19ee9d09a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session1a3363514615e8d20b3daa7ec962fa42d88e6de4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session1ddbe53e2c72e0c66c7d1748066e76110fab7555" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session1decb8c0196a36337d1771457cce7a63e0394964" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session20896adf21f79fa3374f50a78df79d100e912d55" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session263f6c81d894954dd863c367e7060425040b2272" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session26a0456a3374df4dc2b1b46d059654204c22515f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session26db4cbc24149296be36e1585d4af3e3964f0529" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session2cc49f878a61a840f1ba1962fb43b45632094b61" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session2d593458c9736281005cc698b79a2212017596d8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session2f25936507ce6308050c906f93435846ed250603" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session44fb4442f3c587c607f102ee22462afaa40dbf3f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session4bf869bf80b24e3ccb1620609277d876c10c0f0b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session52a32719b3d4a0afd9c0145da32750d8bd32d409" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session52be3f45cd329cbd7b90df072311713702697175" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session57420f0738918dd45a532efb663a3f49f6744b29" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session58297afb1ca5051f83429a0fd065528926165b1a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session631a75034af62d4d69ca0a6b5ecce013e8754fbb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session73b67069cd9d889c67e6864fd8e6d4a4d4ff65ba" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session7716e8a83771f544b89a03f7e6f4141353e8f1dd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session789a27de98e3e9d24f5b230cf4862a6d3a718263" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session83c070d25a0edda33b6aaeed79ee6985c1a63ffc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session85e203033bfc9ee7aec992684ea18dda60c954d0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session912514db22f4e4aec522d0571ef50882cacaeb86" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session96cc5739624b27c71a0b39707c1285b43230cbd5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_session9b7c3b4900d328b96d89746d364fbda8d059350c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionab54c20ae0d6f2a95a1b0f9864a2fa35332e8b2a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionacb98d176d28e742e01835a59f6e4f4c76ca614c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionad3d1481e70ba118f08922d1199b935a66396ea7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionb5546d4829c477cf536cedf7fb6f517ab2d398a4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionb55d16d11b25621e77a0e4765e68d271c7ae72e8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionbd57c54fb49bead8c362ae6026a9befe51935207" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionbd8e55bafed999aecb1838e12a35142abe881fe4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessioncb5d96968b0e5c9e005923fd1fe7b7e947ea7845" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessioncb77f07da554b2a000fbe77d88bf95a8b0a2a30e" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessioncbe3eda10fec77047a30267785ccb73a5e880af6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessioncd17f89d181c7570d964a6656ed86d961ea599c4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessiondfa6e11a028628ccc50d620a39b388cc50769ea6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessione3e75165b7f013c254053c40479bd7afb86ab58a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessione9178ae8c9f31ae86f8272036aa19494257fbe5a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessioneb046ec4432812dedcae9da97fa153e9f9c51d4e" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionf9cff205d5a61ad8a0422613f23703f2f6531052" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionfb2549ff66b0c8aaf9b62f22a644aab244dbe8f0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/system/sessions/ci_sessionfe75f72f0aa19d74a38775cb5be53e950bd001af" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Hair_style.php" afterPath="$PROJECT_DIR$/application/controllers/Hair_style.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/appointment/book_panel.php" afterPath="$PROJECT_DIR$/application/views/appointment/book_panel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/custom.css" afterPath="$PROJECT_DIR$/assets/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/employee_registor/registration.php" afterPath="$PROJECT_DIR$/application/views/employee_registor/registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/plugin/superbox/superbox.min.js" afterPath="$PROJECT_DIR$/assets/js/plugin/superbox/superbox.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/hair_styles/try_hair_styles.php" afterPath="$PROJECT_DIR$/application/views/hair_styles/try_hair_styles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/appointment/view_all_appointment.php" afterPath="$PROJECT_DIR$/application/views/appointment/view_all_appointment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/employee_registor/view_employee.php" afterPath="$PROJECT_DIR$/application/views/employee_registor/view_employee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/appointment/view_panel.php" afterPath="$PROJECT_DIR$/application/views/appointment/view_panel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/login/Login_model.php" afterPath="$PROJECT_DIR$/application/models/login/Login_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="haircut.iws" />
@@ -109,11 +31,11 @@
       <file leaf-file-name="Hair_style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Hair_style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.115385" vertical-offset="830" max-vertical-offset="1615">
+            <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1615">
               <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
               <folding>
-                <marker date="1443774733000" expanded="true" signature="2929:3031" placeholder="insert INTO ..." />
-                <marker date="1443774733000" expanded="true" signature="2940:3031" placeholder="INSERT INTO ..." />
+                <marker date="1444097543000" expanded="true" signature="2929:3031" placeholder="insert INTO ..." />
+                <marker date="1444097543000" expanded="true" signature="2940:3031" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -122,12 +44,9 @@
       <file leaf-file-name="try_hair_styles.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/hair_styles/try_hair_styles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.307693" vertical-offset="2096" max-vertical-offset="3672">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2096" max-vertical-offset="3672">
               <caret line="136" column="109" selection-start-line="136" selection-start-column="91" selection-end-line="136" selection-end-column="109" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,7 +54,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="748">
+            <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="748">
               <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="36" />
               <folding />
             </state>
@@ -145,18 +64,18 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5406">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5253" max-vertical-offset="5406">
               <caret line="309" column="20" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="try_hair_style.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="try_hair_style.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/hair_style/try_hair_style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41570142" vertical-offset="221" max-vertical-offset="1275">
-              <caret line="159" column="24" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1275">
+              <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
               <folding>
                 <element signature="e#405#2471#0" expanded="false" />
                 <element signature="e#2851#3484#0" expanded="false" />
@@ -170,14 +89,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29826897" vertical-offset="5998" max-vertical-offset="8670">
+              <caret line="366" column="43" selection-start-line="366" selection-start-column="43" selection-end-line="366" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="superbox.min.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/plugin/superbox/superbox.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="663">
               <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <marker date="1443754960000" expanded="true" signature="14:2007" placeholder="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +112,7 @@
       <file leaf-file-name="add_hair_style_details.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/hair_styles/add_hair_style_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-71.38461" vertical-offset="1663" max-vertical-offset="3689">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1663" max-vertical-offset="3689">
               <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
               <folding />
             </state>
@@ -195,7 +122,7 @@
       <file leaf-file-name="view_employee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/employee_registor/view_employee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.153847" vertical-offset="595" max-vertical-offset="2618">
+            <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2618">
               <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
               <folding />
             </state>
@@ -338,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,33 +279,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haircut" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haircut" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user_images" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,7 +292,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ravisaloon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mounthotel" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.lastSelected" value="Errors" />
@@ -420,15 +325,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -447,8 +352,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -457,19 +362,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20763889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20763889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -493,6 +398,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/views/employee_registor/view_employee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2618">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="777">
@@ -525,13 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5692" max-vertical-offset="8670">
-          <caret line="363" column="50" selection-start-line="363" selection-start-column="50" selection-end-line="363" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -714,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5207182" vertical-offset="6202" max-vertical-offset="22338">
           <caret line="387" column="52" selection-start-line="387" selection-start-column="52" selection-end-line="387" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38482025" vertical-offset="238" max-vertical-offset="1122">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1326">
           <caret line="51" column="27" selection-start-line="45" selection-start-column="24" selection-end-line="51" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.5" vertical-offset="561" max-vertical-offset="3451">
           <caret line="72" column="17" selection-start-line="62" selection-start-column="12" selection-end-line="72" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-27.461538" vertical-offset="561" max-vertical-offset="2686">
           <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.23077" vertical-offset="629" max-vertical-offset="2567">
           <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,13 +662,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.615385" vertical-offset="680" max-vertical-offset="3111">
           <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/employee_registor/view_employee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.153847" vertical-offset="595" max-vertical-offset="2618">
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2618">
           <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
           <folding />
         </state>
@@ -778,9 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <marker date="1443754960000" expanded="true" signature="14:2007" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4182">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,10 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6111851" vertical-offset="0" max-vertical-offset="751">
           <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <marker date="1443750627000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1443750627000" expanded="true" signature="-1:-1" placeholder="select * fro..hair_styles..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,17 +706,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8601864" vertical-offset="0" max-vertical-offset="1360">
           <caret line="38" column="25" selection-start-line="22" selection-start-column="8" selection-end-line="38" selection-end-column="25" />
-          <folding>
-            <marker date="1443662615000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1443662615000" expanded="true" signature="-1:-1" placeholder="select * fro..booking_request..." />
-            <marker date="1443662615000" expanded="true" signature="-1:-1" placeholder="select * fro..booking_request..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/hair_styles/add_hair_style_details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-71.38461" vertical-offset="1663" max-vertical-offset="3689">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1663" max-vertical-offset="3689">
           <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
           <folding />
         </state>
@@ -833,29 +719,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Hair_style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.115385" vertical-offset="830" max-vertical-offset="1615">
+        <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1615">
           <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
           <folding>
-            <marker date="1443774733000" expanded="true" signature="2929:3031" placeholder="insert INTO ..." />
-            <marker date="1443774733000" expanded="true" signature="2940:3031" placeholder="INSERT INTO ..." />
+            <marker date="1444097543000" expanded="true" signature="2929:3031" placeholder="insert INTO ..." />
+            <marker date="1444097543000" expanded="true" signature="2940:3031" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/hair_styles/try_hair_styles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.307693" vertical-offset="2096" max-vertical-offset="3672">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2096" max-vertical-offset="3672">
           <caret line="136" column="109" selection-start-line="136" selection-start-column="91" selection-end-line="136" selection-end-column="109" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="748">
+        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="748">
           <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="36" />
           <folding />
         </state>
@@ -871,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/hair_style/try_hair_style.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41570142" vertical-offset="221" max-vertical-offset="1275">
-          <caret line="159" column="24" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1275">
+          <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
           <folding>
             <element signature="e#405#2471#0" expanded="false" />
             <element signature="e#2851#3484#0" expanded="false" />
@@ -882,6 +765,14 @@
             <element signature="e#7139#7190#0" expanded="false" />
             <element signature="e#8919#9872#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29826897" vertical-offset="5998" max-vertical-offset="8670">
+          <caret line="366" column="43" selection-start-line="366" selection-start-column="43" selection-end-line="366" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
