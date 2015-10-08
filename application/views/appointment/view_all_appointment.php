@@ -13,6 +13,7 @@
     echo link_tag('assets/css/smartadmin-production.min.css');
     echo link_tag('assets/css/smartadmin-skins.min.css');
     echo link_tag('assets/css/demo.min.css');
+    echo link_tag('assets/css/custom.css');
     ?>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -48,7 +49,7 @@
                 </ul>
             </li>
             <li class="active">
-                <a href=""><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Appointments</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Appointments</span></a>
                 <ul>
                     <li class="active">
                         <?php echo anchor('appointment/view-all-appointment','<span class="menu-item-parent">Appointment</span>');?>
@@ -56,19 +57,16 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Users</span></a>
                 <ul>
                     <li>
-                        <?php echo anchor('profile/show-all-user','<span class="menu-item-parent">User Profile</span>');?>
+                        <?php echo anchor('profile/show-all-user','<span class="menu-item-parent">All Users</span>');?>
                     </li>                    
                 </ul>
             </li>
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Hair Styles</span></a>
                 <ul>
-                    <li>
-                        <?php echo anchor('hair-style/try-hair-styles','<span class="menu-item-parent">Try Hair Styles</span>');?>
-                    </li>
                     <li>
                         <?php echo anchor('hair-style/add-hair-style','<span class="menu-item-parent">Add Hair Styles</span>');?>
                     </li>
@@ -99,7 +97,7 @@
                     <div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false">
                         <header>
                             <span class="widget-icon"> <i class="fa fa-table"></i> </span>
-                            <h2>View Employees Details</h2>
+                            <h2>All Appointments</h2>
                         </header>
                         <div>
                             <div class="widget-body no-padding">
@@ -108,14 +106,14 @@
                                     <tr>
                                         <th data-hide="phone">S. No.</th>
                                         <th data-class="expand" class="hidden"><i class="fa fa-fw text-muted "></i>Appointment ID</th>
-                                        <th data-class="expand"><i class="fa fa-fw text-muted "></i>Name</th>
-                                        <th data-hide="phone"><i class="fa fa-fw text-muted "></i>Booking Date</th>
-                                        <th data-hide="phone,tablet"><i class="fa fa-fw txt-color-blue "></i> Booking With</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Booking Timing</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Phone</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Status</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Action</th>
-                                        <th data-hide="phone,tablet"><I class="fa fa-fw txt-color-blue "></i>Action</th>
+                                        <th data-class="expand">Name</th>
+                                        <th data-hide="phone">Booking Date</th>
+                                        <th data-hide="phone,tablet">Booking With</th>
+                                        <th data-hide="phone,tablet">Booking Timing</th>
+                                        <th data-hide="phone,tablet">Phone</th>
+                                        <th data-hide="phone,tablet">Status</th>
+                                        <th data-hide="phone,tablet">Choice</th>
+                                        <th data-hide="phone,tablet">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody id="employess_data_json"></tbody>
@@ -142,11 +140,11 @@ echo script_tag('assets/js/bootstrap/bootstrap.min.js');
 echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
-echo script_tag('assets/js/appointment/view_employees.js');
+echo script_tag('assets/js/appointment/all_appointments.js');
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
-        new HSS.ViewEmployees();        
+        new HSS.Appointments();
     });
 </script>
 </body>

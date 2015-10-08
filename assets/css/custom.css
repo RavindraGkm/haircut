@@ -15,7 +15,6 @@ span.bold{
 .mytext
 {
     text-align: center;
-    
 }
 
 p.center {
@@ -55,6 +54,12 @@ a.sign-out-button{
     vertical-align: middle !important;
     text-align: right;
 }
+
+.td-middle-left {
+    vertical-align: middle !important;
+    text-align: left;
+}
+
 
 .radio-list .radio-inline {
     padding-top: 0;

@@ -21,8 +21,7 @@ class Employee_model extends CI_Model {
 
         return $response;
     }
-    public function view_all_employees()
-    {
+    public function view_all_employees() {
         $response=array();
         $sql="select * from add_employee";
         $query=$this->db->query($sql);

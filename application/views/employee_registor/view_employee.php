@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title> Monarch Saloon </title>
+    <title>Monarch Saloon</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -13,6 +13,7 @@
     echo link_tag('assets/css/smartadmin-production.min.css');
     echo link_tag('assets/css/smartadmin-skins.min.css');
     echo link_tag('assets/css/demo.min.css');
+    echo link_tag('assets/css/custom.css');
     ?>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -56,19 +57,16 @@
                 </ul>
             </li>
             <li >
-                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Users</span></a>
                 <ul>
                     <li >
-                        <?php echo anchor('profile/show-all-user','<span class="menu-item-parent">User Profile</span>');?>
+                        <?php echo anchor('profile/show-all-user','<span class="menu-item-parent">All User</span>');?>
                     </li>                    
                 </ul>
             </li>
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Hair Styles</span></a>
                 <ul>
-                    <li>
-                        <?php echo anchor('hair-style/try-hair-styles','<span class="menu-item-parent">Try Hair Styles</span>');?>
-                    </li>
                     <li>
                         <?php echo anchor('hair-style/add-hair-style','<span class="menu-item-parent">Add Hair Styles</span>');?>
                     </li>
@@ -108,7 +106,7 @@
                                     <tr>
                                         <th data-hide="phone">S. No.</th>
                                         <th data-class="expand">NAME</th>
-                                        <th data-hide="phone">Booking Date</th>
+                                        <th data-hide="phone">Birth Date</th>
                                         <th data-hide="phone,tablet">Address</th>
                                         <th data-hide="phone,tablet">Phone</th>
                                         <th data-hide="phone,tablet">Email</th>
@@ -134,7 +132,6 @@
         </div>
     </div>
 </div>
-<!--================================================== -->
 <?php
 echo script_tag('assets/js/jquery-1.11.1.min.js');
 echo script_tag('assets/js/bootstrap/bootstrap.min.js');

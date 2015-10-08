@@ -38,18 +38,17 @@ class Appointment_model extends CI_Model {
         }
         return $response;
     }
-    public function view_all_employees_appointments()
-    {
+    public function view_all_employees_appointments() {
         $response=array();
-        $sql="select * from booking_request";
+        $sql="select br.id, br.name as customer_name, ae.name, br.booking_date, br.booking_timing, br.mobile, br.status from booking_request as br INNER JOIN add_employee as ae ON ae.id=br.booking_with";
         $query=$this->db->query($sql);
         foreach($query->result() as $row){
             $temp['id']=$row->id;
-            $temp['name']=$row->name;
+            $temp['customer_name']=$row->customer_name;
             $booking_date = new DateTime($row->booking_date);
             $booking_date = $booking_date->format('d-M-Y');
             $temp['booking_date']=$booking_date;
-            $temp['booking_with']=$row->booking_with;
+            $temp['booking_with']=$row->name;
             $temp['booking_timing']=$row->booking_timing;
             $temp['mobile']=$row->mobile;
             $temp['status']=$row->status;
@@ -59,7 +58,7 @@ class Appointment_model extends CI_Model {
     }
     public function appointment_status_update_call($data){
         $response=array();
-        $sql= "UPDATE `booking_request` SET `status`=? WHERE id=? ";
+        $sql= "UPDATE booking_request SET status=? WHERE id=?";
         $values= array($data['status'],$data['appointment_id']);
         if($this->db->query($sql,$values)) {
             $response['status']=200;

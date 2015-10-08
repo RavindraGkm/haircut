@@ -3,8 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Appointment extends CI_Controller {
     public function book_appointment() {
         $this->load->library('session');
-        if($this->session->has_userdata('user_email'))
-        {
+        if($this->session->has_userdata('user_email')) {
             $data['user_email']= $this->session->userdata('user_email');
             $this->load->helper('html');
             $this->load->helper('url');
@@ -18,8 +17,7 @@ class Appointment extends CI_Controller {
     }
     public function view_appointment() {
         $this->load->library('session');
-        if($this->session->has_userdata('user_email'))
-        {
+        if($this->session->has_userdata('user_email')) {
             $data['user_email']= $this->session->userdata('user_email');
             $this->load->helper('html');
             $this->load->helper('url');
@@ -53,11 +51,10 @@ class Appointment extends CI_Controller {
     }
     public function view_all_appointment() {
          $this->load->library('session');
-        if($this->session->has_userdata('user_email'))
-        {
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('appointment/view_all_appointment');
+        if($this->session->has_userdata('user_email')) {
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('appointment/view_all_appointment');
         }
         else
         {
