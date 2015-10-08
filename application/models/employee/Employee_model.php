@@ -5,8 +5,9 @@ class Employee_model extends CI_Model {
         $response=array();
         $birth_date = new DateTime($data['mydate']);
         $birth_date = $birth_date->format('Y-m-d');
-        $sql= "INSERT INTO add_employee (name, mydate, address, mobile, email) VALUES (?,?,?,?,?)";
-        $values= array($data['name'],$birth_date,$data['address'],$data['mobile'], $data['email']);
+        $status='working';
+        $sql= "INSERT INTO add_employee (name, mydate, address, mobile, email,status) VALUES (?,?,?,?,?,?)";
+        $values= array($data['name'],$birth_date,$data['address'],$data['mobile'], $data['email'],$status);
         if($this->db->query($sql,$values)) {
             $response['status']=200;
             $response['msg']="Employee Added Successfully";

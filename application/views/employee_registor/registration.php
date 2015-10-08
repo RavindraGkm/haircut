@@ -163,7 +163,7 @@ echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
 echo script_tag('assets/js/bootstrap-datepicker.js');
-echo script_tag('assets/js/emp_reg/add_employee.js');
+echo script_tag('assets/js/employee/add_employee.js');
 
 ?>
 <script type="text/javascript">
