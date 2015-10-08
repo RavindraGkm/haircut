@@ -18,7 +18,10 @@ class Hair_style extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
     }
     public function add_hair_style_details() {
@@ -40,7 +43,10 @@ class Hair_style extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
     }
     public function add_hair_style_action() {

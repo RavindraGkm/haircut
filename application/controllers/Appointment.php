@@ -11,7 +11,10 @@ class Appointment extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
         
     }
@@ -25,7 +28,10 @@ class Appointment extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
         
     }
@@ -58,7 +64,10 @@ class Appointment extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
 
     }

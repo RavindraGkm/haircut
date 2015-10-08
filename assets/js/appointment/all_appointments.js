@@ -14,6 +14,7 @@ HSS.Appointments.prototype={
             type: "GET",
             dataType: "JSON",
             success: function (data) {
+                console.log(data);
                 for(var i=0;i<data.length;i++) {
                     var row = "<tr><td class='td-middle-left'>"+[i+1]+"</td><td class='hidden'>"+data[i].id+"</td><td class='td-middle-left'>" + data[i].customer_name + "</td><td class='td-middle-left'>" + data[i].booking_date + "</td><td class='td-middle-left'>" + data[i].booking_with +"</td><td class='td-middle-left'>"+data[i].booking_timing+"</td><td class='td-middle-left'>"+data[i].mobile+"</td><td class='td-middle-left'>"+data[i].status+"</td><td class='td-middle-left'><select class='appointment-status form-control' data-appointment-id='"+data[i].id+"'><option>Action</option><option value='Approved'>Approve</option><option value='Canceled'>Cancel</option></select></td><td><button class='btn btn-primary appintment-status-update' id='"+data[i].id+"' type='button'> Update</button></td></tr>";
                     $("#employess_data_json").append(row);
