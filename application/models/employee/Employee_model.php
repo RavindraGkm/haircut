@@ -1,24 +1,22 @@
 <?php
 class Employee_model extends CI_Model {
-    public function add_new_employee($data) 
-    {
+    public function add_new_employee($data) {
         $response=array();
         $birth_date = new DateTime($data['mydate']);
         $birth_date = $birth_date->format('Y-m-d');
-        $sql= "INSERT INTO add_employee (name, mydate, address, mobile, email) VALUES (?,?,?,?,?)";
-        $values= array($data['name'],$birth_date,$data['address'],$data['mobile'], $data['email']);
+        $sql= "insert into add_employee (name, mydate, address, mobile, email,status) VALUES (?,?,?,?,?,?)";
+        $status = 'Working';
+        $values= array($data['name'],$birth_date,$data['address'],$data['mobile'], $data['email'],$status);
         if($this->db->query($sql,$values)) {
             $response['status']=200;
             $response['msg']="Employee Added Successfully";
             return $response;
         }
-        else
-        {
+        else {
             $response['status']=500;
             $response['msg']="Something Went Wrong...";
             return $response;
         }
-
         return $response;
     }
     public function view_all_employees() {
@@ -50,16 +48,16 @@ class Employee_model extends CI_Model {
         }
         return $response;
     }
-    public function employee_status_update_call($data){
+    public function employee_status_update_call($data) {
         $response=array();
-        $sql= "UPDATE `add_employee` SET `status`=? WHERE id=? ";
+        $sql= "UPDATE add_employee SET status=? WHERE id=?";
         $values= array($data['status'],$data['employee_id']);
         if($this->db->query($sql,$values)) {
             $response['status']=200;
             $response['msg']="Updated Successfully";
             return $response;
         }
-        else{
+        else {
             $response['status']=500;
             $response['msg']="Something Went Wrong...";
             return $response;

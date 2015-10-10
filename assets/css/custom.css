@@ -227,8 +227,7 @@ a.sign-out-button{
     border-bottom: 2px solid #4d90fe;
 }
 .tabs-content-wrapper {
-    padding: 30px 20px;
-    /*background-color: #e74c3c;*/
+    padding-top: 15px;
 }
 .video-player-wrapper {
 
@@ -319,5 +318,17 @@ a.sign-out-button{
     right: 16px;
     top: 19px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.over-lay-msg {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 5px;
+}
+
+.owl-carousel .owl-item {
     cursor: pointer;
 }

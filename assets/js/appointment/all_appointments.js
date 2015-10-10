@@ -46,12 +46,26 @@ HSS.Appointments.prototype={
                 success: function (data) {
                     if(data.status==200) {
                         row.find('td').eq(7).html(status);
+                        $.smallBox({
+                            title: data.msg,
+                            content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
+                            color: "#296191",
+                            iconSmall: "fa fa-thumbs-up bounce animated",
+                            timeout: 4000
+                        });
                         button_clicked.html('Update');
+                    }
+                    else {
+                        $.smallBox({
+                            title: data.msg,
+                            content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
+                            color: "#c26565",
+                            iconSmall: "fa fa-thumbs-down bounce animated",
+                            timeout: 4000
+                        });
                     }
                 }
             });
         });
     }
 }
-
-

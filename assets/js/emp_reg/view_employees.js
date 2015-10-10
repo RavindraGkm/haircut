@@ -15,7 +15,6 @@ HSS.ViewEmployees.prototype={
             type: "GET",
             dataType: "JSON",
             beforeSend: function() {
-
             },
             success: function (data) {
                 console.log(data);
@@ -32,6 +31,7 @@ HSS.ViewEmployees.prototype={
     },
     update_status:function(){
         $('.employees-status-update').click(function(){
+            var button = $(this);
             var row= $(this).closest('tr');
             var select = row.find('.employees-status');
             var status = select.val();
@@ -41,14 +41,36 @@ HSS.ViewEmployees.prototype={
                 url: "employee-status-update-call",
                 type: "POST",
                 dataType: "JSON",
+                beforeSend:function() {
+                    button.html('updating..');
+                },
                 data:{
                     status:  status,
                     employee_tab_id: employee_tab_id
                 },
                 success: function (data) {
                     if(data.status==200) {
+                        $.smallBox({
+                            title: data.msg,
+                            content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
+                            color: "#296191",
+                            iconSmall: "fa fa-thumbs-up bounce animated",
+                            timeout: 4000
+                        });
                         row.find('td').eq(6).html(status);
                     }
+                    else {
+                        $.smallBox({
+                            title: data.msg,
+                            content: "<i class='fa fa-clock-o'></i> <i>1 second ago...</i>",
+                            color: "#c26565",
+                            iconSmall: "fa fa-thumbs-down bounce animated",
+                            timeout: 4000
+                        });
+                    }
+                },
+                complete:function() {
+                    button.html('Update');
                 }
             });
         });

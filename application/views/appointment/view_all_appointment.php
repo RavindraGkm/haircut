@@ -61,7 +61,7 @@
                 <ul>
                     <li>
                         <?php echo anchor('profile/show-all-user','<span class="menu-item-parent">All Users</span>');?>
-                    </li>                    
+                    </li>
                 </ul>
             </li>
             <li>
@@ -81,7 +81,7 @@
             <li>Home</li><li>Appointments</li>
         </ol>
     </div>
-    
+
     <div id="content">
         <div class="row">
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -140,6 +140,7 @@ echo script_tag('assets/js/bootstrap/bootstrap.min.js');
 echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
+echo script_tag('assets/js/notification/SmartNotification.min.js');
 echo script_tag('assets/js/appointment/all_appointments.js');
 ?>
 <script type="text/javascript">

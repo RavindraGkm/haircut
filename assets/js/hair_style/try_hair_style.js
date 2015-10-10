@@ -17,19 +17,19 @@ HSS.TryHairStyle.prototype={
     super_box:function() {
         var self = this;
         var b = $('<div class="superbox-show"></div>'),
-            c = $('<img src="" class="superbox-current-img">' +
-            '<div id="imgInfoBox" class="superbox-imageinfo inline-block"><h1>Image Title</h1><span><p class="superbox-img-description">Image description</p><p><a href="javascript:void(0);" class="btn btn-primary btn-lg try-hair-style">Try Hair Style</a></p></span> </div>'),
-            d = $('<div class="superbox-close txt-color-white"><i class="fa fa-times fa-lg"></i></div>');
+        c = $('<img src="" class="superbox-current-img">' +
+        '<div id="imgInfoBox" class="superbox-imageinfo inline-block"><h1>Image Title</h1><span><p class="superbox-img-description">Image description</p><p><a href="javascript:void(0);" class="btn btn-primary btn-lg try-hair-style">Try Hair Style</a></p></span> </div>'),
+        d = $('<div class="superbox-close txt-color-white"><i class="fa fa-times fa-lg"></i></div>');
         b.append(c).append(d);
         $(".superbox-imageinfo");
         return $('.superbox').each(function() {
             $(".superbox-list").click(function() {
                 $this = $(this);
                 var d = $this.find(".superbox-img"),
-                    e = d.data("img"),
-                    f = d.attr("alt") || "No description",
-                    g = e,
-                    h = d.attr("title") || "No Title";
+                e = d.data("img"),
+                f = d.attr("alt") || "No description",
+                g = e,
+                h = d.attr("title") || "No Title";
                 self.selected_hair_style = d.attr('src');
                 c.attr("src", e), $(".superbox-list").removeClass("active"), $this.addClass("active"), c.find("em").text(g), c.find(">:first-child").text(h), c.find(".superbox-img-description").text(f), 0 == $(".superbox-current-img").css("opacity") && $(".superbox-current-img").animate({
                     opacity: 1
@@ -51,7 +51,7 @@ HSS.TryHairStyle.prototype={
         var self = this;
         $(".try-hair-style").unbind('click');
         $(".try-hair-style").click(function() {
-            $(".try-hair-style-container").removeClass('hidden');
+            $("#myModal").modal('show');
             $("#hair_style_web_cam").attr('src',self.selected_hair_style);
             self.webCamSetup();
         });
@@ -67,10 +67,17 @@ HSS.TryHairStyle.prototype={
             $(this).parent().addClass('active');
             $(tab_id_clicked).removeClass('hidden');
         });
-        $(".Yf-Ph-db-bg").click(function() {
-            $(".try-hair-style-container").addClass('hidden');
-            self.chrome_stream.stop();
-            self.chrome_stream=null;
+        $(".change-hair-style").click(function(e) {
+            e.preventDefault();
+            $("#image_modal").modal('show');
+        });
+        $("#owl-example").owlCarousel();
+        $(".owl-item").click(function() {
+            var hair_style_image = $(this).find('img');
+            self.selected_hair_style = hair_style_image.attr('src');
+            $("#applied_hair_style").attr('src',self.selected_hair_style);
+            $("#hair_style_web_cam").attr('src',self.selected_hair_style);
+            $("#image_modal").modal('hide');
         });
     },
     imageSelection: function() {
@@ -105,20 +112,18 @@ HSS.TryHairStyle.prototype={
     webCamSetup: function() {
         var self=this;
         var canvas = document.getElementById("canvas"), context = canvas.getContext("2d"),video = document.getElementById("video");
-        // Grab elements, create settings, etc.
         console.log("Called");
         self.chrome_stream = "",
-            videoObj = { "video": true },
-            errBack = function(error) {
-                console.log("Video capture error: ", error.code);
-            };
-        // Put video listeners into place
+        videoObj = { "video": true },
+        errBack = function(error) {
+            console.log("Video capture error: ", error.code);
+        };
         if(navigator.getUserMedia) { // Standard
             navigator.getUserMedia(videoObj, function(stream) {
                 video.src = stream;
                 video.play();
+                $("#hair_style_web_cam").draggable({ containment: ".snap-wrapper", scroll: false });
             }, errBack);
-            console.log("First");
         } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
             navigator.webkitGetUserMedia(videoObj, function(stream){
                 video.src = window.URL.createObjectURL(stream);
@@ -127,11 +132,7 @@ HSS.TryHairStyle.prototype={
                 $("#hair_style_web_cam").draggable({ containment: ".snap-wrapper", scroll: false });
             }, errBack);
             setTimeout(function(){
-                //navigator.webkitGetUserMedia(videoObj, function(stream){
-                //  video.src = window.URL.createObjectURL(stream);
-                //self.chrome_stream = stream;
-                //  video.play();
-                //}, errBack);
+
             } , 10000);
         }
         else if(navigator.mozGetUserMedia) { // Firefox-prefixed
@@ -141,17 +142,15 @@ HSS.TryHairStyle.prototype={
                 video.play();
                 $("#hair_style_web_cam").draggable({ containment: ".snap-wrapper", scroll: false });
             }, errBack);
-            setTimeout(function(){
-                self.chrome_stream.stop();
-                self.chrome_stream=null;
-            },5000);
-            console.log("Third");
         }
         $(".btn-take-snap").click(function() {
-            context.drawImage(video, 0, 0, 468, 351);
+            context.drawImage(video, 0, 0, $("#canvas").width(), $("#canvas").height());
             $(".hat-image").removeClass('hidden');
         });
-
+        $('#myModal').on('hidden.bs.modal', function (e) {
+            self.chrome_stream.stop();
+            self.chrome_stream=null;
+        });
     },
     fileUploadSetup: function() {
         $('input[type=file]').customFile();

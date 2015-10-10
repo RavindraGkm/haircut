@@ -9,11 +9,9 @@ class Appointment extends CI_Controller {
             $this->load->helper('url');
             $this->load->view('appointment/book_panel',$data);
         }
-        else
-        {
+        else {
             echo "u r not valid user";
         }
-        
     }
     public function view_appointment() {
         $this->load->library('session');
@@ -23,11 +21,9 @@ class Appointment extends CI_Controller {
             $this->load->helper('url');
             $this->load->view('appointment/view_panel', $data);
         }
-        else
-        {
+        else {
             echo "u r not valid user";
         }
-        
     }
      public function book_my_appointment() {
         $this->load->database();
@@ -56,11 +52,9 @@ class Appointment extends CI_Controller {
             $this->load->helper('url');
             $this->load->view('appointment/view_all_appointment');
         }
-        else
-        {
+        else {
             echo "u r not valid user";
         }
-
     }
     public function show_all_employees_appointment(){
         $this->load->database();
