@@ -13,6 +13,7 @@
     echo link_tag('assets/css/smartadmin-production.min.css');
     echo link_tag('assets/css/smartadmin-skins.min.css');
     echo link_tag('assets/css/demo.min.css');
+    echo link_tag('assets/css/datepicker.css');
     echo link_tag('assets/css/custom.css');
     ?>
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -101,8 +102,32 @@
                         </header>
                         <div>
                             <div class="widget-body no-padding">
-                                <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
+                                <table id="datatable_fixed_column" class="table table-striped table-bordered table-hover custom-table" width="100%">
                                     <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th class="hidden">&nbsp;</th>
+                                        <th class="hasinput">
+                                            <input type="text" class="form-control" placeholder="Filter by name" />
+                                        </th>
+                                        <th class="hasinput">
+                                            <input type="text" class="form-control booking-date" placeholder="Booking date" />
+                                        </th>
+                                        <th class="hasinput">
+                                            <input type="text" class="form-control" placeholder="Booking with" />
+                                        </th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th class="hasinput" style="width:13%">
+                                            <select class="form-control" style="width: 100%;">
+                                                <option value="">Select</option>
+                                                <option value="Approved">Approved</option>
+                                                <option value="Canceled">Canceled</option>
+                                            </select>
+                                        </th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
                                     <tr>
                                         <th data-hide="phone">S. No.</th>
                                         <th data-class="expand" class="hidden"><i class="fa fa-fw text-muted "></i>Appointment ID</th>
@@ -133,14 +158,19 @@
         </div>
     </div>
 </div>
-<!--================================================== -->
 <?php
 echo script_tag('assets/js/jquery-1.11.1.min.js');
 echo script_tag('assets/js/bootstrap/bootstrap.min.js');
 echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
+echo script_tag('assets/js/bootstrap-datepicker.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
+echo script_tag("assets/js/plugin/datatables/jquery.dataTables.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.colVis.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.tableTools.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.bootstrap.min.js");
+echo script_tag("assets/js/plugin/datatable-responsive/datatables.responsive.min.js");
 echo script_tag('assets/js/appointment/all_appointments.js');
 ?>
 <script type="text/javascript">

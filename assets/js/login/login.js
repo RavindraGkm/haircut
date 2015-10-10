@@ -57,7 +57,7 @@ HSS.Login.prototype={
             FB.login(
                 function(response) {
                     if (response.status == 'connected') {
-                        FB.api('/me?fields=id,name,email,first_name', function(response) {
+                        FB.api('/me?fields=id,name,email,first_name,gender', function(response) {
                             $.ajax({
                                 url: self.base_url+"logins/login-with-fb",
                                 type: "POST",

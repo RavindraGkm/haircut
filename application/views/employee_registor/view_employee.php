@@ -100,15 +100,30 @@
                         </header>
                         <div>
                             <div class="widget-body no-padding">
-                                <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
+                                <table id="datatable_fixed_column" class="table table-striped table-bordered table-hover custom-table" width="100%">
                                     <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th class="hasinput" style="width:15%">
+                                            <input type="text" class="form-control" placeholder="Filter by name" />
+                                        </th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th class="hasinput" style="width:13%">
+                                            <input type="text" class="form-control" placeholder="Filter by phone" />
+                                        </th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
                                     <tr>
                                         <th data-hide="phone">S. No.</th>
                                         <th data-class="expand">NAME</th>
                                         <th data-hide="phone">Birth Date</th>
                                         <th data-hide="phone,tablet">Address</th>
                                         <th data-hide="phone,tablet">Phone</th>
-                                        <th data-hide="phone,tablet">Email</th>
                                         <th data-hide="phone,tablet">Joining</th>
                                         <th data-hide="phone,tablet">Leaving</th>
                                         <th data-hide="phone,tablet">Status</th>
@@ -140,6 +155,11 @@ echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
+echo script_tag("assets/js/plugin/datatables/jquery.dataTables.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.colVis.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.tableTools.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.bootstrap.min.js");
+echo script_tag("assets/js/plugin/datatable-responsive/datatables.responsive.min.js");
 echo script_tag('assets/js/employee/view_employees.js');
 ?>
 <script type="text/javascript">

@@ -13,6 +13,7 @@
     echo link_tag('assets/css/smartadmin-production.min.css');
     echo link_tag('assets/css/smartadmin-skins.min.css');
     echo link_tag('assets/css/demo.min.css');
+    echo link_tag('assets/css/custom.css');
     ?>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -100,8 +101,20 @@
                         </header>
                         <div>
                             <div class="widget-body no-padding">
-                                <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
+                                <table id="datatable_fixed_column" class="table table-striped table-bordered table-hover custom-table" width="100%">
                                     <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th class="hasinput">
+                                            <input type="text" class="form-control" placeholder="Filter by name" />
+                                        </th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th class="hasinput">
+                                            <input type="text" class="form-control" placeholder="Filter by phone" />
+                                        </th>
+                                        <th>&nbsp;</th>
+                                    </tr>
                                     <tr>
                                         <th data-hide="phone">S. No.</th>                                        
                                         <th data-class="expand">Name</th>
@@ -135,6 +148,11 @@ echo script_tag('assets/js/bootstrap/bootstrap.min.js');
 echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
+echo script_tag("assets/js/plugin/datatables/jquery.dataTables.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.colVis.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.tableTools.min.js");
+echo script_tag("assets/js/plugin/datatables/dataTables.bootstrap.min.js");
+echo script_tag("assets/js/plugin/datatable-responsive/datatables.responsive.min.js");
 echo script_tag('assets/js/profile/view_users.js');
 ?>
 <script type="text/javascript">

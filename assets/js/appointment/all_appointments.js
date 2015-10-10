@@ -21,9 +21,46 @@ HSS.Appointments.prototype={
                 }
                 self.update_status();
             },
+            complete: function () {
+                self.table_filter($("#datatable_fixed_column"));
+            },
             error: function(data) {
                 console.log(data);
             }
+        });
+    },
+    table_filter:function(table_id) {
+        var responsiveHelper_datatable_fixed_column = undefined;
+        var breakpointDefinition = {
+            tablet : 1024,
+            phone : 480
+        };
+        var otable = table_id.DataTable({
+            "sDom": ""+
+            "t"+
+            "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-sm-6 col-xs-12'p>>",
+            "autoWidth" : true,
+            "preDrawCallback" : function() {
+                if (!responsiveHelper_datatable_fixed_column) {
+                    responsiveHelper_datatable_fixed_column = new ResponsiveDatatablesHelper(table_id, breakpointDefinition);
+                }
+            },
+            "rowCallback" : function(nRow) {
+                responsiveHelper_datatable_fixed_column.createExpandIcon(nRow);
+            },
+            "drawCallback" : function(oSettings) {
+                responsiveHelper_datatable_fixed_column.respond();
+            }
+        });
+        table_id.find("thead th input[type=text], thead th select").on( 'keyup change', function () {
+            otable
+                .column( $(this).parent().index()+':visible' )
+                .search( this.value )
+                .draw();
+        } );
+        $('.booking-date').datepicker({
+            autoclose: true,
+            format: 'dd-M-yyyy'
         });
     },
     update_status:function() {

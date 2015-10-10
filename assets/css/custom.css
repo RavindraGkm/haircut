@@ -332,3 +332,7 @@ a.sign-out-button{
 .owl-carousel .owl-item {
     cursor: pointer;
 }
+
+table.custom-table {
+    margin-top: 0px!important;
+}

@@ -9,23 +9,14 @@ HSS.BookAppointment.prototype={
     },
     get_employees_name:function() {
         $.ajax({
-<<<<<<< HEAD
-            url:"../employee/get-employees-name",
-            type:"GET",
-            dataType:"JSON",
-            success:function(data) {
-                for(var i=0;i<data.length;i++) {
-=======
                 url:"../employee/get-employees-name",
                 type:"GET",
                 dataType:"JSON",
                 success:function(data){
                     console.log(data);
-                    for(var i=0;i<data.length;i++) 
-                    {             
->>>>>>> c8af774b546820d9fe0b409c28de88912d6054fd
-                    var row = "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
-                    $("#booking_with").append(row);
+                    for(var i=0;i<data.length;i++) {
+                        var row = "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                        $("#booking_with").append(row);
                 }
             }
         });
