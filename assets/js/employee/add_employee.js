@@ -14,6 +14,10 @@ HSS.AddEmployee.prototype={
             autoclose: true,
             format: 'dd-mm-yyyy'
         });
+        $('.joining_date').datepicker({
+            autoclose: true,
+            format: 'dd-mm-yyyy'
+        });
         $('.myaddemp').click(function(){
             $.ajax({
                 url: "add-employee",
@@ -24,7 +28,8 @@ HSS.AddEmployee.prototype={
                     birth_date: $("#birth_date").val(),
                     address: $("#address").val(),
                     mobile: $("#mobile").val(),
-                    email: $('#email').val()
+                    email: $('#email').val(),
+                    joining_date: $('#joining_date').val(),
                 },
                 beforeSend: function(data) {
                     $(".myaddemp").html('Processing...');

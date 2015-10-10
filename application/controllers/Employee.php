@@ -25,6 +25,7 @@ class Employee extends CI_Controller {
         $data['address'] = $this->input->post('address');
         $data['mobile'] = $this->input->post('mobile');
         $data['email'] = $this->input->post('email');
+        $data['joining_date'] = $this->input->post('joining_date');
         $this->load->model('employee/Employee_model');
         $response=$this->Employee_model->add_new_employee($data);
         $this->db->close();

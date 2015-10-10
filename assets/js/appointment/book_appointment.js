@@ -16,10 +16,10 @@ HSS.BookAppointment.prototype={
                 type:"GET",
                 dataType:"JSON",
                 success:function(data){
-                    //console.log(data);
+                    console.log(data);
                     for(var i=0;i<data.length;i++) 
                     {             
-                    var row = "<option value='"+data[i].name+"'>"+data[i].name+"</option>";
+                    var row = "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
                     $("#booking_with").append(row);
                     }
                 }

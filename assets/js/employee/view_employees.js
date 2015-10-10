@@ -20,7 +20,7 @@ HSS.ViewEmployees.prototype={
             success: function (data) {
                 //console.log(data);
                 for(var i=0;i<data.length;i++) {
-                    var row = "<tr><td class='td-middle-left'>"+[i+1]+"</td><td class='td-middle-left'>" + data[i].name + "</td><td class='td-middle-left'>" + data[i].birth_date + "</td><td class='td-middle-left'>" + data[i].address +"</td><td class='td-middle-left'>"+data[i].mobile+"</td><td class='td-middle-left'>"+data[i].email+"</td><td class='td-middle-left'>"+data[i].status+"</td><td class='td-middle-left'><select class='employees-status form-control' data-employee-id='"+data[i].id+"'><option>Action</option><option value='Working'>Working</option><option value='Archive'>Archive</option></select></td><td><button class='btn btn-primary employees-status-update' id='"+data[i].id+"' type='button'>Update</button></td></tr>";
+                    var row = "<tr><td class='td-middle-left'>"+[i+1]+"</td><td class='td-middle-left'>" + data[i].name + "</td><td class='td-middle-left'>" + data[i].birth_date + "</td><td class='td-middle-left'>" + data[i].address +"</td><td class='td-middle-left'>"+data[i].mobile+"</td><td class='td-middle-left'>"+data[i].email+"</td><td class='td-middle-left'>"+data[i].joining_date+"</td><td class='td-middle-left'>"+data[i].leaving_date+"</td><td class='td-middle-left'>"+data[i].status+"</td><td class='td-middle-left'><select class='employees-status form-control' data-employee-id='"+data[i].id+"'><option>Action</option><option value='Working'>Working</option><option value='Archive'>Archive</option></select></td><td><button class='btn btn-primary employees-status-update' id='"+data[i].id+"' type='button'>Update</button></td></tr>";
                     $("#employess_data_json").append(row);
                 }
                 self.update_status();
@@ -47,7 +47,8 @@ HSS.ViewEmployees.prototype={
                 },
                 success: function (data) {
                     if(data.status==200) {
-                        row.find('td').eq(6).html(status);
+                        row.find('td').eq(8).html(status);
+                        row.find('td').eq(7).html(data.leaving_date);
                     }
                 }
             });

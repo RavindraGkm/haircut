@@ -110,6 +110,8 @@
                                         <th data-hide="phone,tablet">Address</th>
                                         <th data-hide="phone,tablet">Phone</th>
                                         <th data-hide="phone,tablet">Email</th>
+                                        <th data-hide="phone,tablet">Joining</th>
+                                        <th data-hide="phone,tablet">Leaving</th>
                                         <th data-hide="phone,tablet">Status</th>
                                         <th data-hide="phone,tablet">Action</th>
                                         <th data-hide="phone,tablet">Action</th>
