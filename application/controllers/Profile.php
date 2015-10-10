@@ -14,7 +14,10 @@ class Profile extends CI_Controller {
         }
         else
         {
-            echo "not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
         
     }
@@ -29,7 +32,10 @@ class Profile extends CI_Controller {
         }
         else
         {
-            echo "not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
     }
     public function view_page() {
@@ -53,7 +59,10 @@ class Profile extends CI_Controller {
         }
         else
         {
-            echo "not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
         
     }
@@ -79,7 +88,10 @@ class Profile extends CI_Controller {
         }
         else
         {
-            echo "not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
     }
     public function show_all_users_details(){

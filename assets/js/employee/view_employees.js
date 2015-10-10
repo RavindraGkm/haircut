@@ -17,7 +17,7 @@ HSS.ViewEmployees.prototype={
             beforeSend: function() {
             },
             success: function (data) {
-                console.log(data);
+                //console.log(data);
                 for(var i=0;i<data.length;i++) {
                     var row = "<tr><td class='td-middle-left'>"+[i+1]+"</td><td class='td-middle-left'>" + data[i].name + "</td><td class='td-middle-left'>" + data[i].birth_date + "</td><td class='td-middle-left'>" + data[i].address +"</td><td class='td-middle-left'>"+data[i].mobile+"</td><td class='td-middle-left'>"+data[i].email+"</td><td class='td-middle-left'>"+data[i].status+"</td><td class='td-middle-left'><select class='employees-status form-control' data-employee-id='"+data[i].id+"'><option>Action</option><option value='Working'>Working</option><option value='Archive'>Archive</option></select></td><td><button class='btn btn-primary employees-status-update' id='"+data[i].id+"' type='button'>Update</button></td></tr>";
                     $("#employess_data_json").append(row);
@@ -36,7 +36,7 @@ HSS.ViewEmployees.prototype={
             var select = row.find('.employees-status');
             var status = select.val();
             var employee_tab_id = select.attr('data-employee-id');
-            console.log(status+","+employee_tab_id);
+            //console.log(status+","+employee_tab_id);
             $.ajax({
                 url: "employee-status-update-call",
                 type: "POST",

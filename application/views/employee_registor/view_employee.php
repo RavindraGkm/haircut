@@ -138,7 +138,7 @@ echo script_tag('assets/js/plugin/pace/pace.min.js');
 echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
-echo script_tag('assets/js/emp_reg/view_employees.js');
+echo script_tag('assets/js/employee/view_employees.js');
 ?>
 <script type="text/javascript">
     $(document).ready(function(){

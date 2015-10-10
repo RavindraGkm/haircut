@@ -12,7 +12,10 @@ class Employee extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
     }
     public function add_employee() {
@@ -37,7 +40,10 @@ class Employee extends CI_Controller {
         }
         else
         {
-            echo "u r not valid user";
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
         }
     }
     public function show_all_employees(){
@@ -62,6 +68,7 @@ class Employee extends CI_Controller {
         $response=$this->Employee_model->employee_status_update_call($data);
         echo json_encode($response);
     }
+                                        
 }
 
 ?>
