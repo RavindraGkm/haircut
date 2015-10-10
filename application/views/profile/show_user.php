@@ -109,7 +109,6 @@
                                         <th data-hide="phone,tablet">Address</th>
                                         <th data-hide="phone,tablet">Phone</th>
                                         <th data-hide="phone,tablet">Username</th>
-                                        <th data-hide="phone,tablet">Passowrd</th>
                                     </tr>
                                     </thead>
                                     <tbody id="show_user_data_json"></tbody>

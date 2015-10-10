@@ -33,7 +33,6 @@ $route['employee/get-employees-name']='Employee/get_employees_name';
 $route['employee/employee-status-update-call']='Employee/employee_status_update_call';
 
 $route['hair-style/try-hair-style']='Hair_style/try_hair_style';
-$route['hair-style/try-hair-styles']='Hair_style/try_hair_style';
 $route['hair-style/add-hair-style']='Hair_style/add_hair_style_details';
 $route['hair-style/add-hair-action']='Hair_style/add_hair_style_action';
 $route['hair-style/upload-user-image']='Hair_style/upload_user_image';

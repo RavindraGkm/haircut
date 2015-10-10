@@ -131,6 +131,11 @@
                                                 <label class="input"> <i class="icon-prepend fa fa-user"></i>
                                                     <input type="text" name="email" id="email" class="email" placeholder="Employee email">
                                                 </label>
+                                            </section>  
+                                            <section class="col col-6">
+                                                <label class="input"> <i class="icon-prepend fa fa-calendar"></i>
+                                                    <input type="text" name="joining_date" id="joining_date" class="joining_date" placeholder="Joining Date">
+                                                </label>
                                             </section>                                            
                                         </div>
                                     </fieldset>
