@@ -9,6 +9,14 @@ class Hair_style extends CI_Controller {
             $this->load->database();
             $data['user_email']= $this->session->userdata('user_email');
             $gender= $this->session->userdata('gender');
+            if($this->session->has_userdata('is_fb_login'))
+            {
+                $data['fb_login']=true;
+            }
+            else
+            {
+                $data['fb_login']=false;
+            }
             $this->load->helper('html');
             $this->load->helper('url');
             $this->load->model("hair_style/Hair_style_model");

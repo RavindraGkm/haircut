@@ -38,17 +38,28 @@
     <aside id="left-panel">
         <nav>
             <ul>
-                <li>
-                    <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
-                    <ul>
-                        <li>
-                            <?php echo anchor('profile/view-profile','<span class="menu-item-parent">View Profile</span>');?>
-                        </li>
-                        <li>
-                            <?php echo anchor('profile/edit-profile','<span class="menu-item-parent">Edit Profile</span>');?>
-                        </li>
-                    </ul>
-                </li>
+                <?php
+            if(!$fb_login)
+            {
+
+            ?>
+
+            <li>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
+                <ul>
+                    <li>
+                        <?php echo anchor('profile/view-profile','<span class="menu-item-parent">View Profile</span>');?>
+                    </li>
+                    <li>
+                        <?php echo anchor('profile/edit-profile','<span class="menu-item-parent">Edit Profile</span>');?>
+                    </li>
+                </ul>
+            </li>
+
+            <?php
+            }
+
+            ?>
                 <li>
                     <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Appointment</span></a>
                     <ul>
