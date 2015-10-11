@@ -19,7 +19,7 @@
 
     //<!-- Theme Style -->
     
-    echo link_tag('assets/css/stylesheets/style2.css');
+    echo link_tag('assets/css/stylesheets/style.css');
     
 
     //<!-- Responsive -->
