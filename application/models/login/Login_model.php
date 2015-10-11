@@ -12,7 +12,7 @@ class Login_model extends CI_Model {
             $response['status']=200;
             $response['user_type']=$row->type;
             $this->load->library('session');
-            $this->session->set_userdata(array('user_email' => $row->email));
+            $this->session->set_userdata(array('user_email' => $row->email, 'gender' => $row->gender));
         }
         else {
             $response['status']=401;

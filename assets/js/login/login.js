@@ -63,7 +63,8 @@ HSS.Login.prototype={
                                 type: "POST",
                                 dataType: 'JSON',
                                 data: {
-                                    email: response.email
+                                    email: response.email,
+                                    gender: gender
                                 },
                                 success: function (data) {
                                     console.log(data);

@@ -37,6 +37,11 @@
 <aside id="left-panel">
     <nav>
         <ul>
+            <?php
+            if(!$fb_login)
+            {
+
+            ?>
 
             <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Profile</span></a>
@@ -49,6 +54,13 @@
                     </li>
                 </ul>
             </li>
+
+            <?php
+            }
+
+            ?>
+
+            
             <li class="active">
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Appointment</span></a>
                 <ul>

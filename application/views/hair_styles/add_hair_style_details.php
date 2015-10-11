@@ -128,6 +128,19 @@
                                 </fieldset>
                                 <fieldset>
                                     <div class="row">
+                                        <section class="col col-6">
+                                            <label class="input"> <i class="icon-prepend fa fa-user"></i>
+                                                <select class="gender  form-control" name="gender" id="gender">
+                                                    <option>Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                                            </label>
+                                        </section>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="row">
                                         <section class="col col-lg-12">
                                             <div class="input input-file">
                                                     <span class="button">

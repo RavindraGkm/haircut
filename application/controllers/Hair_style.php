@@ -8,10 +8,11 @@ class Hair_style extends CI_Controller {
         {
             $this->load->database();
             $data['user_email']= $this->session->userdata('user_email');
+            $gender= $this->session->userdata('gender');
             $this->load->helper('html');
             $this->load->helper('url');
             $this->load->model("hair_style/Hair_style_model");
-            $response = $this->Hair_style_model->get_all_hair_styles();
+            $response = $this->Hair_style_model->get_all_hair_styles_by_gender($gender);
             $data['hair_styles_info']=$response;
             $this->db->close();
             $this->load->view('hair_styles/try_hair_styles',$data);
@@ -59,6 +60,7 @@ class Hair_style extends CI_Controller {
         $this->load->library('upload', $config);
         $post_data['style_name'] = $this->input->post('style_name');
         $post_data['style_price'] = $this->input->post('style_price');
+        $post_data['gender'] = $this->input->post('gender');
         if ($this->upload->do_upload('hair_style_image')) {
             $data = $this->upload->data();
             $hair_style_dummy_image = time().'_'.$_FILES["hair_style_image"]['name'];
