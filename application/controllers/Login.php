@@ -17,11 +17,13 @@ class Login extends CI_Controller {
     }
     public function login_with_fb() {
         $email = $this->input->post('email');
+        $gender = $this->input->post('gender');
         $this->load->library('session');
         $this->load->helper('url');
         $this->session->set_userdata('user_email',$email);
         $this->session->set_userdata('is_fb_login',true);
-        echo json_encode(array('status'=>200,'url'=>base_url()."abc"));
+        $this->session->set_userdata('gender',$gender);
+        echo json_encode(array('status'=>200,'url'=>base_url()."hair-style/try-hair-style"));
     }
 }
 ?>

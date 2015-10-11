@@ -59,12 +59,12 @@ HSS.Login.prototype={
                     if (response.status == 'connected') {
                         FB.api('/me?fields=id,name,email,first_name,gender', function(response) {
                             $.ajax({
-                                url: self.base_url+"logins/login-with-fb",
+                                url: self.base_url+"login/login-with-fb",
                                 type: "POST",
                                 dataType: 'JSON',
                                 data: {
                                     email: response.email,
-                                    gender: gender
+                                    gender: response.gender
                                 },
                                 success: function (data) {
                                     console.log(data);

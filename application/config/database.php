@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'haircut',
+	'hostname' => 'saloonhaircut.db.12055437.hostedresource.com',
+	'username' => 'saloonhaircut',
+	'password' => 'Whypass@123',
+	'database' => 'saloonhaircut',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
