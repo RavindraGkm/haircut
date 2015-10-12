@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
     <!-- Basic Page Needs -->
@@ -65,8 +64,8 @@
         <div class="header-wrap clearfix">
             <div class="logo-wrap">
                 <div id="logo" class="logo">
-                    <a href="<?php anchor('home'); ?>" rel="home">
-                        <?php echo img(array('src'=>'assets/img/images/logo.png', 'alt'=>'image')); ?>
+                    <a href="#" rel="home">
+                        <?php echo img(array('src'=>'assets/img/images/logo.png', 'alt'=>'images')); ?>
                     </a>
                 </div><!-- /.logo -->
             </div><!-- /.logo-wrap -->
@@ -75,20 +74,19 @@
                 <nav id="mainnav" class="mainnav">
                     <ul class="menu">
                         <li class="active">
-                            <a href="<?php anchor('',''); ?>">Home</a>
-                        </li>
-                        <li><a href="about-as.html">About</a></li>
-                        <li>
-                            <a href="gallery.html">Gallery</a>
+                            <?php echo anchor('home','Home'); ?>
                         </li>
                         <li>
-                            <a href="#">Event </a>
-                        </li>
-                        <li class="sub-right">
-                            <a href="#">Blog </a>
+                            <?php echo anchor('about','About'); ?>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <?php echo anchor('gallery','Gallery'); ?>
+                        </li>
+                        <li>
+                            <?php echo anchor('contact','Contact'); ?>
+                        </li>
+                        <li>
+                            <?php echo anchor('login','Login'); ?>
                         </li>
                     </ul><!-- /.menu -->
                 </nav><!-- /.mainnav -->
@@ -154,7 +152,9 @@
 </div><!-- /wrap-slide -->
 
 <!-- Information -->
-<section class="roll-row information" style="padding: 0">
+<?php
+
+/*<section class="roll-row information" style="padding: 0">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -168,6 +168,8 @@
     </div><!-- /.container -->
 </section>
 
+
+
 <!-- Button -->
 <section class="roll-row parallax parallax1" style="padding: 50px 0">
     <div class="container">
@@ -177,7 +179,9 @@
             </div><!-- /.col-md-12 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
-</section>
+</section>*/
+
+?>
 
 <!-- Services -->
 <section class="roll-row" style="padding: 0">
@@ -196,14 +200,14 @@
                         <a href="#" class="roll-button white">See all cuts</a>
                     </div><!-- /.roll-services -->
                     <div class="photo">
-                        <img src="images/1.jpg" alt="image">
+                        <img src="<?php echo base_url(); ?>assets/img/images/1.jpg" alt="image">
                     </div>
                 </div><!-- /.item -->
             </div><!-- /.col-md-4 -->
             <div class="col-md-4" style="background-color: #66c7cc; padding: 0">
                 <div class="item">
                     <div class="photo">
-                        <img src="images/2.jpg" alt="image">
+                        <img src="<?php echo base_url(); ?>assets/img/images/2.jpg" alt="image">
                     </div>
                     <div class="roll-services">
                         <p class="sub">Monarch Salon</p>
@@ -230,7 +234,7 @@
                         <a href="#" class="roll-button white">See all Coloring</a>
                     </div><!-- /.roll-services -->
                     <div class="photo">
-                        <img src="images/3.jpg" alt="image">
+                        <img src="<?php echo base_url(); ?>assets/img/images/3.jpg" alt="image">
                     </div>
                 </div><!-- /.item -->
             </div><!-- /.col-md-4 -->
@@ -248,21 +252,21 @@
                     <div class="customer">
                         <blockquote class="text">Polite, professional, charming &amp; courteous team. The best haircut<br> I have ever had! Barber was full of crack, was more than happy to<br> suggest the best cut for me!</blockquote>
                         <div class="person text-center">
-                            <img src="images/1.png" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/1.png" alt="image">
                             <h5 class="name">- Pradeep Chauhan, Client -</h5>
                         </div>
                     </div>
                     <div class="customer">
                         <blockquote class="text">Polite, professional, charming &amp; courteous team. The best haircut<br> I have ever had! Barber was full of crack, was more than happy to<br> suggest the best cut for me!</blockquote>
                         <div class="person text-center">
-                            <img src="images/2.jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/2.jpg" alt="image">
                             <h5 class="name">- Ravindra Singh, Client -</h5>
                         </div>
                     </div>
                     <div class="customer">
                         <blockquote class="text">Polite, professional, charming &amp; courteous team. The best haircut<br> I have ever had! Barber was full of crack, was more than happy to<br> suggest the best cut for me!</blockquote>
                         <div class="person text-center">
-                            <img src="images/3.jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/3.jpg" alt="image">
                             <h5 class="name">- Ravi Sen, Client -</h5>
                         </div>
                     </div>
@@ -322,14 +326,14 @@
                     <div class="roll-toggle">
                         <div class="toggle-title active">Haircut Style</div>
                         <div class="toggle-content">
-                            <img src="images/4.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/4.jpg" alt="images">
                             <p>Ravi Sen.</p>
                         </div>
                     </div><!-- /toggle -->
                     <div class="roll-toggle">
                         <div class="toggle-title">Coloring</div>
                         <div class="toggle-content">
-                            <img src="images/4.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/4.jpg" alt="images">
                             <div class="info">
                                 <p class="desc-info">Ravi sen.</p>
                             </div>
@@ -338,7 +342,7 @@
                     <div class="roll-toggle">
                         <div class="toggle-title">Breads Style</div>
                         <div class="toggle-content">
-                            <img src="images/4.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/4.jpg" alt="images">
                             <div class="info">
                                 <p class="desc-info">Ravi sen.</p>
                             </div>
@@ -347,7 +351,7 @@
                     <div class="roll-toggle">
                         <div class="toggle-title">Spa </div>
                         <div class="toggle-content">
-                            <img src="images/4.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/4.jpg" alt="images">
                             <div class="info">
                                 <p class="desc-info">Ravi sen.</p>
                             </div>
@@ -356,7 +360,7 @@
                     <div class="roll-toggle">
                         <div class="toggle-title">Tatto</div>
                         <div class="toggle-content">
-                            <img src="images/4.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/4.jpg" alt="images">
                             <div class="info">
                                 <p class="desc-info">Ravi sen.</p>
                             </div>
@@ -385,15 +389,15 @@
                     </ul><!-- /.menu-tab -->
                     <div class="content-tab">
                         <div class="content-inner">
-                            <img src="images/5.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/5.jpg" alt="images">
                             <p>Use Best Quality Product.</p>
                         </div>
                         <div class="content-inner">
-                            <img src="images/7.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/7.jpg" alt="images">
                             <p>Apply By Expert.</p>
                         </div>
                         <div class="content-inner">
-                            <img src="images/6.jpg" alt="images">
+                            <img src="<?php echo base_url(); ?>assets/img/images/6.jpg" alt="images">
                             <p>Get Good Result.</p>
                         </div>
                     </div><!-- /.content-tab -->
@@ -404,7 +408,7 @@
 </section>
 
 <!-- Appointment -->
-<section class="roll-row" style="padding: 0; background: url(images/parallax6.jpg);">
+<section class="roll-row" style="padding: 0; background: url('assets/img/images/parallax6.jpg');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6" style="padding: 0">
@@ -490,7 +494,7 @@
             <div class="roll-news">
                 <div class="article">
                     <div class="featured-post">
-                        <img src="images/1.jpg" alt="image">
+                        <img src="<?php echo base_url(); ?>assets/img/images/1.jpg" alt="image">
                         <ul class="post-format">
                             <li class="date">
                                 <span class="day">01</span>
@@ -514,7 +518,7 @@
                 <div class="article">
                     <div class="item-post">
                         <div class="featured-post">
-                            <img src="images/2.jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/2.jpg" alt="image">
                             <ul class="post-format">
                                 <li class="date">
                                     <span class="day">07</span>
@@ -539,7 +543,7 @@
                 <div class="article">
                     <div class="item-post">
                         <div class="featured-post">
-                            <img src="images/3.jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>asssets/img/images/3.jpg" alt="image">
                             <ul class="post-format">
                                 <li class="date">
                                     <span class="day">08</span>
@@ -564,7 +568,7 @@
                 <div class="article">
                     <div class="item-post">
                         <div class="featured-post">
-                            <img src="images/4(2).jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/4(2).jpg" alt="image">
                             <ul class="post-format">
                                 <li class="date">
                                     <span class="day">12</span>
@@ -589,7 +593,7 @@
                 <div class="article">
                     <div class="item-post">
                         <div class="featured-post">
-                            <img src="images/5.jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/5.jpg" alt="image">
                             <ul class="post-format">
                                 <li class="date">
                                     <span class="day">18</span>
@@ -614,7 +618,7 @@
                 <div class="article">
                     <div class="item-post">
                         <div class="featured-post">
-                            <img src="images/1.jpg" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/1.jpg" alt="image">
                             <ul class="post-format">
                                 <li class="date">
                                     <span class="day">12</span>
@@ -660,7 +664,7 @@
     <div class="roll-gallery">
         <div class="owl-carousel">
             <div class="item">
-                <img src="images/1.jpg" alt="image">
+                <img src="<?php echo base_url(); ?>assets/img/images/1.jpg" alt="image">
                 <div class="hover">
                 </div><!-- /.hover -->
                 <div class="gallery-content">
@@ -673,7 +677,7 @@
                 </div><!-- /.gallery-content -->
             </div>
             <div class="item">
-                <img src="images/2.jpg" alt="image">
+                <img src="<?php echo base_url(); ?>assets/img/images/2.jpg" alt="image">
                 <div class="hover">
                 </div><!-- /.hover -->
                 <div class="gallery-content">
@@ -686,7 +690,7 @@
                 </div><!-- /.gallery-content -->
             </div>
             <div class="item">
-                <img src="images/3.jpg" alt="image">
+                <img src="<?php echo base_url(); ?>assets/img/images/3.jpg" alt="image">
                 <div class="hover">
                 </div><!-- /.hover -->
                 <div class="gallery-content">
@@ -699,7 +703,7 @@
                 </div><!-- /.gallery-content -->
             </div>
             <div class="item">
-                <img src="images/4(2).jpg" alt="image">
+                <img src="<?php echo base_url(); ?>assets/img/images/4(2).jpg" alt="image">
                 <div class="hover">
                 </div><!-- /.hover -->
                 <div class="gallery-content">
@@ -708,7 +712,7 @@
                 </div><!-- /.gallery-content -->
             </div>
             <div class="item">
-                <img src="images/1.jpg" alt="image">
+                <img src="<?php echo base_url(); ?>assets/img/images/1.jpg" alt="image">
                 <div class="hover">
                 </div><!-- /.hover -->
                 <div class="gallery-content">
@@ -717,7 +721,7 @@
                 </div><!-- /.gallery-content -->
             </div>
             <div class="item">
-                <img src="images/2.jpg" alt="image">
+                <img src="<?php echo base_url(); ?>assets/img/images/2.jpg" alt="image">
                 <div class="hover">
                 </div><!-- /.hover -->
                 <div class="gallery-content">
@@ -734,7 +738,7 @@
 </section>
 
 <!-- Contact -->
-<section class="roll-row" style="padding: 75px 0; background: url(images/contact.jpg)">
+<section class="roll-row" style="padding: 75px 0; background: url('assets/img/images/contact.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -749,7 +753,7 @@
 </section>
 
 <!-- Contact Form -->
-<section class="roll-row" style="background: url(images/contact-form.jpg)">
+<section class="roll-row" style="background: url('assets/img/images/contact-form.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -791,7 +795,7 @@
                 <div class="col-md-3">
                     <div class="widget widget-about">
                         <div class="logo-footer">
-                            <img src="images/logo.png" alt="image">
+                            <img src="<?php echo base_url(); ?>assets/img/images/logo.png" alt="image">
                         </div>
                         <p>Best salon in rajasthan.</p>
                         <ul class="socials clearfix">
@@ -817,7 +821,7 @@
                         <ul class="posts clearfix">
                             <li>
                                 <div class="thumb">
-                                    <img src="images/6.png" alt="image">
+                                    <img src="<?php echo base_url(); ?>assets/img/images/6.png" alt="image">
                                 </div>
                                 <div class="text">
                                     <h6><a href="#">Monarch Salon</a></h6>
@@ -826,7 +830,7 @@
                             </li>
                             <li>
                                 <div class="thumb">
-                                    <img src="images/7.png" alt="image">
+                                    <img src="<?php echo base_url(); ?>assets/img/images/7.png" alt="image">
                                 </div>
                                 <div class="text">
                                     <h6><a href="#">Monarch Salon </a></h6>
@@ -879,8 +883,8 @@
 
 <!-- Javascript -->
 <?php
-echo script_tag('assest/js/home/jquery.min.js');
-/*echo script_tag('assets/js/home/bootstrap.min.js');
+echo script_tag('assets/js/home/jquery.min.js');
+echo script_tag('assets/js/home/bootstrap.min.js');
 echo script_tag('assets/js/home/jquery.easing.js');
 echo script_tag('assets/js/home/jquery-waypoints.js');
 echo script_tag('assets/js/home/jquery.flexslider-min.js');
@@ -891,25 +895,8 @@ echo script_tag('assets/js/home/switcher.js');
 echo script_tag('assets/js/home/jquery.tweet.min.js');
 echo script_tag('assets/js/home/jquery.matchHeight-min.js');
 echo script_tag('assets/js/home/jquery-validate.js');
-echo script_tag('assets/js/home/jquery-validate.js');
 echo script_tag('assets/js/home/jquery.sticky.js');
-echo script_tag('assets/js/home/main.js');*/
-
-//<script type="text/javascript" src="javascript/jquery.min.js"></script>
-//<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-//<script type="text/javascript" src="javascript/jquery.easing.js"></script>
-//<script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
-//<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-//<script type="text/javascript" src="javascript/owl.carousel.js"></script>
-//<script type="text/javascript" src="javascript/parallax.js"></script>
-//<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-
-//<!--<script type="text/javascript" src="javascript/switcher.js"></script>-->
-//<script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
-//<script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
-//<script type="text/javascript" src="javascript/jquery-validate.js"></script>
-//<script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-//<script type="text/javascript" src="javascript/main.js"></script>
+echo script_tag('assets/js/home/main.js');
 ?>
 
 </body>

@@ -558,10 +558,10 @@
       var retina = window.devicePixelRatio > 1 ? true : false;
 
         if(retina) {
-            $('.header .logo').find('img').attr({src:'./images/logo@2x.png',width:'300',height:'150'});
-            $('.home-dark .header .logo').find('img').attr({src:'./images/logo_dark2@2x.png',width:'300',height:'150'});
-            $('.home-2 .header .logo').find('img').attr({src:'./images/logo_3@2x.png',width:'300',height:'150'});
-            $('.header .logo.small').find('img').attr({src:'./images/logo_small@2x.png',width:'454',height:'120'});           
+            //$('.header .logo').find('img').attr({src:'../images/logo@2x.png',width:'300',height:'150'});
+            //$('.home-dark .header .logo').find('img').attr({src:'./images/logo_dark2@2x.png',width:'300',height:'150'});
+            //$('.home-2 .header .logo').find('img').attr({src:'./images/logo_3@2x.png',width:'300',height:'150'});
+            //$('.header .logo.small').find('img').attr({src:'./images/logo_small@2x.png',width:'454',height:'120'});           
         }
     };
     
