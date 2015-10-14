@@ -842,10 +842,10 @@
                             <form method="post" action="#" id="subscribe-form" data-mailchimp="true">
                                 <div id="subscribe-content">
                                     <div class="input-wrap email">
-                                        <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Email Address">
+                                        <input type="text" id="subscribe_email" name="subscribe-subscribe_email" placeholder="Email Address" class="subscribe_email">
                                     </div>
                                     <div class="button-wrap">
-                                        <button type="button" id="subscribe-button" class="subscribe-button" title="Subscribe now"> + </button>
+                                        <button type="button" id="subscribe_button" class="subscribe_button" title="Subscribe now"> + </button>
                                     </div>
                                 </div>
                                 <div id="subscribe-msg"></div>
