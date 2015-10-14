@@ -50,6 +50,7 @@ class Appointment extends CI_Controller {
         $data['booking_with']=$this->input->post('booking_with');
         $data['booking_timing']=$this->input->post('booking_timing');
         $data['mobile']=$this->input->post('mobile');
+        $data['service']=$this->input->post('service');
         $data['user_email']=$this->input->post('user_email');
         $this->load->model('appointment/Appointment_model');
         $response=$this->Appointment_model->book_new_appointment($data);

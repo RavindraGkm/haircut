@@ -394,16 +394,16 @@
                         </div>
                         <form class="appointment-form" id="appointment-form">                          
                             <div class="input-wrap name">
-                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="name" id="name" class="name" required>
+                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="appointment_name" id="appointment_name" class="appointment_name" required>
                             </div>
                             <div class="input-wrap phone input-small pull-left">
-                                <input type="text" value="" tabindex="1" placeholder="Phone number" name="mobile" id="mobile" class="mobile" required>
+                                <input type="text" value="" tabindex="1" placeholder="Phone number" name="appointment_mobile" id="appointment_mobile" class="appointment_mobile" required>
                             </div>
                             <div class="input-wrap email input-small last pull-right">
-                                <input type="email" value="" tabindex="2" placeholder="E-mail address" name="email" id="email" class="email" required>
+                                <input type="email" value="" tabindex="2" placeholder="E-mail address" name="appointment_email" id="appointment_email" class="appointment_email" required>
                             </div>
                             <div class="wrap-select services">
-                                <select class="select-field service" name="appointment_services" id="appointment_services">
+                                <select class="select-field service appointment_services" name="appointment_services" id="appointment_services">
                                     <option value="" selected="selected"> Choose service </option>
                                     <option value="BeardCuts">BeardCuts </option>
                                     <option value="Haircuts"> Haircuts</option>
@@ -411,7 +411,7 @@
                                 </select> 
                             </div><!-- /.wrap-select -->
                             <div class="wrap-select barber">
-                                <select class="select-field barber booking_with" name="booking_with" id="booking_with">
+                                <select class="select-field barber appointment_booking_with" name="appointment_booking_with" id="appointment_booking_with">
                                     <option> Choose barber </option>
                                     <?php
                                     foreach($employees as $employee) {
@@ -422,10 +422,10 @@
                             </div><!-- /.wrap-select --> 
                             <div class="group-select clearfix">
                                 <div class="wrap-select-group">    
-                                    <input type="text" id="datepicker" placeholder="Date / Month" name="appointment_date" id="appointment_date">
+                                    <input type="text" id="datepicker" class="appointment_date" placeholder="Date / Month" name="appointment_date" id="appointment_date">
                                 </div><!-- /.wrap-select --> 
                                 <div class="wrap-select-group">
-                                    <select class="select-field time" name="appointment_time">
+                                    <select class="select-field time appointment_time" name="appointment_time" id="appointment_time">
                                         <option value="" selected="selected"> Time </option>
                                         <option value="09:00 am"> 0:00 AM </option>
                                         <option value="10:00 am"> 08:00 AM</option>
@@ -444,7 +444,8 @@
                                 </div><!-- /.wrap-select --> 
                             </div><!-- /.group-select -->
                             <div class="submit-form">
-                                <button class="roll-button white">Appointment</button>
+                                <button class="roll-button white appointment_button">Appointment</button>
+                                <button class="roll-button white appointment_reset_button hidden">Reset</button>
                             </div>
                         </form><!-- /.comment-form -->                  
                     </div><!-- /.item -->

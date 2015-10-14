@@ -5,8 +5,8 @@ class Appointment_model extends CI_Model {
         $booking_date = new DateTime($data['booking_date']);
         $booking_date = $booking_date->format('Y-m-d');
         $status='pending';
-        $sql= "INSERT INTO booking_request (name, booking_date, booking_with, booking_timing, mobile, status, user_email) VALUES (?,?,?,?,?,?,?)";
-        $values= array($data['name'],$booking_date,$data['booking_with'],$data['booking_timing'], $data['mobile'],$status, $data['user_email']);
+        $sql= "INSERT INTO booking_request (name, booking_date, booking_with, booking_timing, mobile, service, user_email, status) VALUES (?,?,?,?,?,?,?,?)";
+        $values= array($data['name'],$booking_date,$data['booking_with'],$data['booking_timing'], $data['mobile'], $data['service'], $data['user_email'], $status);
         if($this->db->query($sql,$values)) 
         {
             $response['status']=200;

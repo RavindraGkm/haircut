@@ -4,7 +4,6 @@ HSS.BookAppointment=function(){
 }
 HSS.BookAppointment.prototype={
     initialize:function(){
-        this.get_employees_name_at_home_page();
         this.get_employees_name();
         this.book_appointment();
     },
@@ -44,6 +43,7 @@ HSS.BookAppointment.prototype={
                     booking_with: $('#booking_with').val(),
                     booking_timing: $('#booking_timing').val(),
                     mobile: $('#mobile').val(),
+                    service: $('#service').val(),
                     user_email: $('#user_email').val()
                 },
                 beforeSend:function(){

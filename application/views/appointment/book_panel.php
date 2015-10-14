@@ -158,6 +158,18 @@
                                                     <input type="hidden" name="user_email" id="user_email" value="<?php echo $user_email; ?>">
                                                 </label>
                                             </section>
+                                            <section class="col col-6 ">
+                                                <label class="input">
+                                                    <select class="service form-control" id="service">
+                                                         <option>Services</option>
+                                                         <option value="beard cuts">Beard Cuts</option>
+                                                         <option value="haircuts">Haircuts</option>
+                                                         <option value="coloring">Coloring</option>
+                                                    </select>
+
+                                                </label>
+                                            </section>
+
                                         </div>
                                     </fieldset>
                                     <footer>
