@@ -32,7 +32,6 @@
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body class="header-sticky home">   
     <div class="loader">
         <span class="loader1 block-loader"></span>
@@ -404,7 +403,7 @@
                                 <input type="email" value="" tabindex="2" placeholder="E-mail address" name="email" id="email" class="email" required>
                             </div>
                             <div class="wrap-select services">
-                                <select class="select-field service" name="appointment_services">
+                                <select class="select-field service" name="appointment_services" id="appointment_services">
                                     <option value="" selected="selected"> Choose service </option>
                                     <option value="BeardCuts">BeardCuts </option>
                                     <option value="Haircuts"> Haircuts</option>
@@ -414,6 +413,11 @@
                             <div class="wrap-select barber">
                                 <select class="select-field barber booking_with" name="booking_with" id="booking_with">
                                     <option> Choose barber </option>
+                                    <?php
+                                    foreach($employees as $employee) {
+                                        echo "<option value='$employee[id]'>$employee[name]</option>";
+                                    }
+                                    ?>
                                 </select> 
                             </div><!-- /.wrap-select --> 
                             <div class="group-select clearfix">
@@ -868,11 +872,11 @@
     echo script_tag('assets/js/home/jquery.sticky.js');
     echo script_tag('assets/js/home/main.js');
     echo script_tag('assets/js/notification/SmartNotification.min.js');
-    echo script_tag('assets/js/contact/contact.js');
+    echo script_tag('assets/js/home.js');
     ?>
     <script type="text/javascript">
         $(document).ready(function(){
-            new HSS.Contact();
+            new HSS.Home();
         });
     </script>
 </body>
