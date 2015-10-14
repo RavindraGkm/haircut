@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
     <!-- Basic Page Needs -->
@@ -8,45 +7,24 @@
     <meta name="description" content="Monarch Salon is modern, clean and professionally Barbershop, Hail Salon, Beauty Salon, Tatto Salon and Spa Salon. ">
     <meta name="keywords" content="uaipur best salon,best salon in rajasthan,barber, barber's, barbershop, barber shop, hair salon, beard, beauty, hair, haircut, beardcut, salon, makeup, style, stylist, coloring">
     <meta name="author" content="monarchsalon.com">
-
-    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Bootstrap  -->
     <?php
-
-    echo link_tag('assets/css/stylesheets/bootstrap.css');    
-
-    //<!-- Theme Style -->
-    
+    echo link_tag('assets/css/stylesheets/bootstrap.css');
     echo link_tag('assets/css/stylesheets/style.css');
-    
-
-    //<!-- Responsive -->
-     echo link_tag('assets/css/stylesheets/responsive.css'); 
-
-    //<!-- Colors -->
-
-    echo link_tag('assets/css/stylesheets/colors/color1.css'); 
-
-    //<!-- Animation Style -->
+    echo link_tag('assets/css/stylesheets/responsive.css');
+    echo link_tag('assets/css/stylesheets/colors/color1.css');
     echo link_tag('assets/css/stylesheets/animate.css');
-
     ?>
-
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,900' rel='stylesheet' type='text/css'>
-
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
     <!-- Favicon and touch icons  -->
     <link href="assets/img/images/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
     <link href="assets/img/images/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
     <link href="assets/img/images/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
     <link href="assets/img/images/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="assets/img/images/favicon.png" rel="shortcut icon">
-
     <!--[if lt IE 9]>
     <script src="javascript/html5shiv.js"></script>
     <script src="javascript/respond.min.js"></script>
@@ -643,16 +621,16 @@
 
 <!--&lt;!&ndash; Promotion &ndash;&gt;-->
 <!--<section class="roll-row" style="padding: 0">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-12">-->
-                <!--<div class="roll-promotion clearfix">-->
-                    <!--<div class="title-promotion"><span class="text-color">Like this template?</span> Get your copy of this great theme now!</div>-->
-                    <!--<a href="#" class="roll-button">Purchase</a>-->
-                <!--</div>&lt;!&ndash; /.roll-promotion &ndash;&gt;-->
-            <!--</div>&lt;!&ndash; /.col-md-12 &ndash;&gt;-->
-        <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
-    <!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-12">-->
+<!--<div class="roll-promotion clearfix">-->
+<!--<div class="title-promotion"><span class="text-color">Like this template?</span> Get your copy of this great theme now!</div>-->
+<!--<a href="#" class="roll-button">Purchase</a>-->
+<!--</div>&lt;!&ndash; /.roll-promotion &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.col-md-12 &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
 <!--</section>-->
 
 <!-- Gallery -->
@@ -665,8 +643,8 @@
                 </div><!-- /.hover -->
                 <div class="gallery-content">
                     <!--<ul class="gallery-link">-->
-                        <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
-                        <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
+                    <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
+                    <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
                     <!--</ul>-->
                     <h3>Ayesha Khan</h3>
                     <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
@@ -678,8 +656,8 @@
                 </div><!-- /.hover -->
                 <div class="gallery-content">
                     <!--<ul class="gallery-link">-->
-                        <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
-                        <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
+                    <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
+                    <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
                     <!--</ul>-->
                     <h3>Ragini Tank</h3>
                     <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
@@ -691,8 +669,8 @@
                 </div><!-- /.hover -->
                 <div class="gallery-content">
                     <!--<ul class="gallery-link">-->
-                        <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
-                        <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
+                    <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
+                    <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
                     <!--</ul>-->
                     <h3>Neeti Verma</h3>
                     <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
@@ -722,8 +700,8 @@
                 </div><!-- /.hover -->
                 <div class="gallery-content">
                     <!--<ul class="gallery-link">-->
-                        <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
-                        <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
+                    <!--<li class="icon-s FromLeft"><span class="icon-search5"></span></li>-->
+                    <!--<li class="icon-l FromRight"><span class="icon-location5"></span></li>-->
                     <!--</ul>-->
                     <h3>Divya Sharma</h3>
                     <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
@@ -879,8 +857,8 @@
 
 <!-- Javascript -->
 <?php
-echo script_tag('assest/js/home/jquery.min.js');
-/*echo script_tag('assets/js/home/bootstrap.min.js');
+echo script_tag('assets/js/home/jquery.min.js');
+echo script_tag('assets/js/home/bootstrap.min.js');
 echo script_tag('assets/js/home/jquery.easing.js');
 echo script_tag('assets/js/home/jquery-waypoints.js');
 echo script_tag('assets/js/home/jquery.flexslider-min.js');
@@ -893,23 +871,7 @@ echo script_tag('assets/js/home/jquery.matchHeight-min.js');
 echo script_tag('assets/js/home/jquery-validate.js');
 echo script_tag('assets/js/home/jquery-validate.js');
 echo script_tag('assets/js/home/jquery.sticky.js');
-echo script_tag('assets/js/home/main.js');*/
-
-//<script type="text/javascript" src="javascript/jquery.min.js"></script>
-//<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-//<script type="text/javascript" src="javascript/jquery.easing.js"></script>
-//<script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
-//<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-//<script type="text/javascript" src="javascript/owl.carousel.js"></script>
-//<script type="text/javascript" src="javascript/parallax.js"></script>
-//<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-
-//<!--<script type="text/javascript" src="javascript/switcher.js"></script>-->
-//<script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
-//<script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
-//<script type="text/javascript" src="javascript/jquery-validate.js"></script>
-//<script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-//<script type="text/javascript" src="javascript/main.js"></script>
+echo script_tag('assets/js/home/main.js');
 ?>
 
 </body>
