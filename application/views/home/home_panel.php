@@ -66,7 +66,7 @@
                                 <a href="<?php echo base_url(); ?>contact">Contact </a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url(); ?>login" target="_blank">Login</a>
+                                <a href="<?php echo base_url(); ?>login">Login</a>
                             </li>
                         </ul><!-- /.menu -->
                     </nav><!-- /.mainnav -->
@@ -735,7 +735,11 @@
                         <p class="sub text-color">Haircuts &amp; Beards</p>
                         <h2 class="main text-dark">Contact Form</h2>
                     </div>                    
-                        <form class="roll-contact-form short" id="contactform">                          
+                    <div class="alert alert-warning alert-dismissible hidden" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">X</span></button>
+                        Hello, we received your message. We will shortly contact you.
+                    </div>
+                        <form class="roll-contact-form short my_contact_form" id="contactform">                          
                             <div class="input-wrap name">
                                 <input type="text" value="" tabindex="1" placeholder="Full Name" name="contact_name" id="contact_name" class="contact_name" required>
                             </div>

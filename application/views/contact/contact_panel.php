@@ -80,7 +80,7 @@
                                 <a href="<?php echo base_url(); ?>contact">Contact </a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url(); ?>login" target="_blank">Login</a>
+                                <a href="<?php echo base_url(); ?>login">Login</a>
                             </li>
                         </ul><!-- /.menu -->
                     </nav><!-- /.mainnav -->
@@ -128,6 +128,10 @@
             <div class="row">
                 <div class="col-md-7">
                     <h1>Contact Form</h1>
+                    <div class="alert alert-warning alert-dismissible hidden" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">X</span></button>
+                        Hello, we received your message. We will shortly contact you.
+                    </div>
                     <form class="roll-contact-form" id="contactform">                          
                         <div class="input-wrap name">
                             <input type="text" value="" tabindex="1" placeholder="Full Name" class="contact_name" name="contact_name" id="contact_name" required>

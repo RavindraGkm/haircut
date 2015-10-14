@@ -80,7 +80,7 @@
                                 <a href="<?php echo base_url(); ?>contact">Contact </a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url(); ?>login" target="_blank">Login</a>
+                                <a href="<?php echo base_url(); ?>login">Login</a>
                             </li>
                         </ul><!-- /.menu -->
                     </nav><!-- /.mainnav -->
