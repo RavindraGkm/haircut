@@ -4,6 +4,7 @@ HSS.BookAppointment=function(){
 }
 HSS.BookAppointment.prototype={
     initialize:function(){
+        this.get_employees_name_at_home_page();
         this.get_employees_name();
         this.book_appointment();
     },
@@ -13,7 +14,7 @@ HSS.BookAppointment.prototype={
                 type:"GET",
                 dataType:"JSON",
                 success:function(data){
-                    console.log(data);
+                    //console.log(data);
                     for(var i=0;i<data.length;i++) {
                         var row = "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
                         $("#booking_with").append(row);
@@ -21,6 +22,7 @@ HSS.BookAppointment.prototype={
             }
         });
     },
+    
     book_appointment:function(){
         var self=this;
         $('.booking_timing').timepicker({

@@ -181,22 +181,26 @@
 	box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1) inset;
 }
 
-.roll-working-hours .shop-close {
-	background: #f96868;
+.roll-working-hours li:first-child,
+.roll-working-hours li:last-child {
+	background: #f96868;	
 }
 
-.roll-working-hours .shop-close h3 {
+.roll-working-hours li h3 {
 	font-size: 60px;
 	line-height: 60px;		
 }
 
-.roll-working-hours .shop-close p {
+.roll-working-hours p {
 	font-size: 13px;
 	color: #4c4c4c;
 	font-weight: 400;
 }
 
-.roll-working-hours .shop-close h3 {
+.roll-working-hours li:first-child p,
+.roll-working-hours li:last-child p ,
+.roll-working-hours li:first-child h3,
+.roll-working-hours li:last-child h3 {
 	color: #fff;
 }
 
@@ -583,6 +587,12 @@
 	width: 100%;	
 }
 
+#appointment-form #datepicker {
+	width: 200px;
+	float: left;
+	margin-right: 5px;
+}
+
 #appointment-form .input-wrap.input-small {
 	width: 49.5%;
 	margin-right: 1%;
@@ -668,7 +678,7 @@
 #appointment-form .wrap-select.services .styledSelect:after,
 #appointment-form .wrap-select.barber .styledSelect:after{
     content: "";
-    background: url("../images/row.png");
+    background: url('../../img/trial/icon/row.png');
     background-repeat: no-repeat;
     color: #fff;
     top: 15px;
@@ -712,6 +722,21 @@
 
 #appointment-form .roll-button {
 	padding: 22px 40px;
+}
+
+#appointment-form .error,
+#appointment-form .roll-alert.msg-error {
+	color: #f96868;
+	font-style: italic;
+}
+
+#appointment-form .roll-alert.msg-success {
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+#appointment-form input.error {
+    border: 1px solid #f96868;
 }
 
 /* Roll-news

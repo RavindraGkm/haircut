@@ -235,6 +235,10 @@
 		width: 100%;
 	}
 
+	.roll-services .main {
+		font-size: 40px;
+	}
+
 	.roll-titlebox .main,
 	.roll-contact .mail {
 		font-size: 25px;
@@ -351,6 +355,12 @@
 }
 
 @media (max-width: 479px) {
+	.boxed .top-slider .flexslider .flex_caption,
+	.home3 .top-slider .flexslider .flex_caption {
+		margin-top: 14px;
+		margin-left: 15px;
+	}
+
 	.top-slider .flexslider .slides li {height: 400px;}
 
 	.top-slider .flexslider .flex_caption {

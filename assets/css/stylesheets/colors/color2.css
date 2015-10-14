@@ -1,0 +1,107 @@
+/**
+  * Color
+  * Border Color
+  * Background Color
+  * Shadow Color
+*/
+
+/* Color
+-------------------------------------------------------------- */
+#mainnav ul li a:hover,
+.top-slider .flexslider .flex_caption h3,
+.text-color,
+.roll-information span::before,
+.roll-testimonials blockquote::before,
+.roll-testimonials.v2 blockquote::after,
+.widget.widget-tweets ul li a,
+.widget-subscribe .subscribe-button,
+.roll-titlebox .sub,
+.roll-list li a:hover,
+.roll-news .article ul.sharebar li a:hover span,
+.widget-about ul li a:hover span,
+.bottom .copyright span,
+.bottom .copyright a:hover,
+.page-title h1,
+.roll-title .main,
+.page-title .breadcrumbs ul li a:hover,
+.widget.widget-search #searchform #searchsubmit,
+.sidebar .widget ul li span,
+.widget.widget-popular-news ul li .text p::before,
+.widget ul li a:hover,
+.event .content-post ul.meta-post li a:hover,
+.event .content-post ul.meta-post li::before,
+.event .content-post h2 a:hover,
+.widget.widget-posts ul li a:hover,
+.widget.widget-tag .tag-list a:hover,
+.comments-area .comment-metadata h5 a:hover,
+.comments-area .reply a:hover,
+.roll-project.extended .item-wrap .project-text h6,
+.gallery-single h6.sub-title,
+.gallery-single .socials li a:hover span,
+.roll-contact-info li::before,
+.roll-team .socials li a:hover span,
+.post .meta-post li::before,
+.post .meta-post li a:hover,
+.post.single .author-post .text .position,
+.post-full-width .socials li a:hover span,
+.error404 .number,
+.btn-menu {
+	color: #66c7cc;
+}
+
+/* Border Color
+-------------------------------------------------------------- */
+.roll-contact-form input:focus, 
+.roll-contact-form textarea:focus,
+#subscribe-form #subscribe-email:focus,
+.widget.widget-tag .tag-list a.active,
+.comment-respond input:focus, 
+.comment-respond textarea:focus,
+.roll-project > ul > li.active {
+	border: 1px solid #66c7cc;
+}
+
+.post .more-link a:hover {
+	border: 2px solid #66c7cc;
+}
+
+
+/* Background Color
+-------------------------------------------------------------- */
+.roll-button,
+.flexslider .flex-control-nav li a.flex-active,
+.roll-working-hours li:first-child,
+.roll-working-hours li:last-child,
+.roll-accordion .toggle-title.active,
+.roll-list li::before,
+.roll-tabs ul.menu-tab li.active,
+.roll-news .post-format li,
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span,
+.roll-gallery .gallery-link li,
+.sidebar .widget ul li::before,
+.widget.widget-tag .tag-list a.active,
+.roll-project > ul > li.active,
+.roll-pagination li.active,
+.flexslider .flex-direction-nav a,
+.owl-theme .owl-controls .owl-nav div:hover,
+.post .featured-post .post-comment li,
+.post .more-link a:hover,
+.comment-respond .comment-submit,
+.post-full-width .post-format li {
+	background-color: #66c7cc;
+}
+
+/* Shadow Color
+-------------------------------------------------------------- */
+.owl-theme .owl-controls .owl-nav div:hover {    
+    box-shadow: 0 -2px 0 #66c7cc inset;
+}
+
+.comments-area .reply .comment-reply-link::before,
+.post .featured-post .post-format li.year::after,
+.post .featured-post .post-comment .comment::after {
+	background: url('../../images/icon/reply_color1.png');
+}
+
+

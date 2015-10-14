@@ -12,10 +12,10 @@ $(document).ready(function() {
                   '<div class="sw-odd"><h3>Choose accent color:</h3>'+
                   '<div class="ws-colors">'+
                      '<a href="#" class="styleswitch" id="color2">'+
-                        '<img src="images/color-1.png" alt="image" style="width:40px; height: 41px;">'+
+                        '<img src="images/icon/color-1.png" alt="image" style="width:40px; height: 41px;">'+
                      '</a>'+
                      '<a href="#" class="styleswitch" id="color1">'+
-                        '<img src="images/color-2.png" alt="image" style="width:40px; height: 41px;">'+
+                        '<img src="images/icon/color-2.png" alt="image" style="width:40px; height: 41px;">'+
                      '</a>'+
                   '</div></div>'+
                   '<!--<div class="sw-even" style="height:0;"><h3>Color chema:</h3>'+
@@ -81,8 +81,8 @@ $(document).ready(function() {
             logo = 'images/logo_' + e + '.png';
             logo_small = 'images/logo_small_' + e + '.png';              
             if(e === t.defaultColor){
-                logo = 'images/logo.png'
-                logo_small = 'images/logo_small.png'
+                logo = '../img/trial/logo.png'
+                logo_small = '../img/trial/logo_small.png'
             }
              
             $('.header .logo').find('img').attr('src',logo);

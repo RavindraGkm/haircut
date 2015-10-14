@@ -17,7 +17,7 @@
 <body class="">
 <header id="header">
     <div id="logo-group">
-        <span id="logo"> <img src="assets/img/logo.png" alt="SmartAdmin"> </span>
+        <span id="logo"> <img src="assets/img/images/logo.png" alt="SmartAdmin"> </span>
     </div>
     <div class="pull-right">
         <div id="logout" class="btn-header transparent pull-right">

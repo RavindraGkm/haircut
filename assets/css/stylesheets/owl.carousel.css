@@ -304,7 +304,7 @@
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-prev:before {
-    background: url('../images/prev.png') no-repeat center center;
+    background: url('../../img/trial/icon/prev.png') no-repeat center center;
     content: ""; 
     height: 50px;
     line-height: 50px;
@@ -314,7 +314,7 @@
 }   
 
 .owl-theme .owl-controls .owl-nav div.owl-prev:hover:before {
-    background: url('../images/prev-hover.png') no-repeat center center;
+    background: url('../../img/trial/icon/prev-hover.png') no-repeat center center;
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-next {
@@ -323,7 +323,7 @@
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-next:before {
-    background: url('../images/next.png') no-repeat center center;
+    background: url('../../img/trial/icon/next.png') no-repeat center center;
     content: ""; 
     height: 50px;
     line-height: 50px;
@@ -333,5 +333,5 @@
 }  
 
 .owl-theme .owl-controls .owl-nav div.owl-next:hover:before {
-    background: url('../images/next-hover.png') no-repeat center center;
+    background: url('../../img/trial/icon/next-hover.png') no-repeat center center;
 }

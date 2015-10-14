@@ -2,6 +2,15 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'Home';
+$route['home']='Home/index';
+
+$route['about-us']='About/index';
+$route['gallery']='Gallery/index';
+$route['contact']='Contact/index';
+$route['login']='Login/index';
+
+$route['contact/contact_details']='Contact/contact_details';
+
 $route['login/login-page'] = 'Login/login_page';
 $route['login/login-check']='Login/login_check';
 $route['login/login-with-fb']='Login/login_with_fb';
