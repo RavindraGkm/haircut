@@ -18,5 +18,21 @@ class Contact_details extends CI_Model {
         }
 
     }
+    public function get_contact_details(){
+        $response=array();
+        $sql="select * from contact_us";
+        $query=$this->db->query($sql);
+        foreach($query->result() as $row){
+            $temp['id']=$row->id;
+            $temp['name']=$row->name;
+            $temp['mobile']=$row->mobile;
+            $temp['email']=$row->email;
+            $temp['subject']=$row->subject;
+            $temp['message']=$row->message;
+            $response[]=$temp;
+        }
+        return $response;
+
+    }
 }
 ?>

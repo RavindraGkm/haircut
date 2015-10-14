@@ -20,6 +20,29 @@ class Contact extends CI_Controller {
         $this->db->close();
         echo json_encode($response);
     }
+    public function show_contact_details() {
+        $this->load->library('session');
+        if($this->session->has_userdata('user_email'))
+        {
+        $this->load->helper('html');
+        $this->load->helper('url');
+        $this->load->view('contact/show_contact_details.php');
+        }
+        else
+        {
+            //echo "not valid user";
+            $this->load->helper('html');
+            $this->load->helper('url');
+            redirect('login/login-page','location');
+        }
+    }
+    public function show_all_contact_details(){
+        $this->load->database();
+        $this->load->model('contact/Contact_details');
+        $response=$this->Contact_details->get_contact_details();
+        $this->db->close();
+        echo json_encode($response);
+    }
     
        
 }
