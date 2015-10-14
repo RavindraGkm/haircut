@@ -281,6 +281,57 @@
         });
     };
 
+    var ajaxAppointment = function() {      
+        $('#appointment-form').each(function() {
+            $(this).validate({
+                submitHandler: function( form ) {                   
+                    var $form = $(form),
+                        str = $form.serialize(),
+                        loading = $('<div />', { 'class': 'loading' });                    
+                    $.ajax({
+                        type: "POST",
+                        url:  $form.attr('action'),
+                        data: str,
+                        beforeSend: function () {
+                            $form.find('.send-wrap').append(loading);
+                        },
+
+
+                        success: function( msg ) {
+                            var result, cls;
+                            console.log(msg);
+                            if ( msg == 'Success' ) {
+                                result = 'Your message has been sent. Thank you!';
+                                cls = 'msg-success';
+                            } else {
+                                result = 'Error sending email.';
+                                cls = 'msg-error';
+                            }
+
+                            $form.prepend(
+                                $('<div />', {
+                                    'class': 'roll-alert ' + cls,
+                                    'text' : result
+                                }).append(
+                                    $('<a class="close" href="#"><i class="fa fa-close"></i> x</a>')
+                                )
+                            );
+
+                            $form.find(':input').not('.submit').val('');
+                        },
+                        complete: function (xhr, status, error_thrown) {
+                            $form.find('.loading').remove();
+                        }
+                    });
+                }
+            });
+        }); // each contactform
+    }; 
+
+    var datepicker = function() {
+        $( "#datepicker" ).datepicker();
+    }
+
     var ajaxContactForm = function() {      
         $('#contactform').each(function() {
             $(this).validate({
@@ -558,10 +609,10 @@
       var retina = window.devicePixelRatio > 1 ? true : false;
 
         if(retina) {
-            //$('.header .logo').find('img').attr({src:'../images/logo@2x.png',width:'300',height:'150'});
-            //$('.home-dark .header .logo').find('img').attr({src:'./images/logo_dark2@2x.png',width:'300',height:'150'});
-            //$('.home-2 .header .logo').find('img').attr({src:'./images/logo_3@2x.png',width:'300',height:'150'});
-            //$('.header .logo.small').find('img').attr({src:'./images/logo_small@2x.png',width:'454',height:'120'});           
+            $('.header .logo').find('img').attr({src:'./images/logo@2x.png',width:'300',height:'150'});
+            $('.home-dark .header .logo').find('img').attr({src:'./images/logo_dark2@2x.png',width:'300',height:'150'});
+            $('.home-2 .header .logo').find('img').attr({src:'./images/logo_3@2x.png',width:'300',height:'150'});
+            $('.header .logo.small').find('img').attr({src:'./images/logo_small@2x.png',width:'454',height:'120'});           
         }
     };
     
@@ -641,6 +692,8 @@
         roll_appointment();
         rollNewCarousel();
         rollGallery();  
+        ajaxAppointment();
+        datepicker();
         ajaxContactForm(); 
         ajaxSubscribe.eventLoad();
         blogSlider();
