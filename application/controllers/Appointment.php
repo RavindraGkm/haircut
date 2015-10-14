@@ -5,20 +5,17 @@ class Appointment extends CI_Controller {
         $this->load->library('session');
         if($this->session->has_userdata('user_email')) {
             $data['user_email']= $this->session->userdata('user_email');
-            if($this->session->has_userdata('is_fb_login'))
-            {
+            if($this->session->has_userdata('is_fb_login')) {
                 $data['fb_login']=true;
             }
-            else
-            {
+            else {
                 $data['fb_login']=false;
             }
             $this->load->helper('html');
             $this->load->helper('url');
             $this->load->view('appointment/book_panel',$data);
         }
-        else
-        {
+        else {
             $this->load->helper('html');
             $this->load->helper('url');
             redirect('login/login-page','location');

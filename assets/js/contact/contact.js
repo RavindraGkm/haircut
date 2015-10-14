@@ -2,28 +2,12 @@ var HSS = HSS || {};
 
 HSS.Contact = function (base_url) {
     this.base_url=base_url;
-    this.get_employees_name_at_home_page();
     this.initialize();
 }
 HSS.Contact.prototype={
     initialize:function(){
         this.contact();
         this.show_contact_details();
-    },
-
-    get_employees_name_at_home_page:function() {
-        $.ajax({
-                url:"employee/get-employees-name",
-                type:"GET",
-                dataType:"JSON",
-                success:function(data){
-                    //console.log(data);
-                    for(var i=0;i<data.length;i++) {
-                        var row = "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
-                        $("#booking_with").append(row);
-                }
-            }
-        });
     },
     contact:function() {
         var self=this;

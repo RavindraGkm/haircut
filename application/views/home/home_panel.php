@@ -5,55 +5,33 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Haircuts &amp; Beards - Barbershop &amp; Hair Salon </title>
-    <meta name="description" content="Haircuts &amp; Beards is modern, clean and professionally crafted HTML template which can be used for Barbershop, Hail Salon, Beauty Salon and other related sites. ">
-    <meta name="keywords" content="barber, barber's, barbershop, barber shop, hair salon, beard, beauty, hair, haircut, beardcut, salon, makeup, style, stylist, coloring">
-    <meta name="author" content="Rollthemes.com">
-
-    <!-- Mobile Specific Metas -->
+    <title>Monarch Salon - Barbershop &amp; Hair Salon </title>
+    <meta name="description" content="Monarch Salon is modern, clean and professionally Barbershop, Hail Salon, Beauty Salon, Tatto Salon and Spa Salon. ">
+    <meta name="keywords" content="uaipur best salon,best salon in rajasthan,barber, barber's, barbershop, barber shop, hair salon, beard, beauty, hair, haircut, beardcut, salon, makeup, style, stylist, coloring">
+    <meta name="author" content="monarchsalon.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <?php
-
-
-    //<!-- Bootstrap  -->
     echo link_tag('assets/css/stylesheets/bootstrap.css');
-
-    //<!-- Theme Style -->
     echo link_tag('assets/css/stylesheets/style.css');
-
-    //<!-- Responsive -->
     echo link_tag('assets/css/stylesheets/responsive.css');
-    
-    //<!-- Colors -->
     echo link_tag('assets/css/stylesheets/colors/color1.css');
-   
-    //<!-- Animation Style -->
     echo link_tag('assets/css/stylesheets/animate.css');
-
-    
-
     ?>
-
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,900' rel='stylesheet' type='text/css'>
-
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
     <!-- Favicon and touch icons  -->
-    <link href="icon/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
-    <link href="icon/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
-    <link href="icon/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
-    <link href="icon/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
-    <link href="icon/favicon.png" rel="shortcut icon">
-
+    <link href="assets/img/images/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="assets/img/images/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="assets/img/images/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="assets/img/images/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="assets/img/images/favicon.png" rel="shortcut icon">
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body class="header-sticky home">   
     <div class="loader">
         <span class="loader1 block-loader"></span>
@@ -425,7 +403,7 @@
                                 <input type="email" value="" tabindex="2" placeholder="E-mail address" name="email" id="email" class="email" required>
                             </div>
                             <div class="wrap-select services">
-                                <select class="select-field service" name="appointment_services">
+                                <select class="select-field service" name="appointment_services" id="appointment_services">
                                     <option value="" selected="selected"> Choose service </option>
                                     <option value="BeardCuts">BeardCuts </option>
                                     <option value="Haircuts"> Haircuts</option>
@@ -435,6 +413,11 @@
                             <div class="wrap-select barber">
                                 <select class="select-field barber booking_with" name="booking_with" id="booking_with">
                                     <option> Choose barber </option>
+                                    <?php
+                                    foreach($employees as $employee) {
+                                        echo "<option value='$employee[id]'>$employee[name]</option>";
+                                    }
+                                    ?>
                                 </select> 
                             </div><!-- /.wrap-select --> 
                             <div class="group-select clearfix">
@@ -870,7 +853,6 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>
-
     <!-- Go Top -->
     <a class="go-top">
         <i class="fa fa-angle-up"></i>
@@ -894,26 +876,11 @@
     echo script_tag('assets/js/home/jquery.sticky.js');
     echo script_tag('assets/js/home/main.js');
     echo script_tag('assets/js/notification/SmartNotification.min.js');
-    echo script_tag('assets/js/contact/contact.js');
-
-    /*<script type="text/javascript" src="javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-    <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
-    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="javascript/owl.carousel.js"></script>       
-    <script type="text/javascript" src="javascript/parallax.js"></script>
-    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-    <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
-    <script type="text/javascript" src="javascript/datepicker.js"></script>
-    <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-    <script type="text/javascript" src="javascript/main.js"></script>*/
+    echo script_tag('assets/js/home.js');
     ?>
     <script type="text/javascript">
         $(document).ready(function(){
-            new HSS.Contact();
+            new HSS.Home();
         });
     </script>
 </body>

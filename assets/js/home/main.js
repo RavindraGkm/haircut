@@ -706,7 +706,7 @@
         retinaLogos();  
         alertBox();
         removePreloader();
-        twitterFeed();
+        //twitterFeed();
         gmapSetup();
         parallax();    
         rollAnimation();

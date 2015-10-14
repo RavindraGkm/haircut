@@ -4,15 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Employee extends CI_Controller {
     public function employee_registration() {
         $this->load->library('session');
-        if($this->session->has_userdata('user_email'))
-        {
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('employee_registor/registration');
+        if($this->session->has_userdata('user_email')) {
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('employee_registor/registration');
         }
-        else
-        {
-            //echo "not valid user";
+        else {
             $this->load->helper('html');
             $this->load->helper('url');
             redirect('login/login-page','location');
@@ -33,15 +30,12 @@ class Employee extends CI_Controller {
     }
     public function view_employee_details() {
         $this->load->library('session');
-        if($this->session->has_userdata('user_email'))
-        {
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('employee_registor/view_employee');
+        if($this->session->has_userdata('user_email')) {
+            $this->load->helper('html');
+            $this->load->helper('url');
+            $this->load->view('employee_registor/view_employee');
         }
-        else
-        {
-            //echo "not valid user";
+        else {
             $this->load->helper('html');
             $this->load->helper('url');
             redirect('login/login-page','location');
@@ -69,7 +63,7 @@ class Employee extends CI_Controller {
         $response=$this->Employee_model->employee_status_update_call($data);
         echo json_encode($response);
     }
-                                        
+
 }
 
 ?>
