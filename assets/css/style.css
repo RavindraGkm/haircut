@@ -38,6 +38,7 @@
 
 /* Reset
 -------------------------------------------------------------- */
+
 	html {
 		overflow-y: scroll;
 		-webkit-text-size-adjust: 100%;
@@ -458,6 +459,8 @@
 	margin-right: 240px;
 	padding-left: 30px;
 }
+
+
 
 .header .logo-wrap .logo.small {
 	margin: 6px 0 7px;
@@ -1229,6 +1232,7 @@
 
 /* Blog Single
 -------------------------------------------------------------- */
+
 .post.single {
 	border: 0;
 }

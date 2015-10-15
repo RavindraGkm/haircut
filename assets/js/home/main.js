@@ -224,6 +224,7 @@
                 $list.hide();
             });
         });
+        
     }
 
     var rollNewCarousel = function() {
@@ -295,8 +296,6 @@
                         beforeSend: function () {
                             $form.find('.send-wrap').append(loading);
                         },
-
-
                         success: function( msg ) {
                             var result, cls;
                             console.log(msg);
@@ -692,9 +691,9 @@
         roll_appointment();
         rollNewCarousel();
         rollGallery();  
-        ajaxAppointment();
+        //ajaxAppointment();
         datepicker();
-        ajaxContactForm(); 
+        //ajaxContactForm(); 
         ajaxSubscribe.eventLoad();
         blogSlider();
         blogIsotop();

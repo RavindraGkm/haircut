@@ -128,29 +128,34 @@
             <div class="row">
                 <div class="col-md-7">
                     <h1>Contact Form</h1>
-                    <div class="alert alert-warning alert-dismissible hidden" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <div class="alert alert-warning alert-dismissible hidden" id="contact_alert_button" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
                         Hello, we received your message. We will shortly contact you.
                     </div>
-                    <form class="roll-contact-form" id="contactform">                          
+                    <form class="roll-contact-form" id="contact_form">                          
                         <div class="input-wrap name">
-                            <input type="text" value="" tabindex="1" placeholder="Full Name" class="contact_name" name="contact_name" id="contact_name" required>
+                            <input type="text" value="" tabindex="1" placeholder="Full Name" class="contact_name" name="contact_name" id="contact_name">
+                            <span class='error-span' data-error-for='contact_name'>Error</span>
                         </div>
                         <div class="input-wrap last phone">
-                            <input type="text" value="" placeholder="Phone" class="contact_mobile" name="contact_mobile" id="contact_mobile" >
+                            <input type="text" value="" tabindex="2" placeholder="Phone" class="contact_mobile" name="contact_mobile" id="contact_mobile" >
+                            <span class='error-span' data-error-for='contact_mobile'>Error</span>
                         </div>
                         <div class="input-wrap email">
-                            <input type="email" value="" tabindex="2" placeholder="Email Address" class="contact_email" name="contact_email" id="contact_email" required>
+                            <input type="email" value="" tabindex="3" placeholder="Email Address" class="contact_email" name="contact_email" id="contact_email">
+                            <span class='error-span' data-error-for='contact_email'>Error</span>
                         </div>
                         <div class="input-wrap last Subject">
-                            <input type="text" value="" placeholder="Subject" class="contact_subject" name="contact_subject" id="contact_subject" >
+                            <input type="text" value="" tabindex="4" placeholder="Subject" class="contact_subject" name="contact_subject" id="contact_subject" >
+                            <span class='error-span' data-error-for='contact_subject'>Error</span>
                         </div>
-
                         <div class="textarea-wrap">
-                            <textarea class="type-input  contact_message" tabindex="3" placeholder="Message" name="contact_message" id="contact_message" required></textarea>
+                            <textarea class="type-input  contact_message" tabindex="5" placeholder="Message" name="contact_message" id="contact_message"></textarea>
+                            <span class='error-span' data-error-for='contact_message'>Error</span>
                         </div>
                         <div class="submit-wrap">
-                            <button class="roll-button contact_button" type="button">Send Message</button>
+                            <button class="roll-button contact_button" tabindex="6" type="submit">Send Message</button>
+                            <button type="reset" class="hidden" id="reset_contact_button">Reset</button>
                         </div>
                     </form><!-- /.comment-form -->
                 </div>

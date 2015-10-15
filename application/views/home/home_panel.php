@@ -392,18 +392,19 @@
                             <p class="sub">Monarch Salon</p>
                             <h2 class="main">Appointment</h2>
                         </div>
+                        
                         <form class="appointment-form" id="appointment-form">                          
                             <div class="input-wrap name">
-                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="appointment_name" id="appointment_name" class="appointment_name" required>
+                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="appointment_name" id="appointment_name" class="appointment_name">
                             </div>
                             <div class="input-wrap phone input-small pull-left">
-                                <input type="text" value="" tabindex="1" placeholder="Phone number" name="appointment_mobile" id="appointment_mobile" class="appointment_mobile" required>
+                                <input type="text" value="" tabindex="2" placeholder="Phone number" name="appointment_mobile" id="appointment_mobile" class="appointment_mobile">
                             </div>
                             <div class="input-wrap email input-small last pull-right">
-                                <input type="email" value="" tabindex="2" placeholder="E-mail address" name="appointment_email" id="appointment_email" class="appointment_email" required>
+                                <input type="email" value="" tabindex="3" placeholder="E-mail address" name="appointment_email" id="appointment_email" class="appointment_email">
                             </div>
                             <div class="wrap-select services">
-                                <select class="select-field service appointment_services" name="appointment_services" id="appointment_services">
+                                <select class="select-field service appointment_services" tabindex="4" name="appointment_services" id="appointment_services">
                                     <option value="" selected="selected"> Choose service </option>
                                     <option value="BeardCuts">BeardCuts </option>
                                     <option value="Haircuts"> Haircuts</option>
@@ -411,8 +412,8 @@
                                 </select> 
                             </div><!-- /.wrap-select -->
                             <div class="wrap-select barber">
-                                <select class="select-field barber appointment_booking_with" name="appointment_booking_with" id="appointment_booking_with">
-                                    <option> Choose barber </option>
+                                <select class="select-field barber appointment_booking_with" tabindex="5" name="appointment_booking_with" id="appointment_booking_with">
+                                    <option value="" selected> Choose barber </option>
                                     <?php
                                     foreach($employees as $employee) {
                                         echo "<option value='$employee[id]'>$employee[name]</option>";
@@ -422,30 +423,34 @@
                             </div><!-- /.wrap-select --> 
                             <div class="group-select clearfix">
                                 <div class="wrap-select-group">    
-                                    <input type="text" id="datepicker" class="appointment_date" placeholder="Date / Month" name="appointment_date" id="appointment_date">
+                                    <input type="text" id="datepicker" class="appointment_date" tabindex="6" placeholder="Date / Month" name="appointment_date" id="appointment_date">
                                 </div><!-- /.wrap-select --> 
                                 <div class="wrap-select-group">
-                                    <select class="select-field time appointment_time" name="appointment_time" id="appointment_time">
+                                    <select class="select-field time appointment_time" name="appointment_time" tabindex="7" id="appointment_time">
                                         <option value="" selected="selected"> Time </option>
-                                        <option value="09:00 am"> 0:00 AM </option>
-                                        <option value="10:00 am"> 08:00 AM</option>
-                                        <option value="11:00 am"> 09:00 AM</option>
-                                        <option value="12:00 pm"> 10:00 AM </option>
-                                        <option value="01:00 pm"> 01:00 PM</option>
-                                        <option value="02:00 pm"> 02:00 PM</option>
-                                        <option value="03:00 pm"> 03:00 PM</option>
-                                        <option value="04:00 pm"> 04:00 PM</option>
+                                        <option value="09:00 am"> 09:00 AM </option>
+                                        <option value="10:00 am"> 10:00 AM</option>
+                                        <option value="11:00 am"> 11:00 AM</option>
+                                        <option value="12:00 pm"> 12:00 AM </option>
+                                        <option value="01:00 pm"> 13:00 PM</option>
+                                        <option value="02:00 pm"> 01:00 PM</option>
+                                        <option value="03:00 pm"> 02:00 PM</option>
+                                        <option value="04:00 pm"> 03:00 PM</option>
+                                        <option value="05:00 pm"> 04:00 PM</option>
                                         <option value="05:00 pm"> 05:00 PM</option>
-                                        <option value="05:00 pm"> 06:00 PM</option>
+                                        <option value="06:00 pm"> 06:00 PM</option>
                                         <option value="07:00 pm"> 07:00 PM</option>
                                         <option value="08:00 pm"> 08:00 PM</option>
-                                        <option value="09:00 pm"> 09:00 PM</option>
                                     </select> 
                                 </div><!-- /.wrap-select --> 
                             </div><!-- /.group-select -->
                             <div class="submit-form">
-                                <button class="roll-button white appointment_button">Appointment</button>
-                                <button class="roll-button white appointment_reset_button hidden">Reset</button>
+                                <div class="alert alert-warning alert-dismissible alert-appointment hidden" id="appointment_alert_button" role="alert">
+                                    <button type="button" class="close"  data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
+                                    Appointment Booked, Confirmation will be sent by message.
+                                </div>
+                                <button class="roll-button white appointment_button" tabindex="8"  type="submit">Book Appointment</button>
+                                <button class="roll-button white appointment_reset_button hidden">Reset</button>                                
                             </div>
                         </form><!-- /.comment-form -->                  
                     </div><!-- /.item -->
@@ -736,29 +741,35 @@
                         <p class="sub text-color">Haircuts &amp; Beards</p>
                         <h2 class="main text-dark">Contact Form</h2>
                     </div>                    
-                    <div class="alert alert-warning alert-dismissible hidden" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">X</span></button>
+                    <div class="alert alert-warning alert-dismissible hidden " id="contact_alert_button" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
                         Hello, we received your message. We will shortly contact you.
                     </div>
-                        <form class="roll-contact-form short my_contact_form" id="contactform">                          
+                        <form class="roll-contact-form short my_contact_form" id="contact_form">                          
                             <div class="input-wrap name">
-                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="contact_name" id="contact_name" class="contact_name" required>
+                                <input type="text" value="" tabindex="9" placeholder="Full Name" name="contact_name" id="contact_name" class="contact_name">
+                                <span class='error-span' data-error-for='contact_name'>Error</span>
                             </div>
                             <div class="input-wrap last phone">
-                                <input type="text" value="" placeholder="Phone" name="contact_mobile" id="contact_mobile" class="contact_mobile" >
+                                <input type="text" value="" placeholder="Phone" tabindex="10" name="contact_mobile" id="contact_mobile" class="contact_mobile" >
+                                <span class='error-span' data-error-for='contact_mobile'>Error</span>
                             </div>
                             <div class="input-wrap email">
-                                <input type="email" value="" tabindex="2" placeholder="Email Address" name="contact_email" id="contact_email" class="contact_email" required>
+                                <input type="email" value="" tabindex="11" placeholder="Email Address" name="contact_email" id="contact_email" class="contact_email">
+                                <span class='error-span' data-error-for='contact_email'>Error</span>
                             </div>
                             <div class="input-wrap last Subject">
-                                <input type="text" value="" placeholder="subject" name="contact_subject" id="contact_subject" class="contact_subject">
+                                <input type="text" value="" placeholder="subject" tabindex="12" name="contact_subject" id="contact_subject" class="contact_subject">
+                                <span class='error-span' data-error-for='contact_subject'>Error</span>
                             </div>
 
-                            <div class="textarea-wrap">
-                                <textarea class="type-input contact_message" tabindex="3" placeholder="Message" name="contact_message" id="contact_message" required></textarea>
+                            <div class="textarea-wrap new_text_field">
+                                <textarea class="type-input contact_message" tabindex="13" placeholder="Message" name="contact_message" id="contact_message"></textarea>
+                                <span class='error-span' data-error-for='contact_message'>Error</span>
                             </div>
                             <div class="submit-wrap text-center">
-                                <button class="roll-button contact_button" type="button">Send Message</button>
+                                <button class="roll-button contact_button" tabindex="14" type="submit">Send Message</button>
+                                <button type="reset" class="hidden" id="reset_contact_button">Reset</button>
                             </div>
                         </form><!-- /.comment-form -->                    
                 </div><!-- /.col-md-12 -->
@@ -826,10 +837,10 @@
                             <form method="post" action="#" id="subscribe-form" data-mailchimp="true">
                                 <div id="subscribe-content">
                                     <div class="input-wrap email">
-                                        <input type="text" id="subscribe_email" name="subscribe-subscribe_email" placeholder="Email Address" class="subscribe_email">
+                                         <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Email Address">
                                     </div>
                                     <div class="button-wrap">
-                                        <button type="button" id="subscribe_button" class="subscribe_button" title="Subscribe now"> + </button>
+                                        <button type="button" id="subscribe_button" class="subscribe-button" title="Subscribe now"> + </button>
                                     </div>
                                 </div>
                                 <div id="subscribe-msg"></div>

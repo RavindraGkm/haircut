@@ -12,6 +12,10 @@
 @import url("owl.carousel.css");
 @import url("shortcodes.css");
 
+
+.alert-appointment {
+	font-size: 16px;
+}
 /**
   * Reset
   * Repeatable Patterns  
@@ -1232,6 +1236,11 @@
 .post.single {
 	border: 0;
 }
+.new_text_field{
+	float: left;
+    width: 100%;
+    position: relative;
+}
 
 .post.single .meta-post {
 	margin-bottom: 40px;
@@ -1800,6 +1809,11 @@
 
 /* widget-tweets
 -------------------------------------------------------------- */
+
+.textarea-wrap{
+	position:relative;
+}
+
 .footer-widgets .widget.widget-tweets .widget-title {
 	margin-bottom: 30px;
 }
@@ -1854,6 +1868,19 @@
 
 /* widget-subscribe
 -------------------------------------------------------------- */
+
+.input-wrap{
+	position:relative;
+}
+
+.error-span{
+	position: absolute;
+	right: 10px;
+	top: 9px;
+	color: #f00;
+	opacity:0;
+}
+
 .widget-subscribe #subscribe-form {
 	position: relative;
 }
@@ -2640,6 +2667,8 @@ input::-moz-placeholder {
 	left: 50%;	
 }
 
+
+
 .go-top i:before {
 	position: absolute;
 	content: "";
@@ -2821,6 +2850,7 @@ input::-moz-placeholder {
 .home3 .flexslider .flex-control-nav li a.flex-active,
 .home3 .roll-working-hours li:first-child, 
 .home3 .roll-working-hours li:last-child,
+
 .home3 .owl-theme .owl-dots .owl-dot.active span,
 .home3 .roll-accordion .toggle-title.active,
 .home3 .roll-tabs ul.menu-tab li.active,

@@ -151,7 +151,7 @@ echo script_tag("assets/js/plugin/datatables/dataTables.colVis.min.js");
 echo script_tag("assets/js/plugin/datatables/dataTables.tableTools.min.js");
 echo script_tag("assets/js/plugin/datatables/dataTables.bootstrap.min.js");
 echo script_tag("assets/js/plugin/datatable-responsive/datatables.responsive.min.js");
-echo script_tag('assets/js/contact/contact.js');
+echo script_tag('assets/js/contact.js');
 ?>
 <script type="text/javascript">
     $(document).ready(function(){

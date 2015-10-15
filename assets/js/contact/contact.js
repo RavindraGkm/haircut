@@ -6,67 +6,92 @@ HSS.Contact = function (base_url) {
 }
 HSS.Contact.prototype={
     initialize:function(){
-        this.contact();
-        this.show_contact_details();
+        this.contact_form();
     },
-    contact:function() {
-        var self=this;
-        
-        $('.contact_button').click(function(){
-            $.ajax({
-                url: "contact/contact_details",
-                type: "POST",
-                dataType: "JSON",
-                data:{
-                    contact_name: $("#contact_name").val(),
-                    contact_mobile: $("#contact_mobile").val(),
-                    contact_email: $("#contact_email").val(),
-                    contact_subject: $("#contact_subject").val(),
-                    contact_message: $('#contact_message').val()
-                },
-                beforeSend: function(data) {
-                    $(".contact_button").html('Processing...');
-                },
-                error: function(data){
-                    console.log(data);
-                },
-                success: function (data) {
-                    console.log(data);
-                            $(".contact_button").html('Send Message');
-                            // $(".contact_name").html();
-                            // $(".contact_mobile").html();
-                            // $(".contact_email").html();
-                            // $(".contact_subject").html();
-                            // $(".contact_message").html();
-                    if(data.status==200) {
-                        $(".alert").removeClass('hidden');
-                        //$("#contactform").reset();
 
-                    }
-                    
-                    
+    contact_form: function() {
+        var self = this;
+        $("#contact_form").validate({
+            rules: {
+                contact_name: {
+                    required: true
+                },
+                contact_mobile:{
+                    required: true,
+                    number: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
+                contact_email: {
+                    required : true,
+                    email : true
+                },
+                contact_subject: {
+                    required: true
+                },
+                contact_message: {
+                    required: true
                 }
-
-            });
-        });
-    },
-
-    show_contact_details:function(){
-        $.ajax({
-            url: "show-all-contact-details",
-            type: "GET",
-            dataType: "JSON",
-            data:{
-                user_email: $(".user_email").val()
             },
-            success: function (data) {
-                //console.log(data);
-                 for(var i=0;i<data.length;i++) {
-                     var row = "<tr><td>" + [i+1] + "</td><td>" + data[i].name + "</td><td>"+data[i].mobile+"</td><td>" + data[i].email + "</td><td>" + data[i].subject +"</td><td>"+data[i].message+"</td></tr>";
-                     $("#show_contact_details").append(row);
-                 }
+            messages : {
+                contact_name: {
+                    required: 'Enter your name'
+                },
+                contact_mobile: {
+                    required: 'Enter your mobile number',
+                    number: 'Enter digits only',
+                    minlength: 'Enter minimum 10 digits number',
+                    maxlength: 'Enter maximum 10 digits'
+
+                },
+                contact_email: {
+                    required : 'Enter your email',
+                    email : 'Enter valid email'
+                },
+                contact_subject: {
+                    required: 'Enter Subject'
+                },
+                contact_message: {
+                    required: 'plz type something for us'
+                }
+            },
+            submitHandler: function(form) {
+                $.ajax({
+                    url: "contact/contact_details",
+                    type: "POST",
+                    dataType: "JSON",
+                    data:{
+                        contact_name: $("#contact_name").val(),
+                        contact_mobile: $("#contact_mobile").val(),
+                        contact_email: $("#contact_email").val(),
+                        contact_subject: $("#contact_subject").val(),
+                        contact_message: $('#contact_message').val()
+                    },
+                    beforeSend: function(data) {
+                        $(".contact_button").html('Processing...');
+                    },
+                    error: function(data){
+                        console.log(data);
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        $(".contact_button").html('Send Message');
+                        if(data.status==200)
+                        {
+                            $("#contact_alert_button").removeClass("hidden");
+                            $("#reset_contact_button").click();
+                        }
+                    }
+                });
+            },
+            errorPlacement: function(error, element) {
+                $( element ).closest( "form" ).find( "span[data-error-for='" + element.attr( "id" ) + "']").html(error[0].innerHTML).css('opacity',1);
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                $(element).removeClass('error');
+                $(element).closest('.input-wrap').find('.error-span').css('opacity',0);
+                $(element).closest('.textarea-wrap').find('.error-span').css('opacity',0);
             }
         });
-
     }
 }

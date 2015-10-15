@@ -181,9 +181,17 @@
 	box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1) inset;
 }
 
-.roll-working-hours li:first-child,
+/*.roll-working-hours li:first-child,
 .roll-working-hours li:last-child {
 	background: #f96868;	
+}*/
+
+.shop-close{
+	background-color: #f96868 !important;
+}
+
+.shop-close h3, .shop-close p{
+	color: #FFF !important;
 }
 
 .roll-working-hours li h3 {
@@ -201,7 +209,7 @@
 .roll-working-hours li:last-child p ,
 .roll-working-hours li:first-child h3,
 .roll-working-hours li:last-child h3 {
-	color: #fff;
+	color: black;
 }
 
 /* Informartion
