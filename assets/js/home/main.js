@@ -606,7 +606,6 @@
 
     var retinaLogos = function() {
       var retina = window.devicePixelRatio > 1 ? true : false;
-
         if(retina) {
             $('.header .logo').find('img').attr({src:'../../haircut/assets/img/trial/logo@2x.png',width:'300',height:'150'});
             $('.home-dark .header .logo').find('img').attr({src:'../../haircut/assets/img/trial/logo_dark2@2x.png',width:'300',height:'150'});
