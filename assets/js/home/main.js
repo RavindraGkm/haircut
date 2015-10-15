@@ -606,12 +606,12 @@
 
     var retinaLogos = function() {
       var retina = window.devicePixelRatio > 1 ? true : false;
-        //if(retina) {
-        //    $('.header .logo').find('img').attr({src:base_path+'/logo@2x.png',width:'300',height:'150'});
-        //    $('.home-dark .header .logo').find('img').attr({src:base_path+'/logo_dark2@2x.png',width:'300',height:'150'});
-        //    $('.home-2 .header .logo').find('img').attr({src:base_path+'/logo_3@2x.png',width:'300',height:'150'});
-        //    $('.header .logo.small').find('img').attr({src:base_path+'/logo_small@2x.png',width:'454',height:'120'});
-        //}
+        if(retina) {
+            $('.header .logo').find('img').attr({src:'../../haircut/assets/img/trial/logo@2x.png',width:'300',height:'150'});
+            $('.home-dark .header .logo').find('img').attr({src:'../../haircut/assets/img/trial/logo_dark2@2x.png',width:'300',height:'150'});
+            $('.home-2 .header .logo').find('img').attr({src:'../../haircut/assets/img/trial/logo_3@2x.png',width:'300',height:'150'});
+            $('.header .logo.small').find('img').attr({src:'../../haircut/assets/img/trial/logo_small@2x.png',width:'454',height:'120'});           
+        }
     };
     
     var twitterFeed = function () {
@@ -693,7 +693,7 @@
         //ajaxAppointment();
         datepicker();
         //ajaxContactForm(); 
-        ajaxSubscribe.eventLoad();
+        //ajaxSubscribe.eventLoad();
         blogSlider();
         blogIsotop();
         galleryIsotope();

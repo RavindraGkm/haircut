@@ -5,33 +5,52 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Monarch Salon - Barbershop &amp; Hair Salon </title>
-    <meta name="description" content="Monarch Salon is modern, clean and professionally Barbershop, Hail Salon, Beauty Salon, Tatto Salon and Spa Salon. ">
-    <meta name="keywords" content="uaipur best salon,best salon in rajasthan,barber, barber's, barbershop, barber shop, hair salon, beard, beauty, hair, haircut, beardcut, salon, makeup, style, stylist, coloring">
-    <meta name="author" content="monarchsalon.com">
+    <title>Haircuts &amp; Beards - Barbershop &amp; Hair Salon </title>
+    <meta name="description" content="Haircuts &amp; Beards is modern, clean and professionally crafted HTML template which can be used for Barbershop, Hail Salon, Beauty Salon and other related sites. ">
+    <meta name="keywords" content="barber, barber's, barbershop, barber shop, hair salon, beard, beauty, hair, haircut, beardcut, salon, makeup, style, stylist, coloring">
+    <meta name="author" content="Rollthemes.com">
+
+    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <?php
+
+    //<!-- Bootstrap  -->
     echo link_tag('assets/css/stylesheets/bootstrap.css');
+
+    //<!-- Theme Style -->
     echo link_tag('assets/css/stylesheets/style.css');
+
+    //<!-- Responsive -->
     echo link_tag('assets/css/stylesheets/responsive.css');
+	
+	//<!-- Colors -->
     echo link_tag('assets/css/stylesheets/colors/color1.css');
+   
+    //<!-- Animation Style -->
     echo link_tag('assets/css/stylesheets/animate.css');
+
     ?>
+
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,900' rel='stylesheet' type='text/css'>
+
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
     <!-- Favicon and touch icons  -->
-    <link href="assets/img/images/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
-    <link href="assets/img/images/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
-    <link href="assets/img/images/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
-    <link href="assets/img/images/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
-    <link href="assets/img/images/favicon.png" rel="shortcut icon">
+    <link href="icon/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="icon/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="icon/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="icon/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.png" rel="shortcut icon">
+
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body class="header-sticky home">   
     <div class="loader">
         <span class="loader1 block-loader"></span>
@@ -45,7 +64,7 @@
                 <div class="logo-wrap">
                     <div id="logo" class="logo">
                         <a href="index.html" rel="home">
-                            <img src="<?php echo base_url(); ?>assets/img/trial/logo.png" alt="image">
+                            <img src="images/logo.png" alt="image">
                         </a>
                     </div><!-- /.logo -->                    
                 </div><!-- /.logo-wrap -->
@@ -54,19 +73,55 @@
                     <nav id="mainnav" class="mainnav">
                         <ul class="menu"> 
                             <li class="active">
-                                <a href="<?php echo base_url(); ?>home">Home</a>
+                                <a href="index.html">Home</a>
+                                <ul class="submenu"> 
+                                    <li><a href="index-1.html">Home V.1</a></li>
+                                    <li><a href="index-2.html">Home V.2</a></li>
+                                    <li><a href="index-3.html">Home V.3</a></li>
+                                    <li><a href="index-animated.html">Home Animated </a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li>
+                                <a href="gallery-regular.html">Gallery</a>
+                                <ul class="submenu">     
+                                    <li><a href="gallery-regular.html">Gallery Regular</a></li>
+                                    <li><a href="gallery-full-width.html">Gallery Full Width</a></li>
+                                    <li><a href="gallery-extended.html">Gallery Extended</a></li>                                       
+                                    <li><a href="gallery-item.html">Gallery Item</a>
+                                        <ul class="submenu">     
+                                            <li><a href="gallery-regular.html">Gallery Regular</a></li>
+                                            <li><a href="gallery-full-width.html">Gallery Full Width</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                </ul><!-- /.submenu -->
                             </li>
                             <li>
-                                <a href="<?php echo base_url(); ?>about">About</a>
+                                <a href="#">Event </a>
+                                <ul class="submenu">      
+                                    <li><a href="event.html">Event</a></li>
+                                    <li><a href="event-single.html">Event Page</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li class="sub-right">
+                                <a href="blog-post-sidebar.html">Pages</a>
+                                <ul class="submenu"> 
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="member.html">Member</a></li>
+                                    <li><a href="shortcode.html">Shortcode</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li class="sub-right">
+                                <a href="#">Blog </a>
+                                <ul class="submenu">      
+                                    <li><a href="blog.html">Side bar</a></li>
+                                    <li><a href="blog-single.html">Right Sidebar</a></li>
+                                    <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                                </ul><!-- /.submenu -->
                             </li>
                             <li>
-                                <a href="<?php echo base_url(); ?>gallery">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url(); ?>contact">Contact </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url(); ?>login">Login</a>
+                                <a href="contact.html">Contact</a>
                             </li>
                         </ul><!-- /.menu -->
                     </nav><!-- /.mainnav -->
@@ -92,8 +147,10 @@
                                     <h1 class="sub-title captionDelay6 FromTop">Barber
                                     <span class="text-color">’</span>s</h1>
                                     <h2 class="modern-style captionDelay4 FromTop">Modern Style</h2>
-                                    <p class="captionDelay2 FromTop">Anybody can cut hair off, but barber <br> knows where to stop...</p></div><!-- /.content-slider -->
-                                </div><!-- /.row -->
+                                    <p class="captionDelay2 FromTop">Anybody can cut hair off, but barber <br> knows where to stop...</p>
+                                    <a href="#" class="roll-button FromTop">Purchase</a>
+                                </div><!-- /.content-slider -->
+                            </div><!-- /.row -->
                         </div><!-- /.container -->
                     </li>
                     <li class="slide2">                        
@@ -104,8 +161,10 @@
                                     <h1 class="sub-title captionDelay7 FromLeft">Barber
                                     <span class="text-color">’</span>s</h1>
                                     <h2 class="modern-style captionDelay5 FromLeft">Modern Style</h2>
-                                    <p class="captionDelay3 FromLeft">Where you will find the cut you are <br> looking for!</p></div><!-- /.content-slider -->
-                                </div><!-- /.row -->
+                                    <p class="captionDelay3 FromLeft">Where you will find the cut you are <br> looking for!</p>
+                                    <a href="#" class="roll-button FromLeft">Purchase</a>
+                                </div><!-- /.content-slider -->
+                            </div><!-- /.row -->
                         </div><!-- /.container -->
                     </li>
                     <li class="slide3">                        
@@ -117,6 +176,7 @@
                                     <span class="text-color">’</span>s</h1>
                                     <h2 class="captionDelay5 FromBottom">Modern Style</h2>
                                     <p class="captionDelay3 FromBottom">Giving you a legendary haircut with<br> traditional service.</p>
+                                    <a href="#" class="roll-button captionDelay1 FromBottom">Purchase</a>
                                 </div><!-- /.content-slider -->
                             </div><!-- /.row -->
                         </div><!-- /.container -->
@@ -131,11 +191,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="roll-information clearfix">
-                        <div class="email"><span>contact@monarchsalon.in</span></div>
-                    <div class="phone"><span>9829158345</span></div>
-                    <div class="road"><span>Panchwati, Udaipur(Raj.)</span></div>
-                    </div>
+	 				<div class="roll-information clearfix">
+	 					<div class="email"><span>hearcut&amp;beard@info.com</span></div>
+	 					<div class="phone"><span>8-800-123-4567</span></div>
+	 					<div class="road"><span>Santa Monica st. 567, LA</span></div>
+	 				</div>
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->   
@@ -157,56 +217,56 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4" style="background-color: #f96868; padding: 0">
-                    <div class="item roll-animation" data-animation="fadeInLeft" data-animation-delay="0" data-animation-offset="75%">
-                        <div class="roll-services">
-                            <p class="sub">Haircuts &amp; Beards</p>
-                            <h2 class="main">Haircuts</h2>
-                            <ul>
-                                <li>Men’s cuts (13-59) - <span>150 INR</span></li>
-                                <li>Women’s cuts (13-59) - <span>200 INR</span></li>
-                                <li>Kid’s cuts (under 12) - <span>150 INR</span></li>
-                            </ul>
-                            <a href="#" class="roll-button white">See all cuts</a>                          
-                        </div><!-- /.roll-services -->
-                        <div class="photo">
-                            <img src="<?php base_url(); ?> assets/img/trial/services/1.jpg" alt="image">
-                        </div>
-                    </div><!-- /.item -->
-                </div><!-- /.col-md-4 -->
+	                <div class="item roll-animation" data-animation="fadeInLeft" data-animation-delay="0" data-animation-offset="75%">
+						<div class="roll-services">
+	                        <p class="sub">Haircuts &amp; Beards</p>
+	                        <h2 class="main">Haircuts</h2>
+		                    <ul>
+		                        <li>Men’s cuts (13-59) - <span>$15.00</span></li>
+		                        <li>Women’s cuts (13-59) - <span>$25.00</span></li>
+		                        <li>Kid’s cuts (under 12) - <span>$10.00</span></li>
+		                    </ul>
+		                    <a href="#" class="roll-button white">See all cuts</a>   	                    
+		                </div><!-- /.roll-services -->
+		                <div class="photo">
+		                	<img src="images/services/1.jpg" alt="image">
+		                </div>
+		            </div><!-- /.item -->
+				</div><!-- /.col-md-4 -->
                 <div class="col-md-4" style="background-color: #66c7cc; padding: 0">
-                    <div class="item roll-animation" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
-                        <div class="photo">
-                            <img src="<?php base_url(); ?> assets/img/trial/services/2.jpg" alt="image">
-                        </div>
-                        <div class="roll-services">
-                            <p class="sub">Haircuts &amp; Beards</p>
-                            <h2 class="main">BeardCuts</h2>
-                            <ul>
-                                <li>Beard trimming (trimming/shaping) - <span>50 INR</span></li>
-                                <li>Basic shave (similar to morning shave) - <span>50 INR</span></li>
-                                <li>Beard design (razor fine lines) - <span>50 INR</span></li>
-                            </ul>
-                            <a href="#" class="roll-button white">See all Beards</a>                        
-                        </div><!-- /.roll-services -->
-                    </div><!-- /.item -->
-                </div><!-- /.col-md-4 -->
+					<div class="item roll-animation" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+		                <div class="photo">
+		                	<img src="images/services/2.jpg" alt="image">
+		                </div>
+						<div class="roll-services">
+	                        <p class="sub">Haircuts &amp; Beards</p>
+	                        <h2 class="main">BeardCuts</h2>
+		                    <ul>
+		                        <li>Beard trimming (trimming/shaping) - <span>$7.00</span></li>
+		                        <li>Basic shave (similar to morning shave) - <span>$13.00</span></li>
+		                        <li>Beard design (razor fine lines) - <span>$28.00</span></li>
+		                    </ul>
+		                    <a href="#" class="roll-button white">See all Beards</a>   	                    
+		                </div><!-- /.roll-services -->
+		            </div><!-- /.item -->
+				</div><!-- /.col-md-4 -->
                 <div class="col-md-4" style="background-color: #f9c765; padding: 0">
-                    <div class="item roll-animation" data-animation="fadeInRight" data-animation-delay="0" data-animation-offset="75%">
-                        <div class="roll-services">
-                            <p class="sub">Haircuts &amp; Beards</p>
-                            <h2 class="main">Coloring</h2>
-                            <ul>
-                                <li>Bleach & tone -(13-59) - <span>250 INR</span></li>
-                                <li>All-over custom color - <span>500 INR</span></li>
-                                <li>Highlighting - <span>Variable price</span></li>
-                            </ul>
-                            <a href="#" class="roll-button white">See all Coloring</a>                          
-                        </div><!-- /.roll-services -->
-                        <div class="photo">
-                            <img src="<?php base_url(); ?> assets/img/trial/services/3.jpg" alt="image">
-                        </div>
-                    </div><!-- /.item -->
-                </div><!-- /.col-md-4 -->
+					<div class="item roll-animation" data-animation="fadeInRight" data-animation-delay="0" data-animation-offset="75%">
+						<div class="roll-services">
+	                        <p class="sub">Haircuts &amp; Beards</p>
+	                        <h2 class="main">Coloring</h2>
+		                    <ul>
+		                        <li>Bleach & tone -(13-59) - <span>$60.00</span></li>
+		                        <li>All-over custom color - <span>$45.00</span></li>
+		                        <li>Highlighting - <span>Variable price</span></li>
+		                    </ul>
+		                    <a href="#" class="roll-button white">See all Coloring</a>   	                    
+		                </div><!-- /.roll-services -->
+		                <div class="photo">
+		                	<img src="images/services/3.jpg" alt="image">
+		                </div>
+		            </div><!-- /.item -->
+				</div><!-- /.col-md-4 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
@@ -216,12 +276,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="title text-center">Giving you a legendary haircut with<br><span class="text-color">traditional service</span></h1>
+                   	<h1 class="title text-center">Giving you a legendary haircut with<br><span class="text-color">traditional service</span></h1>
                     <div class="roll-testimonials v2">
                         <div class="customer">
                             <blockquote class="text roll-animation" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">Polite, professional, charming &amp; courteous team. The best haircut<br> I have ever had! Barber was full of crack, was more than happy to<br> suggest the best cut for me!</blockquote>
                             <div class="person text-center roll-animation" data-animation="fadeInDown" data-animation-delay="0" data-animation-offset="75%">
-                                <img src="<?php base_url(); ?>assets/img/trial/author/1.png" alt="image">
+                                <img src="images/author/1.png" alt="image">
                                 <h5 class="name">- Dennis Lee, Client -</h5>
                             </div>
                         </div>
@@ -229,7 +289,7 @@
                         <div class="customer">
                             <blockquote class="text">Polite, professional, charming &amp; courteous team. The best haircut<br> I have ever had! Barber was full of crack, was more than happy to<br> suggest the best cut for me!</blockquote>
                             <div class="person text-center">
-                                <img src="<?php base_url(); ?>assets/img/trial/author/1.png" alt="image">
+                               	<img src="images/author/1.png" alt="image">
                                 <h5 class="name">- Dennis Lee, Client -</h5>
                             </div>
                         </div>
@@ -237,7 +297,7 @@
                         <div class="customer">
                             <blockquote class="text">Polite, professional, charming &amp; courteous team. The best haircut<br> I have ever had! Barber was full of crack, was more than happy to<br> suggest the best cut for me!</blockquote>
                             <div class="person text-center">
-                                <img src="<?php base_url(); ?>assets/img/trial/author/1.png" alt="image">
+                               	<img src="images/author/1.png" alt="image">
                                 <h5 class="name">- Dennis Lee, Client -</h5>
                             </div>
                         </div>
@@ -252,37 +312,37 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12" style="padding: 0">
-                    <ul class="roll-working-hours">
-                        <li>
-                            <h3>Sun</h3>
-                            <p>9:00 AM - 9:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Mon</h3>
-                            <p>9:00 AM - 9:00 PM</p>
-                        </li>
-                        <li class="shop-close">
-                            <h3>Tue</h3>
-                            <p>Closed</p>
-                        </li>
-                        <li>
-                            <h3>Wed</h3>
-                            <p>9:00 AM - 9:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Thu</h3>
-                            <p>9:00 AM - 9:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Fri</h3>
-                            <p>9:00 AM - 9:00 PM</p>
-                        </li>
-                        <li>
-                            <h3>Sat</h3>
-                            <p>9:00 AM - 9:00 PM</p>
-                        </li>
-                    </ul><!-- /.roll-working-hours -->
-                </div><!-- /.col-md-12 -->
+	                <ul class="roll-working-hours">
+	                	<li class="roll-animation" data-animation="fadeInDown" data-animation-delay="0" data-animation-offset="75%">
+		                    <h3>Sun</h3>
+		                    <p>Closed</p>
+		                </li>
+		                <li class="roll-animation" data-animation="fadeInDown" data-animation-delay="1" data-animation-offset="75%">
+		                    <h3>Mon</h3>
+		                    <p>09:00 - 17:00</p>
+		                </li>
+		                <li class="roll-animation" data-animation="fadeInDown" data-animation-delay="2" data-animation-offset="75%">
+		                    <h3>Tue</h3>
+		                    <p>09:00 - 16:00</p>
+		                </li>
+		                <li class="roll-animation" data-animation="fadeInDown" data-animation-delay="3" data-animation-offset="75%">
+		                    <h3>Wed</h3>
+		                    <p>09:00 - 17:00</p>
+		                </li>
+		                <li class="roll-animation" data-animation="fadeInDown" data-animation-delay="4" data-animation-offset="75%">
+		                    <h3>Thu</h3>
+		                    <p>09:00 - 17:00</p>
+		                </li>
+		                <li class="roll-animation" data-animation="fadeInDown" data-animation-delay="5" data-animation-offset="75%">
+		                    <h3>Fri</h3>
+		                    <p>09:00 - 17:00</p>
+		                </li>
+		                <li class="roll-animation" data-animation="fadeInDown" data-animation-delay="6" data-animation-offset="75%">
+		                    <h3>Sat</h3>
+		                    <p>Closed</p>
+		                </li>
+	                </ul><!-- /.roll-working-hours -->
+				</div><!-- /.col-md-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
@@ -292,94 +352,94 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 padr35 roll-animation" data-animation="fadeInLeft" data-animation-delay="4" data-animation-offset="75%">
-                    <h3>Why Us ?</h3>
-                    <div class="roll-accordion">
-                        <div class="roll-toggle">
-                            <div class="toggle-title active">Haircut Style</div>
+					<h3>Why Us ?</h3>
+	                <div class="roll-accordion">
+	                    <div class="roll-toggle">
+                            <div class="toggle-title active">Duis autem veleum</div>
                             <div class="toggle-content">
-                                <img src="<?php base_url(); ?>assets/img/trial/services/4.jpg" alt="images">
-                                <p>Ravi Sen.</p>                                
+                                <img src="images/services/4.jpg" alt="images">
+                                <p>At vero eos et accusam usduo dolores etea rebum stet clita kasd.</p>                                
                             </div>
                         </div><!-- /toggle -->
                         <div class="roll-toggle">
-                            <div class="toggle-title">Coloring</div>
+                            <div class="toggle-title">iriure dolor in hendrerit</div>
                             <div class="toggle-content">
-                                <img src="<?php base_url(); ?>assets/img/trial/services/4.jpg" alt="images">
+                                <img src="images/services/4.jpg" alt="images">
                                 <div class="info">                                    
-                                    <p class="desc-info">Ravi Sen.</p>
+                                    <p class="desc-info">At vero eos et accusam usduo dolores etea rebum stet clita kasd.</p>
                                 </div>
                             </div>
                         </div><!-- /.toggle -->
                         <div class="roll-toggle">
-                            <div class="toggle-title">Breads Style</div>
+                            <div class="toggle-title">vulputate velit</div>
                             <div class="toggle-content">
-                                <img src="<?php base_url(); ?>assets/img/trial/services/4.jpg" alt="images">
+                                <img src="images/services/4.jpg" alt="images">
                                 <div class="info">                                    
-                                    <p class="desc-info">Ravi Sen.</p>
+                                    <p class="desc-info">At vero eos et accusam usduo dolores etea rebum stet clita kasd.</p>
                                 </div>
                             </div>
                         </div><!-- /.toggle -->
                         <div class="roll-toggle">
-                            <div class="toggle-title">Spa</div>
+                            <div class="toggle-title">esse molestie consequat lum </div>
                             <div class="toggle-content">
-                                <img src="<?php base_url(); ?>assets/img/trial/services/4.jpg" alt="images">
+                                <img src="images/services/4.jpg" alt="images">
                                 <div class="info">                                    
-                                    <p class="desc-info">Ravi Sen.</p>
+                                    <p class="desc-info">At vero eos et accusam usduo dolores etea rebum stet clita kasd.</p>
                                 </div>
                             </div>
                         </div><!-- /.toggle -->
                         <div class="roll-toggle">
-                            <div class="toggle-title">Tattoo</div>
+                            <div class="toggle-title">olore feugiat nulla</div>
                             <div class="toggle-content">
-                               <img src="<?php base_url(); ?>assets/img/trial/services/4.jpg" alt="images">
+                               <img src="images/services/4.jpg" alt="images">
                                 <div class="info">                                    
-                                    <p class="desc-info">Ravi Sen.</p>
+                                    <p class="desc-info">At vero eos et accusam usduo dolores etea rebum stet clita kasd.</p>
                                 </div>
                             </div>
                         </div><!-- /.toggle -->
-                    </div><!-- /.accordion -->
+	                </div><!-- /.accordion -->
                 </div><!-- /.col-md-4 -->  
                 <div class="col-md-4 padl25 roll-animation" data-animation="fadeInLeft" data-animation-delay="2" data-animation-offset="75%">
-                    <h3>Services</h3>
-                <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren:</p>
-                <ul class="roll-list">
-                    <li><a href="#">Haircut</a></li>
-                    <li><a href="#">Breads</a></li>
-                    <li><a href="#">Coloring</a></li>
-                    <li><a href="#">Spa</a></li>
-                    <li><a href="#">Tatto</a></li>
-                </ul>   
+                    <h3>Services</h3> 
+                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren:</p>
+                    <ul class="roll-list">
+                        <li><a href="#">Consetetur sadipscing</a></li>
+                        <li><a href="#">Elitr sed diam nonumy eirmod</a></li>
+                        <li><a href="#">Tempor invidunt ut labore</a></li>
+                        <li><a href="#"> Dolore magna aliquyam erat</a></li>
+                        <li><a href="#">At vero eos et accusam</a></li>
+                    </ul>   
                 </div><!-- /.col-md-4 --> 
-                <div class="col-md-4 padl35">
-                <h3>Advantages</h3>
-                <div class="roll-tabs" data-effect ="fadeIn">
-                    <ul class="menu-tab">
-                        <li class="active"><a href="#">Quality</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Results</a></li>
-                    </ul><!-- /.menu-tab -->
-                    <div class="content-tab">
-                        <div class="content-inner">
-                            <img src="assets/img/trial/services/5.jpg" alt="images">
-                            <p>Use Best Quality Product.</p>
-                        </div>
-                        <div class="content-inner">
-                            <img src="assets/img/trial/services/7.jpg" alt="images">
-                            <p>Apply By Expert.</p>
-                        </div>
-                        <div class="content-inner">
-                            <img src="assets/img/trial/services/6.jpg" alt="images">
-                            <p>Get Good Result.</p>
-                        </div>
-                    </div><!-- /.content-tab -->
-                </div><!-- /.roll-tabs -->
-            </div><!-- /.col-md-4 -->
+                <div class="col-md-4 padl35 roll-animation" data-animation="fadeInLeft" data-animation-delay="0" data-animation-offset="75%">
+                    <h3>Advantages</h3>
+                    <div class="roll-tabs" data-effect ="fadeIn">
+                        <ul class="menu-tab">
+                            <li class="active"><a href="#">Quality</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Results</a></li>
+                        </ul><!-- /.menu-tab -->
+                        <div class="content-tab">
+                            <div class="content-inner">
+                                <img src="images/services/5.jpg" alt="images">
+                                <p>At vero eos et accusam usduo dolores etea rebum stet clita kasd gubergren, no sea takimata sanctus elorem ipsum dolor sit amet lorem ipsum.</p>
+                            </div>
+                            <div class="content-inner">
+                                <img src="images/services/7.jpg" alt="images">
+                                <p>Dolor sitamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                            </div>
+                            <div class="content-inner">
+                                <img src="images/services/6.jpg" alt="images">
+                                <p>At vero eos et accusam et justo duo doloresrum. Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div><!-- /.content-tab -->
+                    </div><!-- /.roll-tabs -->
+                </div><!-- /.col-md-4 --> 
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
 
     <!-- Appointment -->
-    <section class="roll-row" style="padding: 0; background: url('assets/img/trial/parallax6.jpg');">
+    <section class="roll-row" style="padding: 0; background: url(images/parallax6.jpg);">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6" style="padding: 0">
@@ -389,22 +449,21 @@
                 <div class="col-md-6 roll-appointment" style="background-color: rgba(249,199,101, 0.9); padding: 4% 6%">
                     <div class="item">
                         <div class="roll-titlebox">
-                            <p class="sub">Monarch Salon</p>
+                            <p class="sub">Haircuts &amp; Beards</p>
                             <h2 class="main">Appointment</h2>
                         </div>
-                        
-                        <form class="appointment-form" id="appointment-form">                          
+                        <form class="appointment-form" id="appointment-form" method="post" action="./appointment/appointment-process.php">                          
                             <div class="input-wrap name">
-                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="appointment_name" id="appointment_name" class="appointment_name">
+                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="appointment_name" id="appointment_name" required>
                             </div>
                             <div class="input-wrap phone input-small pull-left">
-                                <input type="text" value="" tabindex="2" placeholder="Phone number" name="appointment_mobile" id="appointment_mobile" class="appointment_mobile">
+                                <input type="text" value="" tabindex="1" placeholder="Phone number" name="appointment_phone" id="appointment_phone" required>
                             </div>
                             <div class="input-wrap email input-small last pull-right">
-                                <input type="email" value="" tabindex="3" placeholder="E-mail address" name="appointment_email" id="appointment_email" class="appointment_email">
+                                <input type="email" value="" tabindex="2" placeholder="E-mail address" name="appointment_mail" id="appointment_mail" required>
                             </div>
                             <div class="wrap-select services">
-                                <select class="select-field service appointment_services" tabindex="4" name="appointment_services" id="appointment_services">
+                                <select class="select-field services" name="appointment_services">
                                     <option value="" selected="selected"> Choose service </option>
                                     <option value="BeardCuts">BeardCuts </option>
                                     <option value="Haircuts"> Haircuts</option>
@@ -412,45 +471,33 @@
                                 </select> 
                             </div><!-- /.wrap-select -->
                             <div class="wrap-select barber">
-                                <select class="select-field barber appointment_booking_with" tabindex="5" name="appointment_booking_with" id="appointment_booking_with">
-                                    <option value="" selected> Choose barber </option>
-                                    <?php
-                                    foreach($employees as $employee) {
-                                        echo "<option value='$employee[id]'>$employee[name]</option>";
-                                    }
-                                    ?>
+                                <select class="select-field barber" name="appointment_barber">
+                                    <option value="" selected="selected"> Choose barber </option>
+                                    <option value="Dennis Lee">Dennis Lee</option>
+                                    <option value="Dennis Lee"> Jason Smith </option>
+                                    <option value="Dennis Lee"> Lena Amber </option>
                                 </select> 
                             </div><!-- /.wrap-select --> 
                             <div class="group-select clearfix">
                                 <div class="wrap-select-group">    
-                                    <input type="text" id="datepicker" class="appointment_date" tabindex="6" placeholder="Date / Month" name="appointment_date" id="appointment_date">
+                                    <input type="text" id="datepicker" placeholder="Date / Month" name="appointment_date" id="appointment_date">
                                 </div><!-- /.wrap-select --> 
                                 <div class="wrap-select-group">
-                                    <select class="select-field time appointment_time" name="appointment_time" tabindex="7" id="appointment_time">
+                                    <select class="select-field time" name="appointment_time">
                                         <option value="" selected="selected"> Time </option>
-                                        <option value="09:00 am"> 09:00 AM </option>
-                                        <option value="10:00 am"> 10:00 AM</option>
-                                        <option value="11:00 am"> 11:00 AM</option>
-                                        <option value="12:00 pm"> 12:00 AM </option>
-                                        <option value="01:00 pm"> 13:00 PM</option>
-                                        <option value="02:00 pm"> 01:00 PM</option>
-                                        <option value="03:00 pm"> 02:00 PM</option>
-                                        <option value="04:00 pm"> 03:00 PM</option>
-                                        <option value="05:00 pm"> 04:00 PM</option>
-                                        <option value="05:00 pm"> 05:00 PM</option>
-                                        <option value="06:00 pm"> 06:00 PM</option>
-                                        <option value="07:00 pm"> 07:00 PM</option>
-                                        <option value="08:00 pm"> 08:00 PM</option>
+                                        <option value="07:00"> 07:00 </option>
+                                        <option value="08:00"> 08:00 </option>
+                                        <option value="09:00"> 09:00 </option>
+                                        <option value="10:00"> 10:00 </option>
+                                        <option value="1:00"> 1:00 </option>
+                                        <option value="2:00"> 2:00 </option>
+                                        <option value="3:00"> 3:00 </option>
+                                        <option value="4:00"> 4:00 </option>
                                     </select> 
                                 </div><!-- /.wrap-select --> 
                             </div><!-- /.group-select -->
                             <div class="submit-form">
-                                <div class="alert alert-warning alert-dismissible alert-appointment hidden" id="appointment_alert_button" role="alert">
-                                    <button type="button" class="close"  data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
-                                    Appointment Booked, Confirmation will be sent by message.
-                                </div>
-                                <button class="roll-button white appointment_button" tabindex="8"  type="submit">Book Appointment</button>
-                                <button class="roll-button white appointment_reset_button hidden">Reset</button>                                
+                                <button class="roll-button white">Appointment</button>
                             </div>
                         </form><!-- /.comment-form -->                  
                     </div><!-- /.item -->
@@ -464,13 +511,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="roll-titlebox text-center">
-                    <p class="sub text-color">Monarch Salon</p>
-                    <h2 class="main text-dark">Team</h2>
+                    <p class="sub text-color">Haircuts &amp; Beards</p>
+                    <h2 class="main text-dark">Blog Posts</h2>
                 </div>
                 <div class="roll-news">                   
                     <div class="article">
                         <div class="featured-post">
-                            <img src="<?php base_url(); ?>assets/img/trial/blog/1.jpg" alt="image">
+                            <img src="images/blog/1.jpg" alt="image">
                             <ul class="post-format">
                                 <li class="date">
                                     <span class="day">01</span>
@@ -479,9 +526,10 @@
                             </ul><!-- /.post-format -->
                         </div><!-- /.feature-post -->
                         <div class="content-post">
-                            <h3 class="title-post"><a href="blog-single.html">Haircut</a></h3>                     
+                            <h3 class="title-post"><a href="blog-single.html">vero eos et accusam justo duo</a></h3>                     
                             <div class="excerpt">                                
-                                <p>Qwerty</p>
+                                <p>At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et 
+                                </p>
                             </div>
                             <ul class="sharebar">
                                 <li><a href="#"><span class="icon-social facebook">F</span></a></li>
@@ -493,7 +541,7 @@
                     <div class="article">
                         <div class="item-post">
                             <div class="featured-post">
-                                <img src="<?php base_url(); ?>assets/img/trial/blog/2.jpg" alt="image">
+                                <img src="images/blog/2.jpg" alt="image">
                                 <ul class="post-format">
                                     <li class="date">
                                         <span class="day">07</span>
@@ -502,9 +550,10 @@
                                 </ul><!-- /.post-format -->
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <h3 class="title-post"><a href="blog-single.html">Beard</a></h3>                     
+                                <h3 class="title-post"><a href="blog-single.html">Magna aliquyam erat sed diam</a></h3>                     
                                 <div class="entry-post">                                
-                                    <p>Qwerty</p>
+                                    <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet lorem ipsum dolor sit.
+                                   </p>
                                 </div>
                                 <ul class="sharebar">
                                     <li><a href="#"><span class="icon-social facebook">F</span></a></li>
@@ -517,7 +566,7 @@
                     <div class="article">
                         <div class="item-post">
                             <div class="featured-post">
-                                <img src="<?php base_url(); ?>assets/img/trial/blog/3.jpg" alt="image">
+                                <img src="images/blog/3.jpg" alt="image">
                                 <ul class="post-format">
                                     <li class="date">
                                         <span class="day">08</span>
@@ -526,9 +575,10 @@
                                 </ul><!-- /.post-format -->
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <h3 class="title-post"><a href="blog-single.html">Tattoo</a></h3>
+                                <h3 class="title-post"><a href="blog-single.html">Lorem ipsum dolor sit amet consetetur </a></h3>
                                 <div class="entry-post">                                
-                                    <p>Qwerty</p>
+                                    <p>At vero eos accusam usduo dolores etea rebum stet clita kasd gubergren sa takimata sanctus 
+                                    </p>
                                 </div>
                                 <ul class="sharebar">
                                     <li><a href="#"><span class="icon-social facebook">F</span></a></li>
@@ -541,7 +591,7 @@
                     <div class="article">
                         <div class="item-post">
                             <div class="featured-post">
-                                <img src="<?php base_url(); ?>assets/img/trial/blog/4.jpg" alt="image">
+                                <img src="images/blog/4.jpg" alt="image">
                                 <ul class="post-format">
                                     <li class="date">
                                         <span class="day">12</span>
@@ -550,9 +600,10 @@
                                 </ul><!-- /.post-format -->
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <h3 class="title-post"><a href="blog-single.html">oloring</a></h3>
+                                <h3 class="title-post"><a href="blog-single.html">Sadipscing elitr sed nonumy</a></h3>
                                 <div class="entry-post">                                
-                                    <p>Qwerty</p>
+                                    <p>Sit amet lorem ipsum dolor sit amet, consetetur sadipscing elitrsed diam nonumy eirmod tempor invidunt.
+                                   </p>
                                 </div>
                                 <ul class="sharebar">
                                     <li><a href="#"><span class="icon-social facebook">F</span></a></li>
@@ -565,7 +616,7 @@
                     <div class="article">
                         <div class="item-post">
                             <div class="featured-post">
-                                <img src="<?php base_url(); ?>assets/img/trial/blog/5.jpg" alt="image">
+                                <img src="images/blog/5.jpg" alt="image">
                                 <ul class="post-format">
                                     <li class="date">
                                         <span class="day">18</span>
@@ -574,9 +625,10 @@
                                 </ul><!-- /.post-format -->
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <h3 class="title-post"><a href="blog-single.html">Spa</a></h3>                     
+                                <h3 class="title-post"><a href="blog-single.html">Eirmod tempor invidunt ut labore</a></h3>                     
                                 <div class="entry-post">                                
-                                    <p>Qwerty</p>
+                                    <p>Dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+                                    </p>
                                 </div>
                                 <ul class="sharebar">
                                     <li><a href="#"><span class="icon-social facebook">F</span></a></li>
@@ -589,7 +641,7 @@
                     <div class="article">
                         <div class="item-post">
                             <div class="featured-post">
-                                <img src="<?php base_url(); ?>assets/img/trial/blog/1.jpg" alt="image">
+                                <img src="images/blog/1.jpg" alt="image">
                                 <ul class="post-format">
                                     <li class="date">
                                         <span class="day">12</span>
@@ -598,9 +650,10 @@
                                 </ul><!-- /.post-format -->
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <h3 class="title-post"><a href="blog-single.html">Tattoo</a></h3>
+                                <h3 class="title-post"><a href="blog-single.html">Sadipscing elitr sed nonumy</a></h3>
                                 <div class="entry-post">                                
-                                    <p>Qwerty</p>
+                                    <p>Sit amet lorem ipsum dolor sit amet, consetetur sadipscing elitrsed diam nonumy eirmod tempor invidunt 
+                                   </p>
                                 </div>
                                 <ul class="sharebar">
                                     <li><a href="#"><span class="icon-social facebook">F</span></a></li>
@@ -615,93 +668,91 @@
         </div><!-- /.container -->
     </section>  
 
-    <?php 
-    // <!-- Promotion -->
-    // <section class="roll-row" style="padding: 0">
-    //     <div class="container">
-    //         <div class="row">
-    //             <div class="col-md-12">
-    //                 <div class="roll-promotion clearfix">
-    //                     <div class="title-promotion roll-animation" data-animation="fadeInLeft" data-animation-delay="0" data-animation-offset="75%"><span class="text-color">Like this template?</span> Get your copy of this great theme now!</div>
-    //                     <a href="#" class="roll-button roll-animation" data-animation="fadeInRight" data-animation-delay="0" data-animation-offset="75%">Purchase</a>
-    //                 </div><!-- /.roll-promotion -->
-    //             </div><!-- /.col-md-12 -->
-    //         </div><!-- /.row -->
-    //     </div><!-- /.container -->
-    // </section> 
-    ?>
+    <!-- Promotion -->
+    <section class="roll-row" style="padding: 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="roll-promotion clearfix">
+                        <div class="title-promotion roll-animation" data-animation="fadeInLeft" data-animation-delay="0" data-animation-offset="75%"><span class="text-color">Like this template?</span> Get your copy of this great theme now!</div>
+                        <a href="#" class="roll-button roll-animation" data-animation="fadeInRight" data-animation-delay="0" data-animation-offset="75%">Purchase</a>
+                    </div><!-- /.roll-promotion -->
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section> 
 
     <!-- Gallery -->
     <section class="roll-row" style="padding: 0">
         <div class="roll-gallery">
             <div class="owl-carousel">
                 <div class="item">
-                    <img src="<?php base_url(); ?>assets/img/trial/gallery/1.jpg" alt="image">
+                    <img src="images/gallery/1.jpg" alt="image">
                     <div class="hover">
                     </div><!-- /.hover -->
                     <div class="gallery-content">
-                        <!-- <ul class="gallery-link">
+                        <ul class="gallery-link">
                             <li class="icon-s FromLeft"><span class="icon-search5"></span></li>
                             <li class="icon-l FromRight"><span class="icon-location5"></span></li>
-                        </ul> -->
-                        <h3>Ayesha Khan</h3>
+                        </ul>
+                        <h3>Magna aliquyam erat</h3>
                         <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
                     </div><!-- /.gallery-content -->
                 </div>
                 <div class="item">
-                    <img src="<?php base_url(); ?>assets/img/trial/gallery/2.jpg" alt="image">
+                    <img src="images/gallery/2.jpg" alt="image">
                     <div class="hover">
                     </div><!-- /.hover -->
                     <div class="gallery-content">
-                        <!-- <ul class="gallery-link">
+                        <ul class="gallery-link">
                             <li class="icon-s FromLeft"><span class="icon-search5"></span></li>
                             <li class="icon-l FromRight"><span class="icon-location5"></span></li>
-                        </ul> -->
-                        <h3>Ragini Tankt</h3>
+                        </ul>
+                        <h3>Magna aliquyam erat</h3>
                         <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
                     </div><!-- /.gallery-content -->
                 </div>
                 <div class="item">
-                    <img src="<?php base_url(); ?>assets/img/trial/gallery/3.jpg" alt="image">
+                    <img src="images/gallery/3.jpg" alt="image">
                     <div class="hover">
                     </div><!-- /.hover -->
                     <div class="gallery-content">
-                        <!-- <ul class="gallery-link">
+                        <ul class="gallery-link">
                             <li class="icon-s FromLeft"><span class="icon-search5"></span></li>
                             <li class="icon-l FromRight"><span class="icon-location5"></span></li>
-                        </ul> -->
-                        <h3>Neeti Verma</h3>
+                        </ul>
+                        <h3>Magna aliquyam erat</h3>
                         <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
                     </div><!-- /.gallery-content -->
                 </div>
                 <div class="item">
-                    <img src="<?php base_url(); ?>assets/img/trial/gallery/4.jpg" alt="image">
+                    <img src="images/gallery/4.jpg" alt="image">
                     <div class="hover">
                     </div><!-- /.hover -->
                     <div class="gallery-content">
-                        <!-- <ul class="gallery-link">
+                        <ul class="gallery-link">
                             <li class="icon-s FromLeft"><span class="icon-search5"></span></li>
                             <li class="icon-l FromRight"><span class="icon-location5"></span></li>
-                        </ul> -->
-                        <h3>Saroj Khan</h3>
+                        </ul>
+                        <h3>Magna aliquyam erat</h3>
                         <p><a href="">Haircuts</a>,<a href=""> Women</a></p>
                     </div><!-- /.gallery-content -->
                 </div>
                 <div class="item">
-                    <img src="<?php base_url(); ?>assets/img/trial/gallery/1.jpg" alt="image">
+                    <img src="images/gallery/1.jpg" alt="image">
                     <div class="hover">
                     </div><!-- /.hover -->
                     <div class="gallery-content">
-                        <!-- <ul class="gallery-link">
+                        <ul class="gallery-link">
                             <li class="icon-s FromLeft"><span class="icon-search5"></span></li>
                             <li class="icon-l FromRight"><span class="icon-location5"></span></li>
-                        </ul> -->
-                        <h3>Divya Sharma</h3>
+                        </ul>
+                        <h3>Magna aliquyam erat</h3>
                         <p><span>Haircuts</span>, Women</p>
                     </div><!-- /.gallery-content -->
                 </div>
                 <div class="item">
-                    <img src="<?php base_url(); ?>assets/img/trial/gallery/2.jpg" alt="image">
+                    <img src="images/gallery/2.jpg" alt="image">
                     <div class="hover">
                     </div><!-- /.hover -->
                     <div class="gallery-content">
@@ -718,14 +769,14 @@
     </section> 
 
     <!-- Contact -->
-    <section class="roll-row" style="padding: 75px 0; background: url('assets/img/trial/contact.jpg')"> 
+    <section class="roll-row" style="padding: 75px 0; background: url(images/contact.jpg)"> 
         <div class="container">
             <div class="row">
                 <div class="col-md-12">       
                     <div class="roll-contact text-center">
-                        <div class="mail">contact@monarchsalon.in</div>
-                    <div class="phone">9829158345</div>
-                    <div class="address">Panchawati, Udaipur(Raj.)</div>
+                        <div class="mail">hearcut&amp;beard@info.com</div>
+                        <div class="phone">8 (800) 695-2684</div>
+                        <div class="address">Santa Monica Blvd, Los Angeles, Clifornia 97845, United States</div>
                     </div><!-- /infomation --> 
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row -->
@@ -733,7 +784,7 @@
     </section> 
 
     <!-- Contact Form -->
-    <section class="roll-row" style="background: url('assets/img/trial/contact-form.jpg')"> 
+    <section class="roll-row" style="background: url(images/contact-form.jpg)"> 
         <div class="container">
             <div class="row">
                 <div class="col-md-12"> 
@@ -741,35 +792,25 @@
                         <p class="sub text-color">Haircuts &amp; Beards</p>
                         <h2 class="main text-dark">Contact Form</h2>
                     </div>                    
-                    <div class="alert alert-warning alert-dismissible hidden " id="contact_alert_button" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
-                        Hello, we received your message. We will shortly contact you.
-                    </div>
-                        <form class="roll-contact-form short my_contact_form" id="contact_form">                          
+                        <form class="roll-contact-form short" id="contactform" method="post" action="./contact/contact-process.php">                          
                             <div class="input-wrap name">
-                                <input type="text" value="" tabindex="9" placeholder="Full Name" name="contact_name" id="contact_name" class="contact_name">
-                                <span class='error-span' data-error-for='contact_name'>Error</span>
+                                <input type="text" value="" tabindex="1" placeholder="Full Name" name="name" id="name" required>
                             </div>
                             <div class="input-wrap last phone">
-                                <input type="text" value="" placeholder="Phone" tabindex="10" name="contact_mobile" id="contact_mobile" class="contact_mobile" >
-                                <span class='error-span' data-error-for='contact_mobile'>Error</span>
+                                <input type="text" value="" placeholder="Phone" name="phone" id="phone" >
                             </div>
                             <div class="input-wrap email">
-                                <input type="email" value="" tabindex="11" placeholder="Email Address" name="contact_email" id="contact_email" class="contact_email">
-                                <span class='error-span' data-error-for='contact_email'>Error</span>
+                                <input type="email" value="" tabindex="2" placeholder="Email Address" name="email" id="email" required>
                             </div>
                             <div class="input-wrap last Subject">
-                                <input type="text" value="" placeholder="subject" tabindex="12" name="contact_subject" id="contact_subject" class="contact_subject">
-                                <span class='error-span' data-error-for='contact_subject'>Error</span>
+                                <input type="text" value="" placeholder="Subject" name="Subject" id="Subject" >
                             </div>
 
-                            <div class="textarea-wrap new_text_field">
-                                <textarea class="type-input contact_message" tabindex="13" placeholder="Message" name="contact_message" id="contact_message"></textarea>
-                                <span class='error-span' data-error-for='contact_message'>Error</span>
+                            <div class="textarea-wrap">
+                                <textarea class="type-input" tabindex="3" placeholder="Message" name="message" id="message" required></textarea>
                             </div>
                             <div class="submit-wrap text-center">
-                                <button class="roll-button contact_button" tabindex="14" type="submit">Send Message</button>
-                                <button type="reset" class="hidden" id="reset_contact_button">Reset</button>
+                                <button class="roll-button">Send Message</button>
                             </div>
                         </form><!-- /.comment-form -->                    
                 </div><!-- /.col-md-12 -->
@@ -785,23 +826,23 @@
                     <div class="col-md-3 roll-animation" data-animation="fadeInLeft" data-animation-delay="0" data-animation-offset="75%">
                         <div class="widget widget-about">
                             <div class="logo-footer">
-                                <img src="<?php base_url(); ?>assets/img/trial/logo.png" alt="image">
+                                <img src="images/logo.png" alt="image">
                             </div>
-                            <p>Best salon in rajasthan.</p>
+                            <p>At vereos acusam usduo dolores etea rebum stet clitkasd gubergren sa takimata sanctus.</p>
                             <ul class="socials clearfix">
                                 <li><a href="#"><span class="facebook">F</span></a></li>
                                 <li><a href="#"><span class="twitter">L</span></a></li>
-                                <li><a href="#"><span class="google">G</span></a></li>
+                                <li><a href="#"><span class="google">G</span></a></li>             
                                 <li><a href="#"><span class="linkedin">I</span></a></li>
                                 <li><a href="#"><span class="pinterest">:</span></a></li>
-                            </ul>
+                            </ul> 
                         </div><!-- /.widget-about -->  
                     </div><!-- /.col-md-3 -->
 
                     <div class="col-md-3 roll-animation" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
                         <div class="widget widget-tweets">
                             <h5 class="widget-title">Twitter </h5>
-                            <div class="list-tiwtter" data-number="2" data-username="envato" data-modpath="twitter/<?php echo base_url(); ?>home"></div>
+                            <div class="list-tiwtter" data-number="2" data-username="envato" data-modpath="twitter/index.php"></div>
                         </div><!-- /.widget-recent-tweets -->
                     </div><!-- /.col-md-3 -->
 
@@ -811,19 +852,19 @@
                             <ul class="posts clearfix">
                                 <li>
                                     <div class="thumb">
-                                        <img src="<?php base_url(); ?>assets/img/trial/blog/6.png" alt="image">
+                                        <img src="images/blog/6.png" alt="image">
                                     </div>
                                     <div class="text">
-                                        <h6><a href="#">Monarch Salon</a></h6>
+                                        <h6><a href="#">Duis autem vel eum iriure dolorin </a></h6>
                                         <p>April 9, 2014</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="thumb">
-                                        <img src="<?php base_url(); ?>assets/img/trial/blog/7.png" alt="image">
+                                        <img src="images/blog/7.png" alt="image">
                                     </div>
                                     <div class="text">
-                                        <h6><a href="#">Monarch Salon</a></h6>
+                                        <h6><a href="#">Hendrerit in vulputate velit esse </a></h6>
                                         <p>April 5, 2014</p>
                                     </div>
                                 </li>                            
@@ -834,13 +875,13 @@
                     <div class="col-md-3 roll-animation" data-animation="fadeInRight" data-animation-delay="0" data-animation-offset="75%">
                         <div class="widget widget-subscribe">
                             <h5 class="widget-title">Subscribe</h5>
-                            <form class="suscribe_email" id="subscribe-form" data-mailchimp="true">
+                            <form method="post" action="#" id="subscribe-form" data-mailchimp="true">
                                 <div id="subscribe-content">
                                     <div class="input-wrap email">
-                                         <input type="text" id="subscribe-email" name="subscribe-email"  class="suscribe_email" placeholder="Email Address">
+                                        <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Email Address">
                                     </div>
                                     <div class="button-wrap">
-                                        <button type="summit" id="subscribe_button" class="subscribe-button " title="Subscribe now"> + </button>
+                                        <button type="button" id="subscribe-button" class="subscribe-button" title="Subscribe now"> + </button>
                                     </div>
                                 </div>
                                 <div id="subscribe-msg"></div>
@@ -859,18 +900,20 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright text-center">                        
-                        <p>© Monarch Salon 2015 | Developed <span class="icon-heart6"></span> by <a href="http://www.webkreators.in">Web Kreators Infotech</a></p>
+                        <p>© Haircuts &amp; Beards 2015 | Created with <span class="icon-heart6"></span> by <a href="#">MW Templates</a></p>
                     </div>                   
                 </div><!-- /.span12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>
+
     <!-- Go Top -->
     <a class="go-top">
         <i class="fa fa-angle-up"></i>
     </a>
     
     <!-- Javascript -->
+
     <?php
 
     echo script_tag('assets/js/home/jquery.min.js');
@@ -878,6 +921,7 @@
     echo script_tag('assets/js/home/jquery.easing.js');
     echo script_tag('assets/js/home/jquery-waypoints.js');
     echo script_tag('assets/js/home/jquery.flexslider-min.js');
+
     echo script_tag('assets/js/home/owl.carousel.js');
     echo script_tag('assets/js/home/parallax.js');
     echo script_tag('assets/js/home/jquery.cookie.js');
@@ -887,13 +931,23 @@
     echo script_tag('assets/js/home/datepicker.js');
     echo script_tag('assets/js/home/jquery.sticky.js');
     echo script_tag('assets/js/home/main.js');
-    echo script_tag('assets/js/notification/SmartNotification.min.js');
-    echo script_tag('assets/js/home.js');
+
+
+    // <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    // <script type="text/javascript" src="javascript/bootstrap.min.js"></script>    
+    // <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    // <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+    // <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+    // <script type="text/javascript" src="javascript/owl.carousel.js"></script>       
+    // <script type="text/javascript" src="javascript/parallax.js"></script>
+    // <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+    // <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
+    // <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
+    // <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+    // <script type="text/javascript" src="javascript/datepicker.js"></script>
+    // <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
+    // <script type="text/javascript" src="javascript/main.js"></script>
+
     ?>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            new HSS.Home();
-        });
-    </script>
 </body>
 </html>

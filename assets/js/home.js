@@ -8,6 +8,7 @@ HSS.Home = function (base_url) {
 HSS.Home.prototype={
     initialize:function(){
         this.contact_form();
+        this.suscribe_email();
     },
 
      appointment_form: function() {
@@ -239,7 +240,7 @@ HSS.Home.prototype={
                     $(element).closest('.textarea-wrap').find('.error-span').css('opacity',0);
                 }
             });
-        }
+        },
         // $('.contact_button').click(function(){
         //     $.ajax({
         //         url: "contact/contact_details",
@@ -270,5 +271,48 @@ HSS.Home.prototype={
 
         //     });
         // });
+        
+        suscribe_email : function(){
+             var self = this;
+            $("#suscribe_email").validate({
+                rules: {
+                    suscribe_email: {
+                        required : true,
+                        email : true
+                    }
+                },
+                messages : {
+                    
+                    contact_email: {
+                        required : 'Enter your email',
+                        email : 'Enter valid email'
+                    }
+                },
+                submitHandler: function(form) {
+                    $.ajax({
+                        url: "suscribe-email/index",
+                        type: "POST",
+                        dataType: "JSON",
+                        data:{
+                            
+                            suscribe_email: $('.suscribe_email').val()
+                        },
+                        beforeSend: function(data) {
+                            alert('hello');
+                            console.log(data);
+                            //$(".contact_button").html('Processing...');
+                        },
+                        error: function(data){
+                            console.log(data);
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            
+                        }
+                    });
+                }
+            });
+        }
+        
     
 }
