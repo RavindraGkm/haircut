@@ -58,7 +58,7 @@
             <div class="header-wrap clearfix">
                 <div class="logo-wrap">
                     <div id="logo" class="logo small">
-                        <a href="index.html" rel="home">
+                        <a href="<?php echo base_url(); ?>home" rel="home">
                             <img src="<?php echo base_url(); ?>assets/img/trial/logo_small.png" alt="image">
                         </a>
                     </div><!-- /.logo -->

@@ -58,7 +58,7 @@
             <div class="header-wrap clearfix">
                 <div class="logo-wrap">
                     <div id="logo" class="logo small">
-                        <a href="index.html" rel="home">
+                        <a href="<?php echo base_url(); ?>home" rel="home">
                             <img src="<?php echo base_url(); ?>assets/img/trial/logo_small.png" alt="image">
                         </a>
                     </div><!-- /.logo -->
@@ -137,7 +137,7 @@
                             <li><a href="#"> Lorem ipsum dolor sit amet lorem ipsumr</a></li>
                         </ul> 
                         <div class="roll-spacer small"></div>
-                        <a href="#" class="roll-button">Check Gallery</a>
+                        <a href="<?php echo base_url(); ?>gallery" class="roll-button">Check Gallery</a>
                     </div><!-- /.col-md-6 -->
 
                     <div class="col-md-6 padl35">                    
