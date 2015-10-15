@@ -43,7 +43,7 @@
     <link href="img/icon/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
     <link href="img/icon/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
     <link href="img/icon/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
-    <link href="img/icon/favicon.png" rel="shortcut icon">
+    <link href="assets/img/icon/favicon.png" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
