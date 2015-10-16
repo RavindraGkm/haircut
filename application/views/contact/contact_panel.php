@@ -271,7 +271,6 @@
             </div><!-- /.container -->
         </div><!-- /.footer-widgets -->
     </footer>
-
     <!-- Bottom -->
     <div class="bottom">
         <div class="container">
@@ -284,15 +283,10 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>
-
-    <!-- Go Top -->
     <a class="go-top">
         <i class="fa fa-angle-up"></i>
     </a>
-    
-    <!-- Javascript -->
     <?php
-
     echo script_tag('assets/js/home/jquery.min.js');
     echo script_tag('assets/js/home/bootstrap.min.js');
     echo script_tag('assets/js/home/jquery.sticky.js');
@@ -305,22 +299,7 @@
     echo script_tag('assets/js/home/jquery.tweet.min.js');
     echo script_tag('assets/js/home/main.js');
     echo script_tag('assets/js/contact/contact.js');
-
-    // <script type="text/javascript" src="javascript/jquery.min.js"></script>
-    // <script type="text/javascript" src="javascript/bootstrap.min.js"></script> 
-    // <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-    // <script type="text/javascript" src="javascript/jquery.easing.js"></script>    
-    
-    // <script type="text/javascript" src="javascript/jquery-validate.js"></script>
-    // <script type="text/javascript" src="javascript/jquery.gomap-1.3.2.min.js"></script>
-    // <script type="text/javascript" src="javascript/jquery.cookie.js"></script>    
-    // <script type="text/javascript" src="javascript/datepicker.js"></script>        
-    // <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
-    // <script type="text/javascript" src="javascript/main.js"></script>
-
     ?>
-
-    <!-- // <script type="text/javascript" src=""></script> -->
     <script type="text/javascript">
         $(document).ready(function(){
             new HSS.Contact();

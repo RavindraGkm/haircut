@@ -540,7 +540,7 @@
         if ( $().goMap ) {            
             $("#map").goMap({ // load map
                 markers: [{  
-                    address: 'PO Box 97845 Baker st. 567, Los Angeles, California, United States', 
+                    address: 'Panchwati, Udaipur, Rajasthan',
                     title: 'My company',
                 }],
                 scrollwheel: false, 

@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Suscribe_email extends CI_Controller {
+class Subscribe_email extends CI_Controller {
     public function index() {
     	echo "hello";
         // $this->load->database();
@@ -10,6 +10,5 @@ class Suscribe_email extends CI_Controller {
         // $this->db->close();
         // echo json_encode($response);
     }
-    
 }
 ?>
