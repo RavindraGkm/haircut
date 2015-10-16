@@ -81,6 +81,14 @@
                     </li>
                 </ul>
             </li>
+            <li >
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Subscribers</span></a>
+                <ul>
+                    <li>
+                        <?php echo anchor('subscribe/subscribe-email','<span class="menu-item-parent">Subscribers</span>');?>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </aside>

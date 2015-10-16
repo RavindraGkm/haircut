@@ -68,7 +68,7 @@
                     <nav id="mainnav" class="mainnav">
                         <ul class="menu"> 
                             <li>
-                                <a href="<?php echo base_url(); ?>home">Home</a>
+                                <a href="<?php echo base_url(); ?>">Home</a>
                             </li>
                             <li class="active">
                                 <a href="<?php echo base_url(); ?>about">About</a>
@@ -362,60 +362,54 @@
                         </div><!-- /.widget-about -->  
                     </div><!-- /.col-md-3 -->
 
-                    <div class="col-md-3">
-                        <div class="widget widget-tweets">
-                            <h5 class="widget-title">Twitter </h5>
-                            <div class="list-tiwtter" data-number="2" data-username="envato" data-modpath="twitter/index.php"></div>
-                        </div><!-- /.widget-recent-tweets -->
-                    </div><!-- /.col-md-3 -->
 
-                    <div class="col-md-3">
-                        <div class="widget widget-posts">
-                            <h5 class="widget-title">Posts </h5>
-                            <ul class="posts clearfix">
-                                <li>
-                                    <div class="thumb">
-                                        <img src="<?php echo base_url(); ?>assets/img/trial/blog/6.png" alt="image">
-                                    </div>
-                                    <div class="text">
-                                        <h6><a href="#">Monarch Salon</a></h6>
-                                        <p>April 9, 2014</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <img src="<?php echo base_url(); ?>assets/img/trial/blog/7.png" alt="image">
-                                    </div>
-                                    <div class="text">
-                                        <h6><a href="#">Monarch Salon</a></h6>
-                                        <p>April 5, 2014</p>
-                                    </div>
-                                </li>                            
-                            </ul><!-- /.recent-posts -->
-                        </div><!-- /.widget-recent-posts -->
-                    </div><!-- /.col-md-3 -->
-
-                    <div class="col-md-3">
-                        <div class="widget widget-subscribe">
-                            <h5 class="widget-title">Subscribe</h5>
-                            <form method="post" action="#" id="subscribe-form" data-mailchimp="true">
-                                <div id="subscribe-content">
-                                    <div class="input-wrap email">
-                                        <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Email Address">
-                                    </div>
-                                    <div class="button-wrap">
-                                        <button type="button" id="subscribe-button" class="subscribe-button" title="Subscribe now"> + </button>
-                                    </div>
+                    <div class="col-md-4">
+                    <div class="widget widget-posts">
+                        <h5 class="widget-title">Posts </h5>
+                        <ul class="posts clearfix">
+                            <li>
+                                <div class="thumb">
+                                    <img src="<?php base_url(); ?>assets/img/trial/blog/6.png" alt="image">
                                 </div>
-                                <div id="subscribe-msg"></div>
-                            </form><!-- /#subscribe-form -->
-                            <p>Subscribe to Our Newsletter! We promice not to spam You!</p>
-                        </div><!-- /.widget-quick-contact -->
-                    </div><!-- /.col-md-3-->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.footer-widgets -->
-    </footer>
+                                <div class="text">
+                                    <h6><a href="#">Duis autem vel eum iriure dolorin </a></h6>
+                                    <p>April 9, 2014</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <img src="<?php base_url(); ?>assets/img/trial/blog/7.png" alt="image">
+                                </div>
+                                <div class="text">
+                                    <h6><a href="#">Hendrerit in vulputate velit esse </a></h6>
+                                    <p>April 5, 2014</p>
+                                </div>
+                            </li>
+                        </ul><!-- /.recent-posts -->
+                    </div><!-- /.widget-recent-posts -->
+                </div><!-- /.col-md-3 -->
+
+                <div class="col-md-4">
+                    <div class="widget widget-subscribe">
+                        <h5 class="widget-title">Subscribe</h5>
+                        <form id="subscribe-form" data-mailchimp="true">
+                            <div id="subscribe-content">
+                                <div class="input-wrap email">
+                                    <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Email Address">
+                                </div>
+                                <div class="button-wrap">
+                                    <button type="submit" id="subscribe-button" class="subscribe-button disabled" title="Subscribe now"> + </button>
+                                </div>
+                            </div>
+                            <div id="subscribe-msg"></div>
+                        </form><!-- /#subscribe-form -->
+                        <p>Subscribe to Our Newsletter! We promice not to spam You!</p>
+                    </div><!-- /.widget-quick-contact -->
+                </div><!-- /.col-md-3-->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.footer-widgets -->
+</footer>
 
     <!-- Bottom -->
     <div class="bottom">
@@ -445,23 +439,18 @@
     echo script_tag('assets/js/home/jquery.tweet.min.js');
     echo script_tag('assets/js/home/jquery.matchHeight-min.js');
     echo script_tag('assets/js/home/datepicker.js');
+    echo script_tag('assets/js/home/jquery-validate.js');
     echo script_tag('assets/js/home/jquery.sticky.js');
     echo script_tag('assets/js/home/main.js');
-
-    /*
-    
-    <script type="text/javascript" src="javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="javascript/jquery.easing.js"></script>    
-    <script type="text/javascript" src="javascript/jquery.sticky.js"></script>
-    <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>    
-    <script type="text/javascript" src="javascript/datepicker.js"></script>      
-    <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>    
-    <script type="text/javascript" src="javascript/main.js"></script>*/
+    echo script_tag('assets/js/about.js');
 
     ?>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        
+        new HSS.About();
+    });
+</script>
 
 </body>
 </html>

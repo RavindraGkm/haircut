@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'Home';
-$route['home-copy']='Home_copy/index';
 $route['home']='Home/index';
 
 $route['about-us']='About/index';
@@ -15,6 +14,8 @@ $route['contact/show-contact-details']='Contact/show_contact_details';
 $route['contact/show-all-contact-details']='Contact/show_all_contact_details';
 
 $route['subscribe']='Subscribe_email';
+$route['subscribe/subscribe-email']='Subscribe_email/show_subscribe_email';
+$route['subscribe/show-all-subscribe-details']='Subscribe_email/show_all_subscribe_details';
 
 $route['login/login-page'] = 'Login/login_page';
 $route['login/login-check']='Login/login_check';

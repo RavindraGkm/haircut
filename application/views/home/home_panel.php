@@ -62,7 +62,7 @@
                 <nav id="mainnav" class="mainnav">
                     <ul class="menu">
                         <li class="active">
-                            <a href="<?php echo base_url(); ?>home">Home</a>
+                            <a href="<?php echo base_url(); ?>">Home</a>
                         </li>
                         <li>
                             <a href="<?php echo base_url(); ?>about">About</a>
@@ -806,14 +806,9 @@
                     </div><!-- /.widget-about -->
                 </div><!-- /.col-md-3 -->
 
-                <div class="col-md-3">
-                    <div class="widget widget-tweets">
-                        <h5 class="widget-title">Twitter </h5>
-                        <div class="list-tiwtter" data-number="2" data-username="envato" data-modpath="twitter/index.php"></div>
-                    </div><!-- /.widget-recent-tweets -->
-                </div><!-- /.col-md-3 -->
+                
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget widget-posts">
                         <h5 class="widget-title">Posts </h5>
                         <ul class="posts clearfix">
@@ -839,16 +834,16 @@
                     </div><!-- /.widget-recent-posts -->
                 </div><!-- /.col-md-3 -->
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget widget-subscribe">
                         <h5 class="widget-title">Subscribe</h5>
-                        <form method="post" action="#" id="subscribe-form" data-mailchimp="true">
+                        <form id="subscribe-form" data-mailchimp="true">
                             <div id="subscribe-content">
                                 <div class="input-wrap email">
                                     <input type="text" id="subscribe-email" name="subscribe-email" placeholder="Email Address">
                                 </div>
                                 <div class="button-wrap">
-                                    <button type="button" id="subscribe-button" class="subscribe-button" title="Subscribe now"> + </button>
+                                    <button type="submit" id="subscribe-button" class="subscribe-button" title="Subscribe now"> + </button>
                                 </div>
                             </div>
                             <div id="subscribe-msg"></div>

@@ -31,10 +31,10 @@
 <aside id="left-panel">
     <nav>
         <ul>
-            <li class="active">
+            <li>
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Employee</span></a>
                 <ul>
-                    <li class="active">
+                    <li>
                         <?php echo anchor('employee/employee-registration','<span class="menu-item-parent">Registration Panel</span>');?>
                     </li>
                     <li>
@@ -74,10 +74,10 @@
                     </li>
                 </ul>
             </li>
-            <li >
+            <li  class="active">
                 <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">Subscribers</span></a>
                 <ul>
-                    <li>
+                    <li  class="active">
                         <?php echo anchor('subscribe/subscribe-email','<span class="menu-item-parent">Subscribers</span>');?>
                     </li>
                 </ul>
@@ -88,85 +88,46 @@
 <div id="main" role="main">
     <div id="ribbon">
         <ol class="breadcrumb">
-            <li>Home></li><li>Employee</li><li>Employee Registration Panel</li>
+            <li>Home</li><li>Subscribers</li>
         </ol>
     </div>
+
     <div id="content">
         <div class="row">
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <h1 class="page-title txt-color-blueDark">
-                    <i class="fa-fw fa fa-pencil-square-o"></i>Employee
-                    <span> > Registration</span>
+                    <i class="fa-fw fa fa fa-book"></i> &nbsp Subscribers
+                    <span>&nbsp > &nbsp Information</span>
                 </h1>
             </div>
         </div>
         <section id="widget-grid" class="">
             <div class="row">
-                <article class="col-sm-12 col-md-12 col-lg-8">
-                    <div class="jarviswidget" id="wid-id-1" data-widget-editbutton="false" data-widget-custombutton="false">
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false">
                         <header>
-                            <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                            <h2>Fill information to add new employee</h2>
+                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                            <h2>All Contact Requests</h2>
                         </header>
                         <div>
-                            <div class="jarviswidget-editbox">
-                            </div>
                             <div class="widget-body no-padding">
-                                <form  class="smart-form" novalidate="novalidate">
-                                    <fieldset>
-                                        <div class="row">
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-user"></i>
-                                                    <input type="text" name="name" class="name" id="name" placeholder="Employee name">
-                                                </label>
-                                            </section>
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-calendar"></i>
-                                                    <input name="birth_date" id="birth_date" placeholder="Employee DOB" class="birth_date">
-                                                </label>
-                                            </section>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="row">
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-                                                    <input type="text" name="address" id="address" class="address" placeholder="Employee address">
-                                                </label>
-                                            </section>
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-phone"></i>
-                                                    <input type="text" name="mobile" id="mobile" class="mobile" placeholder="Employee mobile no">
-                                                </label>
-                                            </section>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="row">
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-user"></i>
-                                                    <input type="text" name="email" id="email" class="email" placeholder="Employee email">
-                                                </label>
-                                            </section>  
-                                            <section class="col col-6">
-                                                <label class="input"> <i class="icon-prepend fa fa-calendar"></i>
-                                                    <input type="text" name="joining_date" id="joining_date" class="joining_date" placeholder="Joining Date">
-                                                </label>
-                                            </section>                                            
-                                        </div>
-                                    </fieldset>
-                                    <footer>
-                                        <button type="button" class="btn btn-primary myaddemp">Add New Employee</button>
-                                        <button type="reset" class="hidden" id="reset_employee_add_form"></button>
-                                    </footer>
-                                </form>
+                                <table id="datatable_fixed_column" class="table table-striped table-bordered table-hover custom-table" width="100%">
+                                    <thead>
+                                    <tr>                                    
+                                        <th data-hide="phone">S. No.</th>
+                                        <th data-class="expand"><i class="fa fa-fw text-muted "></i> Subscribe Email</th>
+                                        <th data-class="expand">Date</th>
+                                        <th data-hide="phone">Status</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="show_subscribe_details"></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
-        </section>           
-        
+        </section>
     </div>
 </div>
 <div class="page-footer">
@@ -184,12 +145,12 @@ echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
 echo script_tag('assets/js/bootstrap-datepicker.js');
-echo script_tag('assets/js/employee/add_employee.js');
+echo script_tag('assets/js/subscribe/subscribe_email.js');
 
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
-        new HSS.AddEmployee();
+        new HSS.ShowSubscribe();
     });
 </script>
 </body>

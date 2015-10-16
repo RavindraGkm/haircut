@@ -7,6 +7,7 @@ HSS.Contact = function (base_url) {
 HSS.Contact.prototype={
     initialize:function(){
         this.contact_form();
+        tihs.suscribe_email();
     },
 
     contact_form: function() {
@@ -93,5 +94,40 @@ HSS.Contact.prototype={
                 $(element).closest('.textarea-wrap').find('.error-span').css('opacity',0);
             }
         });
-    }
+    },
+    suscribe_email : function(){
+            $("#subscribe-form").validate({
+                rules: {
+                    suscribe_email: {
+                        required : true,
+                        email : true
+                    }
+                },
+                messages : {
+                    
+                    contact_email: {
+                        required : 'Enter your email',
+                        email : 'Enter valid email'
+                    }
+                },
+                submitHandler: function(form) {
+                    $.ajax({
+                        url: "subscribe",
+                        type: "POST",
+                        dataType: "JSON",
+                        data:{
+                            
+                            subscribe_email: $('#subscribe-email').val()
+                        },
+                        error: function(data){
+                            console.log(data);
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            
+                        }
+                    });
+                }
+            });
+        }
 }

@@ -274,7 +274,7 @@ HSS.Home.prototype={
         
         suscribe_email : function(){
              var self = this;
-            $("#suscribe_email").validate({
+            $("#subscribe-form").validate({
                 rules: {
                     suscribe_email: {
                         required : true,
@@ -290,17 +290,12 @@ HSS.Home.prototype={
                 },
                 submitHandler: function(form) {
                     $.ajax({
-                        url: "suscribe-email/index",
+                        url: "subscribe",
                         type: "POST",
                         dataType: "JSON",
                         data:{
                             
-                            suscribe_email: $('.suscribe_email').val()
-                        },
-                        beforeSend: function(data) {
-                            alert('hello');
-                            console.log(data);
-                            //$(".contact_button").html('Processing...');
+                            subscribe_email: $('#subscribe-email').val()
                         },
                         error: function(data){
                             console.log(data);
