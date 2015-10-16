@@ -111,6 +111,7 @@
                                 <table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
                                     <thead>
                                     <tr>
+                                        <th data-class="expand">S. No.</th>
                                         <th data-class="expand">Customer Name</th>
                                         <th data-hide="phone">User Email</th>
                                         <th data-hide="phone">Booking Date</th>

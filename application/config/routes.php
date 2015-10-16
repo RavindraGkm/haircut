@@ -14,7 +14,7 @@ $route['contact/contact_details']='Contact/contact_details';
 $route['contact/show-contact-details']='Contact/show_contact_details';
 $route['contact/show-all-contact-details']='Contact/show_all_contact_details';
 
-$route['suscribe-email/index']='Suscribe_email/index';
+$route['suscribe']='Suscribe_email';
 
 $route['login/login-page'] = 'Login/login_page';
 $route['login/login-check']='Login/login_check';

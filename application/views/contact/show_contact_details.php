@@ -112,13 +112,14 @@
                             <div class="widget-body no-padding">
                                 <table id="datatable_fixed_column" class="table table-striped table-bordered table-hover custom-table" width="100%">
                                     <thead>
-                                    <tr>
+                                    <tr>                                    
                                         <th data-hide="phone">S. No.</th>
                                         <th data-class="expand"><i class="fa fa-fw text-muted "></i>Name</th>
                                         <th data-class="expand">Phome</th>
                                         <th data-hide="phone">Email</th>
                                         <th data-hide="phone,tablet">Subject</th>
                                         <th data-hide="phone,tablet">Message</th>
+                                        <th data-hide="phone,tablet">Date</th>
                                     </tr>
                                     </thead>
                                     <tbody id="show_contact_details"></tbody>

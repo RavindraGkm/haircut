@@ -19,7 +19,7 @@ HSS.Contact.prototype={
             success: function (data) {
                 //console.log(data);
                  for(var i=0;i<data.length;i++) {
-                     var row = "<tr><td>" + [i+1] + "</td><td>" + data[i].name + "</td><td>"+data[i].mobile+"</td><td>" + data[i].email + "</td><td>" + data[i].subject +"</td><td>"+data[i].message+"</td></tr>";
+                     var row = "<tr><td>" + [i+1] + "</td><td>" + data[i].name + "</td><td>"+data[i].mobile+"</td><td>" + data[i].email + "</td><td>" + data[i].subject +"</td><td>"+data[i].message+"</td><td>"+data[i].contact_date+"</td></tr>";
                      $("#show_contact_details").append(row);
                  }
             }

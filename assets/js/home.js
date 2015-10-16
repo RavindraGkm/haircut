@@ -80,7 +80,7 @@ HSS.Home.prototype={
                         dataType:"JSON",
                         data:{
                             name:$('#appointment_name').val(),
-                            booking_date: $('#appointment_date').val(),
+                            booking_date: $('.appointment_date').val(),
                             booking_with: $('#appointment_booking_with').val(),
                             booking_timing: $('#appointment_time').val(),
                             mobile: $('#appointment_mobile').val(),

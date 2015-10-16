@@ -31,6 +31,7 @@ class Contact_details extends CI_Model {
             $temp['email']=$row->email;
             $temp['subject']=$row->subject;
             $temp['message']=$row->message;
+            $temp['contact_date']=$row->contact_date;
             $response[]=$temp;
         }
         return $response;

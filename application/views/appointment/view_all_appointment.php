@@ -126,6 +126,7 @@
                                         </th>
                                         <th>&nbsp;</th>
                                         <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
                                         <th class="hasinput" style="width:13%">
                                             <select class="form-control" style="width: 100%;">
                                                 <option value="">Select</option>
@@ -144,6 +145,7 @@
                                         <th data-hide="phone,tablet">Booking With</th>
                                         <th data-hide="phone,tablet">Booking Timing</th>
                                         <th data-hide="phone,tablet">Phone</th>
+                                        <th data-hide="phone,tablet">Service</th>
                                         <th data-hide="phone,tablet">Status</th>
                                         <th data-hide="phone,tablet">Choice</th>
                                         <th data-hide="phone,tablet">Action</th>

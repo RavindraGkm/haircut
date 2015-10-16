@@ -40,7 +40,7 @@ class Appointment_model extends CI_Model {
     }
     public function view_all_employees_appointments() {
         $response=array();
-        $sql="select br.id, br.name as customer_name, ae.name, br.booking_date, br.booking_timing, br.mobile, br.status from booking_request as br INNER JOIN add_employee as ae ON ae.id=br.booking_with";
+        $sql="select br.id, br.name as customer_name, ae.name, br.booking_date, br.booking_timing, br.mobile, br.status, br.service from booking_request as br INNER JOIN add_employee as ae ON ae.id=br.booking_with";
         $query=$this->db->query($sql);
         foreach($query->result() as $row){
             $temp['id']=$row->id;
@@ -51,6 +51,7 @@ class Appointment_model extends CI_Model {
             $temp['booking_with']=$row->name;
             $temp['booking_timing']=$row->booking_timing;
             $temp['mobile']=$row->mobile;
+            $temp['service']=$row->service;
             $temp['status']=$row->status;
             $response[]=$temp;
         }
