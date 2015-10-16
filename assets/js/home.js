@@ -121,40 +121,6 @@ HSS.Home.prototype={
             });
         },
 
-    // appointment:function(){
-    //         // $('.appointment_button').click(function(){
-    //         //     $.ajax({
-    //         //         url:"appointment/book-my-appointment",
-    //         //         type:"POST",
-    //         //         dataType:"JSON",
-    //         //         data:{
-    //         //             name:$('#appointment_name').val(),
-    //         //             booking_date: $('#appointment_date').val(),
-    //         //             booking_with: $('#appointment_booking_with').val(),
-    //         //             booking_timing: $('#appointment_time').val(),
-    //         //             mobile: $('#appointment_mobile').val(),
-    //         //             service: $('#appointment_services').val(),
-    //         //             user_email: $('#appointment_email').val()
-    //         //         },
-    //         //         beforeSend:function(){
-    //         //             $('.appointment_button').html("Booking...");
-    //         //         },
-    //         //         error:function(data){
-    //         //             console.log(data);
-    //         //         },
-    //         //         success:function(data){
-    //         //             console.log(data);
-    //         //             $('.appointment_button').html("Book Appointment");
-    //         //             if(data.status==200)
-    //         //         {
-    //         //             $("#appointment_alert_button").removeClass("hidden");
-    //         //             $("#appointment_reset_button").click();
-    //         //         }
-    //         //     }
-                    
-    //         //     });
-    //         // });
-    // },
 
         contact_form: function() {
             var self = this;
@@ -241,36 +207,6 @@ HSS.Home.prototype={
                 }
             });
         },
-        // $('.contact_button').click(function(){
-        //     $.ajax({
-        //         url: "contact/contact_details",
-        //         type: "POST",
-        //         dataType: "JSON",
-        //         data:{
-        //             contact_name: $("#contact_name").val(),
-        //             contact_mobile: $("#contact_mobile").val(),
-        //             contact_email: $("#contact_email").val(),
-        //             contact_subject: $("#contact_subject").val(),
-        //             contact_message: $('#contact_message').val()
-        //         },
-        //         beforeSend: function(data) {
-        //             $(".contact_button").html('Processing...');
-        //         },
-        //         error: function(data){
-        //             console.log(data);
-        //         },
-        //         success: function (data) {
-        //             console.log(data);
-        //             $(".contact_button").html('Send Message');
-        //             if(data.status==200)
-        //             {
-        //                 $("#contact_alert_button").removeClass("hidden");
-        //                 $("#reset_contact_button").click();
-        //             }
-        //         }
-
-        //     });
-        // });
         
         suscribe_email : function(){
              var self = this;
@@ -302,10 +238,15 @@ HSS.Home.prototype={
                         },
                         success: function (data) {
                             console.log(data);
+                            if(data.status==200)
+                            {
+                                $("#subscription_alert_button").removeClass("hidden");
+                            }
                             
                         }
                     });
                 }
+                
             });
         }
         

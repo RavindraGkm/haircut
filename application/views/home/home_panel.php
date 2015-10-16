@@ -844,7 +844,12 @@
                                 </div>
                                 <div class="button-wrap">
                                     <button type="submit" id="subscribe-button" class="subscribe-button" title="Subscribe now"> + </button>
+                                    <span class="place-error" data-error-for="subscribe-button"></span>
                                 </div>
+                            </div>
+                             <div class="alert alert-warning alert-dismissible hidden " id="subscription_alert_button" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
+                                Thanks for the subscription..!!
                             </div>
                             <div id="subscribe-msg"></div>
                         </form><!-- /#subscribe-form -->
