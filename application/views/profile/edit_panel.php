@@ -27,11 +27,17 @@
         </span>
     </div>
     <div class="pull-right">
+
         <div id="logout" class="btn-header transparent pull-right">
             <span class="">
                 <?php echo anchor('logout/logout-panel','<i class="fa fa-sign-out"></i>');?>
             </span>
         </div>
+
+        <div id="hide-menu" class="btn-header pull-right">
+            <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+        </div>
+
     </div>
 </header>
 <aside id="left-panel">
@@ -99,7 +105,7 @@
                             <div class="jarviswidget-editbox">
                             </div>
                             <div class="widget-body no-padding">
-                                <form  class="smart-form" novalidate="novalidate">
+                                <form  class="smart-form" id="edit-profile-form">
                                     <fieldset>
                                         <div class="row">
                                             <section class="col col-6">
@@ -138,7 +144,7 @@
                                         </div>
                                     </fieldset>
                                     <footer>
-                                        <button type="button" class="btn btn-primary myupdate">Update Profile Info</button>
+                                        <button type="submit" class="btn btn-primary myupdate">Update Profile Info</button>
                                     </footer>
                                 </form>
                             </div>
@@ -169,6 +175,7 @@ echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
 echo script_tag('assets/js/bootstrap-datepicker.js');
+echo script_tag('assets/js/home/jquery-validate.js');
 echo script_tag('assets/js/profile/edit_profile.js');
 ?>
 <script type="text/javascript">

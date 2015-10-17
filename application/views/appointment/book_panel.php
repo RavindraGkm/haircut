@@ -27,12 +27,19 @@
         </span>
     </div>
     <div class="pull-right">
+
         <div id="logout" class="btn-header transparent pull-right">
             <span class="">
                 <?php echo anchor('logout/logout-panel','<i class="fa fa-sign-out"></i>');?>
             </span>
         </div>
+
+        <div id="hide-menu" class="btn-header pull-right">
+            <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+        </div>
+
     </div>
+
 </header>
 <aside id="left-panel">
     <nav>
@@ -114,7 +121,7 @@
                             <div class="jarviswidget-editbox">
                             </div>
                             <div class="widget-body no-padding">
-                                <form  class="smart-form" novalidate="novalidate">
+                                <form  class="smart-form" id="book-form-validate">
                                     <fieldset>
                                         <div class="row">
                                             <section class="col col-6">
@@ -133,10 +140,9 @@
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input">
-                                                    <select class="booking_with form-control" id="booking_with">
-                                                         <option>Booking With</option>
+                                                    <select class="booking_with form-control" id="booking_with" name="booking_with">
+                                                         <option value="">Booking With</option>
                                                     </select>
-
                                                 </label>
                                             </section>
                                             <section class="col col-6">
@@ -160,8 +166,8 @@
                                             </section>
                                             <section class="col col-6 ">
                                                 <label class="input">
-                                                    <select class="service form-control" id="service">
-                                                         <option>Services</option>
+                                                    <select class="service form-control" id="service" name="service">
+                                                         <option value="">Services</option>
                                                          <option value="beard cuts">Beard Cuts</option>
                                                          <option value="haircuts">Haircuts</option>
                                                          <option value="coloring">Coloring</option>
@@ -173,8 +179,8 @@
                                         </div>
                                     </fieldset>
                                     <footer>
-                                        <button type="reset" class="hidden" id="reset_client_form"></button>
-                                        <button type="button" class="btn btn-primary mybooking" id="mybooking">Book new appointment</button>
+                                        
+                                        <button type="submit" class="btn btn-primary mybooking" id="mybooking">Book new appointment</button>
                                         <button type="reset" class="hidden" id="reset_appointment_form"></button>
                                     </footer>
                                 </form>
@@ -205,6 +211,7 @@ echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/bootstrap-datepicker.js');
 echo script_tag('assets/js/timepicker.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
+echo script_tag('assets/js/home/jquery-validate.js');
 echo script_tag('assets/js/appointment/book_appointment.js');
 ?>
 <script type="text/javascript">

@@ -21,11 +21,17 @@
         <span id="logo"> <img src="<?php echo base_url('assets/img/logo.png')?>" alt="SmartAdmin"> </span>
     </div>
     <div class="pull-right">
+
         <div id="logout" class="btn-header transparent pull-right">
             <span class="">
                 <?php echo anchor('logout/logout-panel','<i class="fa fa-sign-out"></i>');?>
             </span>
         </div>
+
+        <div id="hide-menu" class="btn-header pull-right">
+            <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+        </div>
+
     </div>
 </header>
 <aside id="left-panel">
@@ -112,12 +118,12 @@
                             <div class="jarviswidget-editbox">
                             </div>
                             <div class="widget-body no-padding">
-                                <form  class="smart-form" novalidate="novalidate">
+                                <form  class="smart-form" id="booking-form">
                                     <fieldset>
                                         <div class="row">
                                             <section class="col col-6">
                                                 <label class="input"> <i class="icon-prepend fa fa-user"></i>
-                                                    <input type="text" name="name" class="name" id="name" placeholder="Employee name">
+                                                    <input type="text" name="name" class="name error-placement-class" id="name" placeholder="Employee name">                                            
                                                 </label>
                                             </section>
                                             <section class="col col-6">
@@ -156,7 +162,7 @@
                                         </div>
                                     </fieldset>
                                     <footer>
-                                        <button type="button" class="btn btn-primary myaddemp">Add New Employee</button>
+                                        <button type="submit" class="btn btn-primary myaddemp">Add New Employee</button>
                                         <button type="reset" class="hidden" id="reset_employee_add_form"></button>
                                     </footer>
                                 </form>
@@ -184,6 +190,7 @@ echo script_tag('assets/js/app.config.js');
 echo script_tag('assets/js/app.min.js');
 echo script_tag('assets/js/notification/SmartNotification.min.js');
 echo script_tag('assets/js/bootstrap-datepicker.js');
+echo script_tag('assets/js/home/jquery-validate.js');
 echo script_tag('assets/js/employee/add_employee.js');
 
 ?>

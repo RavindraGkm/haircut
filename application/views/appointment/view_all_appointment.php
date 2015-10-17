@@ -27,12 +27,18 @@
             <?php echo img(array('src'=>'assets/img/logo.png','alt'=>'SmartAdmin')); ?>
         </span>
     </div>
-    <div class="pull-right">
+    <<div class="pull-right">
+
         <div id="logout" class="btn-header transparent pull-right">
             <span class="">
                 <?php echo anchor('logout/logout-panel','<i class="fa fa-sign-out"></i>');?>
             </span>
         </div>
+
+        <div id="hide-menu" class="btn-header pull-right">
+            <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+        </div>
+
     </div>
 </header>
 <aside id="left-panel">
